@@ -49,7 +49,7 @@ class School extends MyApplication
     public function index()
     {
         // 処理
-        $this->displayPage('index');
+        $this->displayPage('school/index');
     }
 }
 /* End Of File: code/application/Index.php */
