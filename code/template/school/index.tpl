@@ -50,7 +50,7 @@
 
 <header class="headerBasic02">
     <div class="logo">
-        <img src="./img/logo_header01@2x.png" alt="LOGO">
+        <img src="{{ base }}/data/img/logo_header01@2x.png" alt="LOGO">
     </div>
     <div class="icon iconOpen">
         <svg xmlns="http://www.w3.org/2000/svg" width="34.5" height="44.5" viewBox="0 0 34.5 44.5">
@@ -322,8 +322,8 @@
         <div class="list">
             <a href="" class="item">
                 <figure class="img">
-                    <img src="./img/img26@2x.png" alt="" srcset="" class="pc">
-                    <img src="./img/img60@2x.png" alt="" srcset="" class="sp">
+                    <img src="{{ base }}/data/img/img26@2x.png" alt="" srcset="" class="pc">
+                    <img src="{{ base }}/data/img/img60@2x.png" alt="" srcset="" class="sp">
                 </figure>
                 <div class="title">
                     陰山式スコーラプレミアについて
@@ -331,8 +331,8 @@
             </a>
             <a href="" class="item">
                 <figure class="img">
-                    <img src="./img/img27@2x.png" alt="" srcset="" class="pc">
-                    <img src="./img/img61@2x.png" alt="" srcset="" class="sp">
+                    <img src="{{ base }}/data/img/img27@2x.png" alt="" srcset="" class="pc">
+                    <img src="{{ base }}/data/img/img61@2x.png" alt="" srcset="" class="sp">
                 </figure>
                 <div class="title">
                     カリキュラム
@@ -340,8 +340,8 @@
             </a>
             <a href="" class="item">
                 <figure class="img">
-                    <img src="./img/img28@2x.png" alt="" srcset="" class="pc">
-                    <img src="./img/img62@2x.png" alt="" srcset="" class="sp">
+                    <img src="{{ base }}/data/img/img28@2x.png" alt="" srcset="" class="pc">
+                    <img src="{{ base }}/data/img/img62@2x.png" alt="" srcset="" class="sp">
                 </figure>
                 <div class="title">
                     開発者
@@ -373,8 +373,8 @@
         <div class="list">
             <a href="" class="item">
                 <figure class="img">
-                    <img src="./img/img63@2x.png" alt="" srcset="" class="pc">
-                    <img src="./img/img64@2x.png" alt="" srcset="" class="sp">
+                    <img src="{{ base }}/data/img/img63@2x.png" alt="" srcset="" class="pc">
+                    <img src="{{ base }}/data/img/img64@2x.png" alt="" srcset="" class="sp">
                 </figure>
                 <div class="title">
                     mpi英語倶楽部について
@@ -382,8 +382,8 @@
             </a>
             <a href="" class="item">
                 <figure class="img">
-                    <img src="./img/img27@2x.png" alt="" srcset="" class="pc">
-                    <img src="./img/img61@2x.png" alt="" srcset="" class="sp">
+                    <img src="{{ base }}/data/img/img27@2x.png" alt="" srcset="" class="pc">
+                    <img src="{{ base }}/data/img/img61@2x.png" alt="" srcset="" class="sp">
                 </figure>
                 <div class="title">
                     カリキュラム
@@ -391,8 +391,8 @@
             </a>
             <a href="" class="item">
                 <figure class="img">
-                    <img src="./img/img66@2x.png" alt="" srcset="" class="pc">
-                    <img src="./img/img67@2x.png" alt="" srcset="" class="sp">
+                    <img src="{{ base }}/data/img/img66@2x.png" alt="" srcset="" class="pc">
+                    <img src="{{ base }}/data/img/img67@2x.png" alt="" srcset="" class="sp">
                 </figure>
                 <div class="title">
                     講師紹介
@@ -421,8 +421,8 @@
         <div class="list">
             <a href="" class="item">
                 <figure class="img">
-                    <img src="./img/img68@2x.png" alt="" srcset="" class="pc">
-                    <img src="./img/img69@2x.png" alt="" srcset="" class="sp">
+                    <img src="{{ base }}/data/img/img68@2x.png" alt="" srcset="" class="pc">
+                    <img src="{{ base }}/data/img/img69@2x.png" alt="" srcset="" class="sp">
                 </figure>
                 <div class="title">
                     PlogLABについて
@@ -430,8 +430,8 @@
             </a>
             <a href="" class="item">
                 <figure class="img">
-                    <img src="./img/img27@2x.png" alt="" srcset="" class="pc">
-                    <img src="./img/img61@2x.png" alt="" srcset="" class="sp">
+                    <img src="{{ base }}/data/img/img27@2x.png" alt="" srcset="" class="pc">
+                    <img src="{{ base }}/data/img/img61@2x.png" alt="" srcset="" class="sp">
                 </figure>
                 <div class="title">
                     カリキュラム
@@ -439,8 +439,8 @@
             </a>
             <a href="" class="item">
                 <figure class="img">
-                    <img src="./img/img70@2x.png" alt="" srcset="" class="pc">
-                    <img src="./img/img71@2x.png" alt="" srcset="" class="sp">
+                    <img src="{{ base }}/data/img/img70@2x.png" alt="" srcset="" class="pc">
+                    <img src="{{ base }}/data/img/img71@2x.png" alt="" srcset="" class="sp">
                 </figure>
                 <div class="title">
                     講師紹介
@@ -494,8 +494,8 @@
             </div>
             <div class="col02">
                 <figure class="img">
-                    <img src="./img/img35@2x.png" alt="" srcset="" class="pc">
-                    <img src="./img/img38@2x.png" alt="" srcset="" class="sp">
+                    <img src="{{ base }}/data/img/img35@2x.png" alt="" srcset="" class="pc">
+                    <img src="{{ base }}/data/img/img38@2x.png" alt="" srcset="" class="sp">
                 </figure>
             </div>
         </div>
@@ -595,7 +595,7 @@
                 </div>
             </div>
             <div class="col02">
-                <img src="./img/img37@2x.png" alt="" class="img">
+                <img src="{{ base }}/data/img/img37@2x.png" alt="" class="img">
             </div>
         </div>
     </div>
@@ -709,7 +709,7 @@
         <div class="row">
             <div class="col01">
                 <div class="logo">
-                    <img src="./img/logo.svg" alt="" class="">
+                    <img src="{{ base }}/data/img/logo.svg" alt="" class="">
                 </div>
                 <div class="address">〒461-0002
                     愛知県名古屋市東区代官町34番15号</div>

@@ -50,7 +50,7 @@
 
 <header class="headerBasic02">
     <div class="logo">
-        <img src="./img/logo_header01@2x.png" alt="LOGO">
+        <img src="{{ base }}/data/img/logo_header01@2x.png" alt="LOGO">
     </div>
     <div class="icon iconOpen">
         <svg xmlns="http://www.w3.org/2000/svg" width="34.5" height="44.5" viewBox="0 0 34.5 44.5">
@@ -588,7 +588,7 @@
         <div class="row">
             <div class="col01">
                 <div class="logo">
-                    <img src="./img/logo.svg" alt="" class="">
+                    <img src="{{ base }}/data/img/logo.svg" alt="" class="">
                 </div>
                 <div class="address">〒461-0002
                     愛知県名古屋市東区代官町34番15号</div>
