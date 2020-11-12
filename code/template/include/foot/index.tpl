@@ -101,6 +101,35 @@ PlogLABに関する
         </div>
     </div>
 </section>
+{{ elseif $site.url === 'schola/' }}
+<section class="secBasic05">
+    <div class="txt">
+        <div class="title">
+            陰山式スコーラプレミア
+        </div>
+        <div class="subtitle">無料体験・ご入会など
+陰山式スコーラプレミアに関するお問い合わせはこちら</div>
+        <a href="#" class="btnBasic01 btn btnBasic01O#232448">
+            <div class="txt">
+                <div class="title">
+                    お問い合わせ
+                </div>
+                <div class="icon iconRight">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19.662" height="11.737" viewBox="0 0 19.662 11.737">
+                        <g id="Group_84" data-name="Group 84" transform="translate(0 0.369)">
+                            <path id="Path_194" data-name="Path 194" d="M155.775,803.688h19"
+                                transform="translate(-155.775 -798.152)" fill="none" stroke="#232448" stroke-width="1">
+                            </path>
+                            <path id="Path_195" data-name="Path 195" d="M168.275,783.965l6,5.5-6,5.5"
+                                transform="translate(-155.354 -783.965)" fill="none" stroke="#232448" stroke-width="1">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
 {{ end }}
 <footer class="footerBasic01">
     {{ if !isset($site.url) || $site.url === 'school/' }}
