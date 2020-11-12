@@ -14,7 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="{{ base }}/data/css/styles.css?v={{ $site.version }}">
+
 </head>
 
 <body>
