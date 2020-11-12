@@ -19,7 +19,7 @@ $route['school/schola/'] = 'schola/index';
 $route['school/schola/index.html'] = 'schola/index';
 
 // For Curriculum
-$route['school/schola/curriculum'] = 'curriculum/index';
+$route['school/schola/curriculum/'] = 'curriculum/index';
 $route['school/schola/curriculum/index.html'] = 'curriculum/index';
 
 // For Developer
