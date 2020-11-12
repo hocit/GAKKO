@@ -1,6 +1,6 @@
 {{ assign $site.title = 'ニュース | ' . $site.title }}
 {{ assign $site.description = 'ニュース | ' . $site.description }}
-{{ assign $site.url = 'company/' }}
+{{ assign $site.url = 'privacy/' }}
 
 {{ transclude '../template/siteframe' }}
 
