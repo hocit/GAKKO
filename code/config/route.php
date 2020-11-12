@@ -30,26 +30,26 @@ $route['school/developer/index.html'] = 'developer/index';
 // For News
 $route['school/news/'] = 'news/index';
 $route['school/news/index.html'] = 'news/index';
-$route['school/news/post_:num.html'] = 'news/detail/$1';
+$route['school/news/detail_:num.html'] = 'news/detail/$1';
 
 // お問い合わせ
 // For contact
-$route['contact/']                = 'contact/index';
-$route['contact/index.html']      = 'contact/index';
-$route['contact/confirm.html']    = 'contact/confirm';
-$route['contact/error.html']      = 'contact/error';
-$route['contact/result.html']     = 'contact/result';
+$route['school/schola/contact/']                = 'contact/index';
+$route['school/schola/contact/index.html']      = 'contact/index';
+$route['school/schola/contact/confirm.html']    = 'contact/confirm';
+$route['school/schola/contact/error.html']      = 'contact/error';
+$route['school/schola/contact/result.html']     = 'contact/result';
 
 // For Company
-$route['school/company'] = 'company/index';
-$route['school/company/index.html'] = 'company/index';
+$route['company'] = 'company/index';
+$route['company/index.html'] = 'company/index';
 
 // For Privacy
-$route['school/privacy'] = 'privacy/index';
-$route['school/privacy/index.html'] = 'privacy/index';
+$route['privacy'] = 'privacy/index';
+$route['privacy/index.html'] = 'privacy/index';
 
 // For Sitemap
-$route['school/sitemap'] = 'sitemap/index';
-$route['school/sitemap/index.html'] = 'sitemap/index';
+$route['sitemap'] = 'sitemap/index';
+$route['sitemap/index.html'] = 'sitemap/index';
 
 /* End of file routes.php */
