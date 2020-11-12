@@ -19,8 +19,8 @@ $route['school/schola'] = 'schola/index';
 $route['school/schola/index.html'] = 'schola/index';
 
 // For Curriculum
-$route['school/curriculum'] = 'curriculum/index';
-$route['school/curriculum/index.html'] = 'curriculum/index';
+$route['school/schola/curriculum'] = 'curriculum/index';
+$route['school/schola/curriculum/index.html'] = 'curriculum/index';
 
 // For Developer
 $route['school/developer'] = 'developer/index';
@@ -30,7 +30,7 @@ $route['school/developer/index.html'] = 'developer/index';
 // For News
 $route['school/news/'] = 'news/index';
 $route['school/news/index.html'] = 'news/index';
-$route['school/news/detail_:num.html'] = 'news/detail/$1';
+$route['school/news/detail/:num.html'] = 'news/detail/$1';
 
 // お問い合わせ
 // For contact
