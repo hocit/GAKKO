@@ -11,10 +11,10 @@
         <div class="item">
             <div class="txt">
                 <div class="title">陰山式スコーラ
-                    プレミア</div>
+プレミア</div>
                 <div class="subtitle">無料体験・ご入会など
-                    陰山式スコーラに関する
-                    お問い合わせはこちら</div>
+陰山式スコーラに関する
+お問い合わせはこちら</div>
                 <a href="#" class="btnBasic01 btn btnBasic01O#232448">
                     <div class="txt">
                         <div class="title">
@@ -43,8 +43,8 @@
             <div class="txt">
                 <div class="title titleWhite">mpi英語倶楽部</div>
                 <div class="subtitle subtitleWhite">無料体験・ご入会など
-                    mpi英語倶楽部に関する
-                    お問い合わせはこちら</div>
+mpi英語倶楽部に関する
+お問い合わせはこちら</div>
                 <a href="#" class="btnBasic01 btn btnBasic01White">
                     <div class="txt">
                         <div class="title">
@@ -73,8 +73,8 @@
             <div class="txt">
                 <div class="title">PlogLAB</div>
                 <div class="subtitle">無料体験・ご入会など
-                    PlogLABに関する
-                    お問い合わせはこちら</div>
+PlogLABに関する
+お問い合わせはこちら</div>
                 <a href="#" class="btnBasic01 btn btnBasic01O#232448">
                     <div class="txt">
                         <div class="title">
@@ -120,7 +120,7 @@
                     <img src="{{ base }}/data/img/logo.svg" alt="" class="">
                 </div>
                 <div class="address">〒461-0002
-                    愛知県名古屋市東区代官町34番15号</div>
+愛知県名古屋市東区代官町34番15号</div>
                 <div class="contact">
                     Tel :052-931-0400 Fax:052-932-2878
                 </div>
