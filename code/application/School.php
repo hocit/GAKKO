@@ -1,6 +1,6 @@
 <?php // code/application/Index.php
 
-class Index extends MyApplication
+class School extends MyApplication
 {
     private $_common;
 
