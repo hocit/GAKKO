@@ -9,6 +9,7 @@
     <meta name="keywords" content="{{ $site.keywords }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="canonical" href="{{ $define.FEGG_HTTP_DOMAIN }}/{{ $site.url }}">
+<meta name="robots" content="noindex">
 
     <!-- OGP -->
     <meta property="og:title" content="{{ $site.title }}">
