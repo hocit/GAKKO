@@ -1,4 +1,4 @@
-{{ if isset($site.url) || $site.url === 'school' }}
+{{ if isset($site.url) }}
 {{ else }}
 <section class="secBasic04">
     <div class="backTop">
