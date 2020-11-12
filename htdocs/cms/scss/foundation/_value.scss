@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+// フォント
+// stylelint-disable-next-line value-keyword-case
+$font-sans: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+// stylelint-disable-next-line value-keyword-case
+$font-serif: Georgia, 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
+$font-source: 'Source Code Pro', monospace;
+$font-default: $font-sans;
+$font-size: 14px;
+
+// For SmartPhone
+$sp-width: 375;
+$sp-width-breakpoint: 768;
+$sp-window-gap: 1.5rem;
+$sp-grid-gap: 0.5rem;
+$sp-grid-steps: 12;
+
+// For PC
+$pc-grid-gap: 2rem;
+$pc-grid-steps: 12;
+
+// レイアウトサイズ
+$side-width: 160px;
+
+// 文字色
+$color-text: #1d1d1d;
+$color-link-text: #1183c0;
+$color-background: #f5f5f5;
+
+// ヘッダ、サイドバー
+$frame-back-color: #403f4c;
+$frame-text-color: #fff;
+
+// 分類カラー
+// デフォルト
+$cat-default-text:   #333;
+$cat-default-back:   #fafafa;
+$cat-default-hover:  #fff;
+$cat-default-border: #aaa;
+$cat-default-field:  #f5f5f5;
+// プライマリー
+$cat-primary-text:   #fff;
+$cat-primary-back:   #246eb9;
+$cat-primary-hover:  lighten($cat-primary-back, 10%);
+$cat-primary-border: darken($cat-primary-back, 10%);
+$cat-primary-field:  lighten($cat-primary-back, 35%);
+// デンジャー
+$cat-danger-text:    #fff;
+$cat-danger-back:    #e84855;
+$cat-danger-hover:   lighten($cat-danger-back, 10%);
+$cat-danger-border:  darken($cat-danger-back, 10%);
+$cat-danger-field:   lighten($cat-danger-back, 35%);
+// サクセス
+$cat-success-text:   #fff;
+$cat-success-back:   #70ae6e;
+$cat-success-hover:  lighten($cat-success-back, 10%);
+$cat-success-border: darken($cat-success-back, 10%);
+$cat-success-field:  lighten($cat-success-back, 35%);
+// コーション
+$cat-warning-text:   #fff;
+$cat-warning-back:   #f9dc5c;
+$cat-warning-hover:  lighten($cat-warning-back, 10%);
+$cat-warning-border: darken($cat-warning-back, 10%);
+$cat-warning-field:  lighten($cat-warning-back, 35%);
+// 無効
+$cat-disabled-text:   #fff;
+$cat-disabled-back:   #999;
+$cat-disabled-hover:  #999;
+$cat-disabled-border: #666;
+$cat-disabled-field:  #aaa;

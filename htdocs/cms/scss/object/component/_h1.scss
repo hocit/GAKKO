@@ -1,0 +1,13 @@
+.c-h1 {
+    border-bottom: 1px solid #ddd;
+    font-size: 1.8em;
+    padding: 0 0 10px 0;
+    margin: 15px 0 30px;
+
+    &__small {
+        font-size: 0.6em;
+        font-weight: normal;
+        margin-left: 10px;
+        color: #666;
+    }
+}

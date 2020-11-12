@@ -1,0 +1,25 @@
+/**
+ * Font Style
+ */
+.u-font-serif {
+    font-family: $font-serif;
+}
+
+.u-font-sans {
+    font-family: $font-sans;
+}
+
+.u-font-source {
+    font-family: $font-source;
+}
+
+.u-font-marker {
+    background: rgba(#aecfde, 0);
+    background: -moz-linear-gradient(top, rgba(#aecfde, 0) 70%, rgba(#aecfde, 1) 70%);
+    background: -webkit-gradient(left top, left bottom, color-stop(70%, rgba(#aecfde, 0)), color-stop(70%, rgba(#aecfde, 1)));
+    background: -webkit-linear-gradient(top, rgba(#aecfde, 0) 70%, rgba(#aecfde, 1) 70%);
+    background: -o-linear-gradient(top, rgba(#aecfde, 0) 70%, rgba(#aecfde, 1) 70%);
+    background: -ms-linear-gradient(top, rgba(#aecfde, 0) 70%, rgba(#aecfde, 1) 70%);
+    background: linear-gradient(to bottom, rgba(#aecfde, 0) 70%, rgba(#aecfde, 1) 70%);
+    font-weight: normal;
+}

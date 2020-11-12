@@ -1,0 +1,15 @@
+.c-label {
+    display: inline-block;
+    line-height: 1;
+    padding: 0.3em 0.5em;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: 0.8em;
+    white-space: nowrap;
+
+    @include labelStyle( 'default',  $cat-default-field,  $cat-default-text );
+    @include labelStyle( 'primary',  $cat-primary-field,  $cat-primary-border );
+    @include labelStyle( 'danger',   $cat-danger-field,   $cat-danger-border  );
+    @include labelStyle( 'success',  $cat-success-field,  $cat-success-border );
+    @include labelStyle( 'warning',  $cat-warning-field,  $cat-warning-border );
+}

@@ -1,0 +1,26 @@
+.c-uploader-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+
+    @include mq_sp {
+        margin: 0 -5px;
+    }
+
+    &__item {
+        width: calc(20% - 20px);
+        margin: 0 10px 10px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        cursor: move;
+
+        &:hover {
+            background: #eee;
+        }
+
+        @include mq_sp {
+            width: calc(50% - 10px);
+            margin: 0 5px 10px;
+        }
+    }
+}

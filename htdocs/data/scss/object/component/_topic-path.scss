@@ -1,0 +1,40 @@
+.c-topic-path {
+    margin-bottom: 40px;
+
+    @include mq_sp {
+        margin-bottom: 3rem;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__col {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        &::after {
+            content: '>';
+            margin: 0 0.5em;
+        }
+
+        &:last-child {
+            &::after {
+                content: none;
+            }
+        }
+
+        & > a {
+            color: inherit;
+        }
+
+        & > span {
+            font-weight: bold;
+        }
+    }
+}

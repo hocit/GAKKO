@@ -1,0 +1,87 @@
+.l-header {
+    background: $frame-back-color;
+    color: $frame-text-color;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+    @include mq_sp {
+        transition: left 0.3s;
+
+        .has-side & {
+            left: $side-width;
+        }
+    }
+
+    &__inner {
+        margin-left: $side-width;
+        display: flex;
+        height: 36px;
+
+        @include mq_sp {
+            margin-left: 0;
+        }
+    }
+
+    &__nav {
+        display: flex;
+
+        &.is-pull-right {
+            margin-left: auto;
+        }
+
+        &__anchor {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            padding: 0 10px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-left: 1px solid darken($frame-back-color, 5%);
+
+            &:hover {
+                text-decoration: none;
+                background: lighten($frame-back-color, 10%);
+            }
+        }
+    }
+
+    &__toggle {
+        background: none;
+        padding: 0;
+        border: none;
+        height: 24px;
+        width: 24px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 10px;
+        margin: auto 0;
+        outline: none;
+
+        &__line {
+            position: absolute;
+            width: 20px;
+            height: 1px;
+            background: #fff;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+
+            &:nth-child(1) {
+                top: 5px;
+            }
+
+            &:nth-child(2) {
+                top: 12px;
+            }
+
+            &:nth-child(3) {
+                top: 19px;
+            }
+        }
+    }
+}

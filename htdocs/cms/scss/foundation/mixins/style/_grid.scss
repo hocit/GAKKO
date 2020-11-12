@@ -1,0 +1,24 @@
+// stylelint-disable
+@mixin gridStyle ($gap, $step, $prefix: "") {
+    .u#{$prefix}-grid {
+        &__row {
+            display: flex;
+            margin-left: -$gap/2;
+            margin-right: -$gap/2;
+        }
+
+        &__col {
+            margin-left: $gap/2;
+            margin-right: $gap/2;
+
+            $index: 1;
+            @while ($index <= $step) {
+                &.is-col-#{$index} {
+                    $width: ($index / $step * 100) + 0%;
+                    width: calc(#{$width} - #{$gap});
+                    $index: $index + 1;
+                }
+            }
+        }
+    }
+}

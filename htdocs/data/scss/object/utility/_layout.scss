@@ -1,0 +1,45 @@
+.u-layout {
+    margin: 0 auto;
+    max-width: calc(#{$pc-layout-width}px + #{$pc-window-gap * 2});
+    padding: 0 $pc-window-gap;
+
+    @include mq_sp {
+        margin: 0 $sp-window-gap;
+        padding: 0;
+        width: auto;
+
+        &.is-nomargin {
+            margin: 0;
+            padding: 0;
+        }
+
+        &.is-padding {
+            margin: 0;
+            padding: 0 $sp-window-gap;
+        }
+    }
+}
+
+@include mq_pc {
+    .u-pc-layout {
+        margin: 0 auto;
+        max-width: calc(#{$pc-layout-width}px + #{$pc-window-gap * 2});
+        padding: 0 $pc-window-gap;
+    }
+}
+
+@include mq_sp {
+    .u-sp-layout {
+        margin: 0 $sp-window-gap;
+        max-width: none;
+
+        &.is-nomargin {
+            margin: 0;
+        }
+
+        &.is-padding {
+            margin: 0;
+            padding: 0 $sp-window-gap;
+        }
+    }
+}

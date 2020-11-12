@@ -1,0 +1,119 @@
+/**
+ * FOOTER
+ */
+.l-footer {
+    margin-top: 80px;
+
+    @include mq_sp {
+        margin-top: 4rem;
+    }
+
+    &__pagetop {
+        &__button {
+            background: #ddd;
+            color: inherit;
+            display: block;
+            padding: 15px 0;
+            text-align: center;
+            text-decoration: none;
+
+            &:hover {
+                background: #eee;
+            }
+        }
+    }
+
+    &__inner {
+        background: #eee;
+        padding: 40px 0 20px;
+
+        @include mq_sp {
+            padding: 2rem 0;
+        }
+    }
+
+    &__content {
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-between;
+
+        @include mq_sp {
+            display: block;
+        }
+    }
+
+    &__info {
+        width: 320px;
+
+        @include mq_sp {
+            width: auto;
+        }
+
+        &__head {
+            margin-bottom: 15px;
+        }
+
+        &__button {
+            background: #888;
+            color: #fff;
+            display: block;
+            font-size: 1.8rem;
+            font-weight: normal;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            text-decoration: none;
+            width: 120px;
+
+            &:hover {
+                background: #666;
+            }
+        }
+    }
+
+    &__sitemap {
+        width: 600px;
+
+        @include mq_sp {
+            width: auto;
+        }
+
+        &__anchor {
+            color: #333;
+
+            &::before {
+                content: "■";
+            }
+
+            &.is-sub {
+                &::before {
+                    content: "・";
+                }
+            }
+        }
+
+        &__col {
+            width: 33.33%;
+
+            @include mq_sp {
+                width: auto;
+            }
+        }
+
+        &__menu {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__copyright {
+        font-size: 1.2rem;
+        line-height: 40px;
+        text-align: center;
+
+        @include mq_sp {
+            line-height: inherit;
+            padding: 1rem 0;
+        }
+    }
+}

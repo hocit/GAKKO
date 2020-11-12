@@ -1,0 +1,14 @@
+/**
+ * Display only target layout
+ */
+@include mq_pc {
+    .u-sp-only {
+        display: none !important;
+    }
+}
+
+@include mq_sp {
+    .u-pc-only {
+        display: none !important;
+    }
+}

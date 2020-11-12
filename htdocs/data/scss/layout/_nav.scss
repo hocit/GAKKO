@@ -1,0 +1,143 @@
+/**
+ * Global Navigation
+ */
+.l-nav {
+    background: #eee;
+
+    @include mq_sp {
+        left: 0;
+        margin: 0 auto;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 11;
+    }
+
+    &__trigger {
+        @include mq_sp {
+            position: absolute;
+            right: 1.5rem;
+            top: 1rem;
+
+            &__button {
+                background: none;
+                border: none;
+                height: 3rem;
+                outline: none;
+                overflow: hidden;
+                padding: 0;
+                position: relative;
+                vertical-align: top;
+                width: 3rem;
+            }
+
+            &__line {
+                background: #666;
+                display: block;
+                height: 0.3rem;
+                left: 0;
+                margin: 0 auto;
+                position: absolute;
+                right: 0;
+                transition: 0.2s;
+                width: 82%;
+
+                &:nth-child(1) {
+                    top: 0.5rem;
+                }
+
+                &:nth-child(2) {
+                    top: 50%;
+                }
+
+                &:nth-child(3) {
+                    top: 2.5rem;
+                }
+            }
+
+            .is-nav-view & {
+                &__line {
+                    &:nth-child(1) {
+                        top: 50%;
+                        transform: rotate(45deg);
+                    }
+
+                    &:nth-child(2) {
+                        left: 100%;
+                    }
+
+                    &:nth-child(3) {
+                        top: 50%;
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+
+    &__content {
+        border-right: 1px solid #fff;
+        display: flex;
+        height: 46px;
+        justify-content: space-between;
+
+        @include mq_sp {
+            background: rgba(0, 0, 0, 0.6);
+            border: none;
+            bottom: 100%;
+            display: block;
+            height: auto;
+            left: 0;
+            margin: auto;
+            overflow: auto;
+            position: fixed;
+            right: 0;
+            top: 5rem;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+
+            .is-nav-view & {
+                bottom: 0;
+            }
+        }
+    }
+
+    &__menu {
+        height: 46px;
+        list-style: none;
+        width: 20%;
+
+        @include mq_sp {
+            background: rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            height: auto;
+            width: auto;
+        }
+
+        &__anchor {
+            border-left: 1px solid #fff;
+            color: #333;
+            display: block;
+            font-size: 1.6rem;
+            height: 46px;
+            line-height: 46px;
+            text-align: center;
+            text-decoration: none;
+
+            &:hover {
+                background: #ddd;
+            }
+
+            @include mq_sp {
+                border: none;
+                font-size: 1.6rem;
+                height: auto;
+                line-height: 1.4;
+                padding: 1.6rem 0;
+            }
+        }
+    }
+}

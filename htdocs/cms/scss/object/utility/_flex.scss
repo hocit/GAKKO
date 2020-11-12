@@ -1,0 +1,35 @@
+/**
+ * Flex Box
+ *
+ * .u-flex
+ * .u-flex-row-reverse
+ * .u-flex-column
+ * .u-flex-column-reverse
+ * .u-flex-wrap
+ * .u-flex-justify-flex-start
+ * .u-flex-justify-flex-end
+ * .u-flex-justify-center
+ * .u-flex-justify-space-between
+ * .u-flex-justify-space-around
+ * .u-flex-align-flex-start
+ * .u-flex-align-flex-end
+ * .u-flex-align-center
+ * .u-flex-align-space-between
+ *
+ * @see foundation/mixins/style/_flex.scss
+ */
+.u-flex {
+    @include flexStyle;
+}
+
+@media screen and (min-width: $sp-width-breakpoint + 1px) {
+    .u-pc-flex {
+        @include flexStyle;
+    }
+}
+
+@include mq_sp {
+    .u-sp-flex {
+        @include flexStyle;
+    }
+}

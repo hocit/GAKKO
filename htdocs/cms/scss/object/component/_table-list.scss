@@ -1,0 +1,87 @@
+.c-table-list {
+    width: 100%;
+    border-bottom: 1px solid #999;
+
+    @include mq_sp {
+        display: block;
+        border-top: 1px solid #999;
+
+        &__tbody,
+        &__tbody__row,
+        &__tbody__head,
+        &__tbody__data {
+            display: block;
+        }
+    }
+
+    &__thead {
+        @include mq_sp {
+            display: none;
+        }
+
+        &__head,
+        &__data {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #999;
+
+            &.is-visible {
+                width: 5em;
+            }
+
+            &.is-category {
+                width: 7em;
+            }
+
+            &.is-date {
+                width: 8em;
+            }
+
+            &.is-thumbnail {
+                width: 100px;
+            }
+        }
+    }
+
+    &__tbody {
+        &__head,
+        &__data {
+            padding: 10px;
+            text-align: left;
+
+            @include mq_sp {
+                &:not(:first-child) {
+                    padding-top: 0;
+                }
+
+                &:not(:last-child) {
+                    padding-bottom: 5px;
+                }
+            }
+
+            &.is-action {
+                white-space: nowrap;
+                width: 1em;
+
+                @include mq_sp {
+                    width: auto;
+                }
+            }
+        }
+
+        &__row:not(:last-child) &__head,
+        &__row:not(:last-child) &__data {
+            border-bottom: 1px dotted #aaa;
+        }
+
+        &__row:hover &__head,
+        &__row:hover &__data {
+            background: #fff;
+        }
+
+        &__row.is-top &__head,
+        &__row.is-top &__data {
+            vertical-align: top;
+        }
+    }
+}

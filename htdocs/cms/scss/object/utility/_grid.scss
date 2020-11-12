@@ -1,0 +1,31 @@
+/**
+ * Grid system
+ *
+ * .u-grid__row
+ * .u-grid__col
+ * .u-grid__col.is-col-(number)
+ *
+ * .e.g) If $pc/sp-grid-steps is 12
+ * <div class="u-grid__row">
+ *     <div class="u-grid__col is-col-6">
+ *         width 50%
+ *     </div>
+ *     <div class="u-grid__col is-col-3">
+ *         width 25%
+ *     </div>
+ *     <div class="u-grid__col is-col-3">
+ *         width 25%
+ *     </div>
+ * </div>
+ *
+ * @see foundation/mixins/style/_grid.scss
+ */
+@include gridStyle($pc-grid-gap, $pc-grid-steps);
+
+@include mq_pc {
+    @include gridStyle($pc-grid-gap, $pc-grid-steps, '-pc');
+}
+
+@include mq_sp {
+    @include gridStyle($sp-grid-gap, $sp-grid-steps, '-sp');
+}

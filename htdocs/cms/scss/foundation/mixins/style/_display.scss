@@ -1,0 +1,18 @@
+// stylelint-disable
+@mixin displayStyle($prefix: "") {
+    .u#{$prefix}-display-block {
+        display: block !important;
+    }
+
+    .u#{$prefix}-display-inline-block {
+        display: inline-block !important;
+    }
+
+    .u#{$prefix}-display-flex {
+        display: flex !important;
+    }
+
+    .u#{$prefix}-display-none {
+        display: none !important;
+    }
+}

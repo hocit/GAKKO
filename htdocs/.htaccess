@@ -1,0 +1,64 @@
+<Files ~ "^.(htaccess|htpasswd)$">
+	deny from all
+</Files>
+
+# tplファイルを表示しない
+<Files ~ "^.*\.tpl$">
+    deny from all
+</Files>
+
+DirectoryIndex index.php index.html
+Order deny,allow
+
+# URI
+RewriteEngine on
+
+RewriteBase /
+
+# Add "/" end of URL
+# RewriteCond %{REQUEST_URI} !/$
+# RewriteCond %{REQUEST_URI} !^/cms/
+# RewriteCond %{REQUEST_URI} !^/contact/
+# RewriteCond %{REQUEST_URI} !\.[^/\.]+$
+# RewriteRule .* %{REQUEST_URI}/ [L,R]
+
+# Forced WWW
+# RewriteCond %{HTTP_HOST} !^www\.
+# RewriteCond %{HTTP_HOST} !develop\.lionheart\.co\.jp
+# RewriteCond %{HTTP_HOST} !localhost
+# RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# Forced SSL
+# RewriteCond %{HTTPS} off
+# RewriteCond %{HTTP_HOST} !develop\.lionheart\.co\.jp
+# RewriteCond %{HTTP_HOST} !localhost
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+# For Fegg
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}/index.html !-f
+RewriteCond %{REQUEST_FILENAME}/index.htm !-f
+RewriteCond $1 !^(index\.php|testindex\.php|.+\.js$|.+\.css$|.+\.ico$|.+\.swf$|.+\.mov$|.+\.wmv$|.+\.avi$|.+\.cgi$|.+\.pm$)
+RewriteRule ^(.+)$ index.php/$1/ [L]
+# For PHP-CGI
+# RewriteRule ^(.+)$ index.php?/$1/ [L,QSA]
+
+# PHP
+<IfModule mod_php5.c>
+php_flag magic_quotes_gpc off
+php_flag magic_quotes_runtime off
+php_flag magic_quotes_sybase off
+php_flag register_argc_argv off
+php_flag registar_globals off
+php_flag register_long_arrays off
+php_flag mbstring.encoding_translation Off
+
+php_value default_charset "none"
+php_value mbstring.language "Japanese"
+php_value mbstring.internal_encoding "UTF-8"
+php_value mbstring.http_input "pass"
+php_value mbstring.http_output "pass"
+php_value mbstring.substitute_character none
+php_value mbstring.detect_order "SJIS-WIN,SJIS,UTF-8,EUCJP-WIN,EUC-JP,JIS,ASCII"
+php_value upload_max_filesize "5M"
+</IfModule>

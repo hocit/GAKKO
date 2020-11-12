@@ -1,0 +1,19 @@
+/**
+ * Align Styles
+ *
+ * .u-align-center
+ * .u-align-left
+ * .u-align-right
+ * .u-align-justify
+ *
+ * @see foundation/mixins/style/_align.scss
+ */
+@include alignStyle();
+
+@include mq_pc {
+    @include alignStyle('-pc');
+}
+
+@include mq_sp {
+    @include alignStyle('-sp');
+}

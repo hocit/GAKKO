@@ -1,0 +1,27 @@
+.c-modal-box {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    display: none;
+    vertical-align: top;
+    text-align: center;
+    padding: 40px;
+    overflow: auto;
+
+    @include mq_sp {
+        padding: 10px;
+    }
+
+    &__content {
+        border: none;
+        vertical-align: top;
+
+        @include mq_sp {
+            width: 100% !important;
+        }
+    }
+}

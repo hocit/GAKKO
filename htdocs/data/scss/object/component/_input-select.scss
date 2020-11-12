@@ -1,0 +1,15 @@
+/**
+ * Input select
+ */
+.c-input-select {
+    background: #eee;
+    border: 1px solid #aaa;
+    font-size: 1.6rem;
+    height: 2em;
+    padding: 0 1em;
+
+    @include mq_sp {
+        font-size: initial;
+    }
+}
+

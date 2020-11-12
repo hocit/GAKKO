@@ -1,0 +1,10 @@
+/**
+ * Anchor
+ */
+.u-anchor-tel {
+    @include mq_pc {
+        color: inherit;
+        text-decoration: none;
+        pointer-events: none !important;
+    }
+}

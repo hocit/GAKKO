@@ -1,0 +1,45 @@
+.l-nav {
+    border-top: 1px solid darken($frame-back-color, 5%);
+
+    &__head {
+        padding: 0.1em 0.5em;
+        font-size: 0.6em;
+        color: #fff;
+        background: darken($frame-back-color, 10%);
+        border-bottom: 1px solid darken($frame-back-color, 5%);
+
+        &.is-active {
+            background: $cat-primary-back;
+        }
+    }
+
+    &__list {
+        &__anchor {
+            display: block;
+            padding: 0.4em 1em;
+            color: $frame-text-color;
+            border-bottom: 1px solid darken($frame-back-color, 5%);
+            position: relative;
+            text-decoration: none;
+
+            &.is-active,
+            &:hover {
+                background: lighten($frame-back-color, 10%);
+            }
+        }
+
+        &__icon {
+            line-height: 1;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            margin-top: -0.5em;
+        }
+
+        &__anchor.is-active & {
+            &__icon {
+                right: 10px;
+            }
+        }
+    }
+}
