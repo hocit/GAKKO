@@ -4,7 +4,7 @@
 
 {{ transclude '../template/siteframe' }}
 
-{{ include head './include/head/index' }}
+{{ include head './include/head/school' }}
 {{ include foot './include/foot/index' }}
 
 {{ section contents }}
