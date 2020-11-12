@@ -1,4 +1,4 @@
-{{ if $site.url !== '' }}
+{{ if isset($site.url) }}
 <header class="headerBasic01">
 {{ else }}
 <header class="headerBasic01 headerBasic01aa">
