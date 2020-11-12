@@ -2,8 +2,8 @@
 
 {{ transclude './template/siteframe' }}
 
-{{ include head './include/head/index' }}
-{{ include foot './include/foot/index' }}
+{{ include head '../include/head/index' }}
+{{ include foot '../include/foot/index' }}
 
 {{ section contents }}
 
