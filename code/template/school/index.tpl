@@ -4,6 +4,9 @@
 
 {{ transclude '../template/siteframe' }}
 
+{{ include head './include/head/index' }}
+{{ include foot './include/foot/index' }}
+
 {{ section contents }}
 
 <header class="headerBasic01">
