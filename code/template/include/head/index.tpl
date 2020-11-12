@@ -1,8 +1,4 @@
-{{if $name eq ''}}
 <header class="headerBasic01 headerBasic01aa">
-{{else}}
-<header class="headerBasic01">
-{{/if}}
     <a href="" class="logo">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="298" height="85"
             viewBox="0 0 298 85">
