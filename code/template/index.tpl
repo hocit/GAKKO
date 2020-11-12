@@ -50,7 +50,7 @@
 
 <header class="headerBasic02">
     <div class="logo">
-        <img src="./img/logo_header01@2x.png" alt="LOGO">
+        <img src="{{ base }}/data/img/logo_header01@2x.png" alt="LOGO">
     </div>
     <div class="icon iconOpen">
         <svg xmlns="http://www.w3.org/2000/svg" width="34.5" height="44.5" viewBox="0 0 34.5 44.5">
@@ -316,7 +316,7 @@
                 </div>
             </div>
             <div class="col02">
-                <img src="./img/img23@2x.png" alt="">
+                <img src="{{ base }}/data/img/img23@2x.png" alt="">
             </div>
         </div>
     </div>
@@ -354,7 +354,7 @@
                 </div>
             </div>
             <div class="col02">
-                <img src="./img/img57@2x.png" alt="" class="img imgRight">
+                <img src="{{ base }}/data/img/img57@2x.png" alt="" class="img imgRight">
             </div>
         </div>
     </div>
@@ -392,7 +392,7 @@
                 </div>
             </div>
             <div class="col02">
-                <img src="./img/img58@2x.png" alt="" class="img imgLeft">
+                <img src="{{ base }}/data/img/img58@2x.png" alt="" class="img imgLeft">
             </div>
         </div>
     </div>
@@ -400,7 +400,7 @@
 
 <section class="secIndex05">
     <a href="#" class="box">
-        <img src="./img/img59@2x.png" alt="" class="img">
+        <img src="{{ base }}/data/img/img59@2x.png" alt="" class="img">
         <div class="txt">
             <div class="title">
                 COMPANY
@@ -520,7 +520,7 @@
         <div class="row">
             <div class="col01">
                 <div class="logo">
-                    <img src="./img/logo.svg" alt="" class="">
+                    <img src="{{ base }}/data/img/logo.svg" alt="" class="">
                 </div>
                 <div class="address">〒461-0002
                     愛知県名古屋市東区代官町34番15号</div>
