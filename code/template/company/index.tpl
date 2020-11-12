@@ -1,11 +1,10 @@
-{{ assign $site.title = 'お問い合わせ [完了] | ' . $site.title }}
-{{ assign $site.description = 'お問い合わせ [完了] | ' . $site.description }}
-{{ assign $site.url = 'contact/result.html' }}
+{{ assign $site.title = 'ニュース | ' . $site.title }}
+{{ assign $site.description = 'ニュース | ' . $site.description }}
+{{ assign $site.url = 'news/' }}
+
+{{ include './include/head/lists' }}
 
 {{ transclude '../template/siteframe' }}
-
-{{ include head './include/head/input' }}
-{{ include foot './include/foot/input' }}
 
 {{ section contents }}
 
@@ -264,11 +263,11 @@
     </div>
 </header>
 
-<section class="secBasic01 secBasic01contact">
+<section class="secBasic01 secBasic01company">
     <div class="container">
         <div class="txt">
-            <h1 class="title">スコーラについてのお問い合わせ</h1>
-            <div class="subtitle">CONTACT</div>
+            <h1 class="title">企業情報</h1>
+            <div class="subtitle">COMPANY</div>
         </div>
     </div>
 </section>
@@ -284,50 +283,88 @@
                         stroke-linejoin="round" stroke-width="1"></path>
                 </svg>
             </div>
-            <a href="" class="item link">スクール事業</a>
-            <div class="item link icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="5.2" height="7.399" viewBox="0 0 5.2 7.399">
-                    <path id="Path_44" data-name="Path 44" d="M9291.7,7842.992l4,3-4,3"
-                        transform="translate(-9290.999 -7842.292)" fill="none" stroke="#356fbf" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="1"></path>
-                </svg>
-            </div>
-            <a href="" class="item link">陰山式スコーラプレミア</a>
-            <div class="item link icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="5.2" height="7.399" viewBox="0 0 5.2 7.399">
-                    <path id="Path_44" data-name="Path 44" d="M9291.7,7842.992l4,3-4,3"
-                        transform="translate(-9290.999 -7842.292)" fill="none" stroke="#356fbf" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="1"></path>
-                </svg>
-            </div>
-            <div class="item">お問い合わせ</div>
+            <div class="item">企業情報</div>
         </div>
     </div>
 </section>
 
-<section class="secComplete01 secComplete01aa">
-    <div class="box">
-        <div class="tab">
-            <div class="item">
-                <div class="title">入力</div>
-            </div>
-            <div class="item">
-                <div class="title">確認</div>
-            </div>
-            <div class="item itemActive">
-                <div class="title titleActive">送信</div>
-            </div>
-        </div>
-        <div class="alert">
-            お問い合わせいただきありがとうございます。
-            内容を確認後、担当者よりご連絡いたします。
-        </div>
+<section class="secCompany01 secCompany01aa">
+    <h2 class="ttl">
+        会社概要
+    </h2>
+    <div class="contact">
         <div class="list">
             <div class="item">
+                <div class="left">
+                    会社名
+                </div>
+                <div class="right">
+                    株式会社学校良品
+                </div>
+            </div>
+            <div class="item">
+                <div class="left">
+                    設立
+                </div>
+                <div class="right">
+                    平成29年7月
+                </div>
+            </div>
+            <div class="item">
+                <div class="left">
+                    代表者
+                </div>
+                <div class="right">
+                    森 和茂
+                </div>
+            </div>
+            <div class="item">
+                <div class="left">
+                    本社所在地
+                </div>
+                <div class="right">
+                    〒461‐0002<br>
+                    愛知県名古屋市東区代官町34番15号<br>
+                    TEL（052）931‐0400　／　FAX（052）932‐2878<br>
+                </div>
+            </div>
+            <div class="item">
+                <div class="left">
+                    事業内容
+                </div>
+                <div class="right">
+                    ・書籍、文具、雑貨などの販売<br>
+                    ・各種教室の運営<br>
+                    ・防災用品、学校教材・教具の販売<br>
+                    ・各種検定の取扱い<br>
+                    ・教育全般に関するワークショップの企画・運営<br>
+                    ・ICT教育、教材導入サポートおよび、販売<br>
+                    ・その他、学校運営にかかわる支援業務<br>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="secBasic04">
+    <div class="backTop">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25.693" height="13.054" viewBox="0 0 25.693 13.054">
+            <path id="Path_229" data-name="Path 229" d="M-11821.905,1626.305l12.5-12,12.5,12"
+                transform="translate(11822.252 -1613.612)" fill="none" stroke="#fff" stroke-width="1"></path>
+        </svg>
+    </div>
+    <div class="list">
+        <div class="item">
+            <div class="txt">
+                <div class="title">陰山式スコーラ
+                    プレミア</div>
+                <div class="subtitle">無料体験・ご入会など
+                    陰山式スコーラに関する
+                    お問い合わせはこちら</div>
                 <a href="#" class="btnBasic01 btn btnBasic01O#232448">
                     <div class="txt">
                         <div class="title">
-                            トップページ
+                            お問い合わせ
                         </div>
                         <div class="icon iconRight">
                             <svg xmlns="http://www.w3.org/2000/svg" width="19.662" height="11.737"
@@ -348,16 +385,71 @@
                 </a>
             </div>
         </div>
+        <div class="item">
+            <div class="txt">
+                <div class="title titleWhite">mpi英語倶楽部</div>
+                <div class="subtitle subtitleWhite">無料体験・ご入会など
+                    mpi英語倶楽部に関する
+                    お問い合わせはこちら</div>
+                <a href="#" class="btnBasic01 btn btnBasic01White">
+                    <div class="txt">
+                        <div class="title">
+                            お問い合わせ
+                        </div>
+                        <div class="icon iconRight">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19.662" height="11.737"
+                                viewBox="0 0 19.662 11.737">
+                                <g id="Group_84" data-name="Group 84" transform="translate(0 0.369)">
+                                    <path id="Path_194" data-name="Path 194" d="M155.775,803.688h19"
+                                        transform="translate(-155.775 -798.152)" fill="none" stroke="#232448"
+                                        stroke-width="1">
+                                    </path>
+                                    <path id="Path_195" data-name="Path 195" d="M168.275,783.965l6,5.5-6,5.5"
+                                        transform="translate(-155.354 -783.965)" fill="none" stroke="#232448"
+                                        stroke-width="1">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="txt">
+                <div class="title">PlogLAB</div>
+                <div class="subtitle">無料体験・ご入会など
+                    PlogLABに関する
+                    お問い合わせはこちら</div>
+                <a href="#" class="btnBasic01 btn btnBasic01O#232448">
+                    <div class="txt">
+                        <div class="title">
+                            お問い合わせ
+                        </div>
+                        <div class="icon iconRight">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19.662" height="11.737"
+                                viewBox="0 0 19.662 11.737">
+                                <g id="Group_84" data-name="Group 84" transform="translate(0 0.369)">
+                                    <path id="Path_194" data-name="Path 194" d="M155.775,803.688h19"
+                                        transform="translate(-155.775 -798.152)" fill="none" stroke="#232448"
+                                        stroke-width="1">
+                                    </path>
+                                    <path id="Path_195" data-name="Path 195" d="M168.275,783.965l6,5.5-6,5.5"
+                                        transform="translate(-155.354 -783.965)" fill="none" stroke="#232448"
+                                        stroke-width="1">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
     </div>
 </section>
 
 <footer class="footerBasic01">
-    <div class="backTop">
-        <svg xmlns="http://www.w3.org/2000/svg" width="25.693" height="13.054" viewBox="0 0 25.693 13.054">
-            <path id="Path_229" data-name="Path 229" d="M-11821.905,1626.305l12.5-12,12.5,12"
-                transform="translate(11822.252 -1613.612)" fill="none" stroke="#fff" stroke-width="1"></path>
-        </svg>
-    </div>
     <div class="container">
         <div class="row">
             <div class="col01">

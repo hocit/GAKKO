@@ -1,11 +1,10 @@
-{{ assign $site.title = 'お問い合わせ [完了] | ' . $site.title }}
-{{ assign $site.description = 'お問い合わせ [完了] | ' . $site.description }}
-{{ assign $site.url = 'contact/result.html' }}
+{{ assign $site.title = 'ニュース | ' . $site.title }}
+{{ assign $site.description = 'ニュース | ' . $site.description }}
+{{ assign $site.url = 'news/' }}
+
+{{ include './include/head/lists' }}
 
 {{ transclude '../template/siteframe' }}
-
-{{ include head './include/head/input' }}
-{{ include foot './include/foot/input' }}
 
 {{ section contents }}
 
@@ -305,49 +304,276 @@
     </div>
 </section>
 
-<section class="secComplete01 secComplete01aa">
+<section class="secContact01 secContact01aa">
     <div class="box">
+        <div class="title">
+            以下のフォームに必要事項をご記入のうえ「入力内容の確認」ボタンを押してください。必須項目は、必ずご記入ください。
+            また、お電話でのお問い合わせをご希望の方は、以下の番号までお問い合わせください。
+        </div>
+        <div class="contact">
+            <div class="txt">
+                <div class="tel">
+                    TEL：052-931-0400
+                </div>
+                <div class="line"></div>
+                <div class="time">受付時間：9時～18時
+                    土日祝日、夏季休暇、年末年始を除く）</div>
+            </div>
+        </div>
         <div class="tab">
-            <div class="item">
-                <div class="title">入力</div>
+            <div class="item itemActive">
+                <div class="title titleActive">入力</div>
             </div>
             <div class="item">
                 <div class="title">確認</div>
             </div>
-            <div class="item itemActive">
-                <div class="title titleActive">送信</div>
+            <div class="item">
+                <div class="title">送信</div>
             </div>
         </div>
-        <div class="alert">
-            お問い合わせいただきありがとうございます。
-            内容を確認後、担当者よりご連絡いたします。
-        </div>
-        <div class="list">
+        <div class="form">
             <div class="item">
-                <a href="#" class="btnBasic01 btn btnBasic01O#232448">
-                    <div class="txt">
+                <div class="grid">
+                    <div class="col01">
                         <div class="title">
-                            トップページ
+                            お問い合わせ種別
                         </div>
-                        <div class="icon iconRight">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="19.662" height="11.737"
-                                viewBox="0 0 19.662 11.737">
-                                <g id="Group_84" data-name="Group 84" transform="translate(0 0.369)">
-                                    <path id="Path_194" data-name="Path 194" d="M155.775,803.688h19"
-                                        transform="translate(-155.775 -798.152)" fill="none" stroke="#232448"
-                                        stroke-width="1">
-                                    </path>
-                                    <path id="Path_195" data-name="Path 195" d="M168.275,783.965l6,5.5-6,5.5"
-                                        transform="translate(-155.354 -783.965)" fill="none" stroke="#232448"
-                                        stroke-width="1">
-                                    </path>
-                                </g>
-                            </svg>
+                        <div class="note">
+                            必須
                         </div>
                     </div>
-                </a>
+                    <div class="col02">
+                        <div class="grid">
+                            <div class="item item01">
+                                <label for="label_01" class="chkBasic01 chk01">
+                                    <input type="checkbox" id="label_01">
+                                    <span class="mark">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
+                                            viewBox="0 0 16.562 10.917">
+                                            <path id="Path_220" data-name="Path 220"
+                                                d="M-12674.319,1707.73l5.645,5.644,10.917-10.917-10.917,7.425Z"
+                                                transform="translate(12674.319 -1702.456)" fill="#fff"></path>
+                                        </svg>
+
+                                    </span>
+                                </label>
+                                <label for="label_01" class="title">資料請求</label>
+                            </div>
+                            <div class="item item01">
+                                <label for="label_02" class="chkBasic01 chk01">
+                                    <input type="checkbox" id="label_02">
+                                    <span class="mark">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
+                                            viewBox="0 0 16.562 10.917">
+                                            <path id="Path_220" data-name="Path 220"
+                                                d="M-12674.319,1707.73l5.645,5.644,10.917-10.917-10.917,7.425Z"
+                                                transform="translate(12674.319 -1702.456)" fill="#fff"></path>
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label for="label_02" class="title">体験授業</label>
+                            </div>
+                            <div class="item item01">
+                                <label for="label_03" class="chkBasic01 chk01">
+                                    <input type="checkbox" id="label_03">
+                                    <span class="mark">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
+                                            viewBox="0 0 16.562 10.917">
+                                            <path id="Path_220" data-name="Path 220"
+                                                d="M-12674.319,1707.73l5.645,5.644,10.917-10.917-10.917,7.425Z"
+                                                transform="translate(12674.319 -1702.456)" fill="#fff"></path>
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label for="label_03" class="title">その他質問など</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="grid">
+                    <div class="col01">
+                        <div class="title">
+                            お子様のお名前
+                        </div>
+                        <div class="note">
+                            必須
+                        </div>
+                    </div>
+                    <div class="col02">
+                        <input type="text" class="iptBasic01 ipt01" placeholder="山田太郎">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="grid">
+                    <div class="col01">
+                        <div class="title">
+                            ふりがな
+                        </div>
+                        <div class="note">
+                            必須
+                        </div>
+                    </div>
+                    <div class="col02">
+                        <input type="text" class="iptBasic01 ipt01" placeholder="やまだたろう">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="grid">
+                    <div class="col01">
+                        <div class="title">
+                            お子様の年齢・学年
+                        </div>
+                        <div class="note">
+                            必須
+                        </div>
+                    </div>
+                    <div class="col02">
+                        <input type="text" class="iptBasic01 ipt01" placeholder="小学1年生">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="grid">
+                    <div class="col01">
+                        <div class="title">
+                            保護者様のお名前
+                        </div>
+                        <div class="note">
+                            必須
+                        </div>
+                    </div>
+                    <div class="col02">
+                        <input type="text" class="iptBasic01 ipt01" placeholder="山田太郎">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="grid">
+                    <div class="col01">
+                        <div class="title">
+                            ふりがな
+                        </div>
+                        <div class="note">
+                            必須
+                        </div>
+                    </div>
+                    <div class="col02">
+                        <input type="text" class="iptBasic01 ipt01" placeholder="やまだたろう">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="grid">
+                    <div class="col01">
+                        <div class="title">
+                            メールアドレス
+                        </div>
+                        <div class="note">
+                            必須
+                        </div>
+                    </div>
+                    <div class="col02">
+                        <input type="text" class="iptBasic01 ipt01" placeholder="ryouhin@chunichi-shobou.co.jp">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="grid">
+                    <div class="col01">
+                        <div class="title">
+                            お電話番号
+                        </div>
+                        <div class="note">
+                            必須
+                        </div>
+                    </div>
+                    <div class="col02">
+                        <input type="text" class="iptBasic01 ipt01" placeholder="052-931-0400">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="grid">
+                    <div class="col01">
+                        <div class="title">
+                            ご住所
+                        </div>
+                        <div class="note">
+                            必須
+                        </div>
+                    </div>
+                    <div class="col02">
+                        <input type="text" class="iptBasic01 ipt01" placeholder="愛知県名古屋市東区代官町34番15号">
+                    </div>
+                </div>
+            </div>
+            <div class="item itemBig">
+                <div class="grid">
+                    <div class="col01">
+                        <div class="title title01">お問い合わせ内容を
+                            ご記入ください</div>
+                    </div>
+                    <div class="col02">
+                        <textarea name="" id="" cols="30" rows="10" class="txtBasic01 txt01"
+                            placeholder="お問い合わせ内容をご記入ください"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="item itemMedium">
+                <div class="grid">
+                    <div class="col01">
+                        <div class="title">
+                            個人情報保護方針
+                        </div>
+                        <div class="note">
+                            必須
+                        </div>
+                    </div>
+                    <div class="col02">
+                        <div class="iagree">
+                            <div class="chk">
+                                <label for="label_04" class="chkBasic01 chk01">
+                                    <input type="checkbox" id="label_04">
+                                    <span class="mark">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
+                                            viewBox="0 0 16.562 10.917">
+                                            <path id="Path_220" data-name="Path 220"
+                                                d="M-12674.319,1707.73l5.645,5.644,10.917-10.917-10.917,7.425Z"
+                                                transform="translate(12674.319 -1702.456)" fill="#fff"></path>
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label for="label_04" class="title">同意する</label>
+                            </div>
+                            <div class="title">※個人情報の取り扱いについては、<a href="#">プライバシーポリシー</a>をご覧ください。</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <a href="#" class="btnBasic01 btn btnBasic01O#232448">
+            <div class="txt">
+                <div class="title">
+                    入力内容の確認
+                </div>
+                <div class="icon iconRight">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19.662" height="11.737" viewBox="0 0 19.662 11.737">
+                        <g id="Group_84" data-name="Group 84" transform="translate(0 0.369)">
+                            <path id="Path_194" data-name="Path 194" d="M155.775,803.688h19"
+                                transform="translate(-155.775 -798.152)" fill="none" stroke="#232448" stroke-width="1">
+                            </path>
+                            <path id="Path_195" data-name="Path 195" d="M168.275,783.965l6,5.5-6,5.5"
+                                transform="translate(-155.354 -783.965)" fill="none" stroke="#232448" stroke-width="1">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </a>
     </div>
 </section>
 
