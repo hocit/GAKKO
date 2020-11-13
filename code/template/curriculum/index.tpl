@@ -1018,11 +1018,11 @@
         <div class="list">
             <a href="{{ base }}/school/schola/" class="item">
                 <figure class="img">
-                    <img src="{{ base }}/data/img/img27@2x.png" alt="" srcset="" class="pc">
-                    <img src="{{ base }}/data/img/img61@2x.png" alt="" srcset="" class="sp">
+                    <img src="{{ base }}/data/img/img72@2x.png" alt="" srcset="" class="pc">
+                    <img src="{{ base }}/data/img/img73@2x.png" alt="" srcset="" class="sp">
                 </figure>
                 <div class="title">
-                    カリキュラム
+                    陰山式スコーラプレミアについて
                 </div>
             </a>
             <a href="{{ base }}/school/developer/" class="item">
