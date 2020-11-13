@@ -1,6 +1,6 @@
 <?php // code/application/Index.php
 
-class Company extends MyApplication
+class Sitemap extends MyApplication
 {
     private $_common;
 
