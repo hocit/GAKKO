@@ -22,7 +22,7 @@
 <section class="secBasic03">
     <div class="container">
         <div class="list">
-            <a href="" class="item link">TOP</a>
+            <a href="{{ base }}/school/developer/" class="item link">TOP</a>
             <div class="item link icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="5.2" height="7.399" viewBox="0 0 5.2 7.399">
                     <path id="Path_44" data-name="Path 44" d="M9291.7,7842.992l4,3-4,3"
@@ -67,7 +67,7 @@
             </div>
         </div>
         <div class="list">
-            <a href="" class="item">
+            <a href="{{ base }}/school/schola/" class="item">
                 <figure class="img">
                     <img src="{{ base }}/data/img/img26@2x.png" alt="" srcset="" class="pc">
                     <img src="{{ base }}/data/img/img60@2x.png" alt="" srcset="" class="sp">
@@ -76,7 +76,7 @@
                     陰山式スコーラプレミアについて
                 </div>
             </a>
-            <a href="" class="item">
+            <a href="{{ base }}/school/schola/curriculum/" class="item">
                 <figure class="img">
                     <img src="{{ base }}/data/img/img27@2x.png" alt="" srcset="" class="pc">
                     <img src="{{ base }}/data/img/img61@2x.png" alt="" srcset="" class="sp">
@@ -85,7 +85,7 @@
                     カリキュラム
                 </div>
             </a>
-            <a href="" class="item">
+            <a href="{{ base }}/school/developer/" class="item">
                 <figure class="img">
                     <img src="{{ base }}/data/img/img28@2x.png" alt="" srcset="" class="pc">
                     <img src="{{ base }}/data/img/img62@2x.png" alt="" srcset="" class="sp">
