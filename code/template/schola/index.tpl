@@ -133,7 +133,7 @@
 <section class="secSchool03 secSchool03ad">
     <div class="container">
         <div class="list">
-            <a href="{{ base }}/school/schola/curriculum" class="item">
+            <a href="{{ base }}/school/schola/curriculum/" class="item">
                 <figure class="img">
                     <img src="{{ base }}/data/img/img27@2x.png" alt="" srcset="" class="pc">
                     <img src="{{ base }}/data/img/img61@2x.png" alt="" srcset="" class="sp">
@@ -190,7 +190,7 @@
 <section class="secSchool03 secSchool03ae">
     <div class="container">
         <div class="list">
-            <a href="{{ base }}/school/schola/curriculum" class="item">
+            <a href="{{ base }}/school/schola/curriculum/" class="item">
                 <figure class="img">
                     <img src="{{ base }}/data/img/img27@2x.png" alt="" srcset="" class="pc">
                     <img src="{{ base }}/data/img/img61@2x.png" alt="" srcset="" class="sp">
