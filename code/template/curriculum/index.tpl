@@ -1,5 +1,5 @@
-{{ assign $site.title = 'ニュース | ' . $site.title }}
-{{ assign $site.description = 'ニュース | ' . $site.description }}
+{{ assign $site.title = 'カリキュラム | ' . $site.title }}
+{{ assign $site.description = 'CURRICULUM | ' . $site.description }}
 {{ assign $site.url = 'school/schola/curriculum/' }}
 
 {{ transclude '../template/siteframe' }}
