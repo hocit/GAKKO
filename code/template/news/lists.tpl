@@ -60,7 +60,9 @@
                 {{ elseif $post.category === 'ploglab' }}
                 <div class="badge badgeBasic01 badgeBasic01#F0BB1C">{{ $post.category|feggCategoryLabel:'news' }}</div>
                 {{ end }}
-                {{ code $title = feggSubstr($post.title) }}
+                {{ code $title = feggSubstr('Nếu $start là một số không âm, chuỗi trả về sẽ bắt đầu từ vị trí thứ $start trong chuỗi, ký tự đầu tiên được tính là vị trí số 0. Ví dụ, trong chuỗi ‘abcdef’, ký tự ở vị trí số 0 là ‘a’, ký tự ở vị trí số 2 là ‘c’.
+
+') }}
                 <div class="title">{{ $title }}</div>
             </a>
             {{ end foreach }}
