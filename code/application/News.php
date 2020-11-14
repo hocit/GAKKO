@@ -57,9 +57,8 @@ class News extends MyApplication
             // データ取得
             // Get data
             $this->page['data'] = $this->_model->id($internalId);
-            $this->page['next'] = $this->_model->where('news_id > ?', $internalId)->one();
             $this->page['prev'] = $this->_model->where('news_id < ?', $internalId)->one();
-        // $this->page['prev'] = $this->_model->where('id < ', $internalId)->one();
+            $this->page['next'] = $this->_model->where('news_id > ?', $internalId)->one();
         } else {
             // 件数設定
             // Assignment row count
