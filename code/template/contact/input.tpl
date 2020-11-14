@@ -216,8 +216,7 @@
                     <div class="col02">
                         {{ assign $child_name = 'child_name' }}
                         {{ if isset($page.error.child_name )}}
-                        <input name="{{ $child_name }}" type="text" class="iptBasic01 iptBasic01err ipt01"
-                            placeholder="山田太郎">
+                        <input name="{{ $child_name }}" type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="山田太郎">
                         <div class="tltBasic01 tlt02">
                             <div class="ttl">
                                 必ず入力してください。
@@ -471,7 +470,11 @@
                         <div class="iagree">
                             <div class="chk">
                                 <label for="label_04" class="chkBasic01 chk01">
+                                    {{ if {{ $page.data[ $iagree ] === 1 }} }}
                                     <input name="{{ $iagree }}" checked value="1" type="checkbox" id="label_04">
+                                    {{ else }}
+                                    <input name="{{ $iagree }}" value="1" type="checkbox" id="label_04">
+                                    {{ end }}
                                     <span class="mark">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
                                             viewBox="0 0 16.562 10.917">
