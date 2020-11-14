@@ -152,9 +152,9 @@
                             <div class="item item01">
                                 <label for="label_01" class="chkBasic01 chk01">
                                     {{ if $page.data[ $type_request ][0] === 'document' }}
-                                    <input type="checkbox" value="document" id="label_01" name="{{ $type_request }}[]">
-                                    {{ else }}
                                     <input type="checkbox" checked value="document" id="label_01" name="{{ $type_request }}[]">
+                                    {{ else }}
+                                    <input type="checkbox" value="document" id="label_01" name="{{ $type_request }}[]">
                                     {{ end }}
                                     <span class="mark">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
