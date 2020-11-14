@@ -206,7 +206,7 @@
                     </div>
                     <div class="col02">
                         {{ assign $child_age = 'child_age' }}
-                        {{ if isset($page.error.child_name_furigana )}}
+                        {{ if isset($page.error.child_age )}}
                         <input name="{{ $child_age }}" type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="小学1年生">
                         <div class="tltBasic01 tlt02">
                             <div class="ttl">
@@ -232,7 +232,7 @@
                     </div>
                     <div class="col02">
                         {{ assign $parent_name = 'parent_name' }}
-                        {{ if isset($page.error.child_name_furigana )}}
+                        {{ if isset($page.error.parent_name )}}
                         <input name="{{ $parent_name }}" type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="山田太郎">
                         <div class="tltBasic01 tlt02">
                             <div class="ttl">
