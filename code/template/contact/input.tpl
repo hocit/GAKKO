@@ -144,7 +144,9 @@
                                <div class="arrow"></div>
                             </div>
                             {{ else}}
-                            {{$page.data[ $type_request ]}}
+                            {{ $page.data[ $type_request ][0] }}
+                            {{ $page.data[ $type_request ][1] }}
+                            {{ $page.data[ $type_request ][2] }}
                             <div class="item item01">
                                 <label for="label_01" class="chkBasic01 chk01">
                                     <input type="checkbox" value="document" id="label_01" name="{{ $type_request }}[]">
