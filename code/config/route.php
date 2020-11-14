@@ -35,7 +35,7 @@ $route['school/developer/index.html'] = 'developer/index';
 $route['school/news'] = 'news/index';
 $route['school/news/'] = 'news/index';
 $route['school/news/index.html'] = 'news/index';
-$route['school/news/detail/:num.html'] = 'news/detail/$1';
+$route['school/news/detail_:num.html'] = 'news/detail/$1';
 
 // お問い合わせ
 // For contact
