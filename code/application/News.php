@@ -58,6 +58,7 @@ class News extends MyApplication
             // Get data
             $this->page['data'] = $this->_model->id($internalId);
             $this->page['next'] = $this->_model->where('news_id =? ', $internalId);
+            $this->page['pre'] = $this->_model->where('news_id <? ', $internalId);
         // $this->page['prev'] = $this->_model->where('id < ', $internalId)->one();
         } else {
             // 件数設定
