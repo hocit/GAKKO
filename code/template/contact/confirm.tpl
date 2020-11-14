@@ -73,7 +73,13 @@
                         </div>
                     </div>
                     <div class="col02">
-                        資料請求
+                        {{ if isset($page.data[ $type_request ][0]) }}
+                        {{ $page.data[ $type_request ][0] }}
+                        {{ else if isset($page.data[ $type_request ][1]) }}
+                        , {{ $page.data[ $type_request ][1] }}
+                        {{ else if isset($page.data[ $type_request ][2]) }}
+                        , {{ $page.data[ $type_request ][1] }}
+                        {{ end }}
                     </div>
                 </div>
             </div>
