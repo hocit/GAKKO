@@ -136,6 +136,12 @@
                                 </label>
                                 <label for="label_03" class="title">その他質問など</label>
                             </div>
+                            <div class="tltBasic01 tlt01">
+                                <div class="ttl">
+                                    必ずどれかをチェックしてください。
+                                </div>
+                               <div class="arrow"></div>
+                            </div>
                             {{ else}}
                             <div class="item item01">
                                 <label for="label_01" class="chkBasic01 chk01">
