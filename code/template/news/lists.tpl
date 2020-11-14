@@ -51,8 +51,15 @@
             {{ foreach $page.data as $key => $post }}
             <a href="{{ base }}/school/news/detail_{{ $post[ $page.id ] }}.html" class="item">
                 <div class="date">{{ $post.post_date|feggDate:$format }}</div>
-                {{$post.category}}
+                {{ if $post.category === 'yinyama_style_scola_premiere' }}
                 <div class="badge badgeBasic01 badgeBasic01#356FBF">{{ $post.category|feggCategoryLabel:'news' }}</div>
+                {{ elseif $post.category === 'mpi_english_club' }}
+                <div class="badge badgeBasic01 badgeBasic01#E57AC0">{{ $post.category|feggCategoryLabel:'news' }}</div>
+                {{ elseif $post.category === 'other' }}
+                <div class="badge badgeBasic01 badgeBasic01#848484">{{ $post.category|feggCategoryLabel:'news' }}</div>
+                {{ elseif $post.category === 'ploglab' }}
+                <div class="badge badgeBasic01 badgeBasic01#F0BB1C">{{ $post.category|feggCategoryLabel:'news' }}</div>
+                {{ end }}
                 <div class="title">{{ $post.title }}</div>
             </a>
             {{ end foreach }}
