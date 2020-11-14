@@ -60,9 +60,7 @@
                 {{ elseif $post.category === 'ploglab' }}
                 <div class="badge badgeBasic01 badgeBasic01#F0BB1C">{{ $post.category|feggCategoryLabel:'news' }}</div>
                 {{ end }}
-                {{ code $title = feggSubstr('Nếu $start là một số không âm, chuỗi trả về sẽ bắt đầu từ vị trí thứ $start trong chuỗi, ký tự đầu tiên được tính là vị trí số 0. Ví dụ, trong chuỗi ‘abcdef’, ký tự ở vị trí số 0 là ‘a’, ký tự ở vị trí số 2 là ‘c’.
-
-') }}
+                {{ code $title = feggExcerpt('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.') }}
                 <div class="title">{{ $title }}</div>
             </a>
             {{ end foreach }}
