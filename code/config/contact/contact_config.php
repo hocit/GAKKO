@@ -17,16 +17,16 @@ $_TEMPLATE_PATH = 'contact';
 
 // 入力ページURL
 // Input Page URL
-$_PAGE_URL_INPUT = '/contact/';
+$_PAGE_URL_INPUT = '/school/schola/contact/';
 // 確認ページURL
 // Confirm Page URL
-$_PAGE_URL_CONFIRM = '/contact/confirm.html';
+$_PAGE_URL_CONFIRM = '/school/schola/contact/confirm.html';
 // エラーページURL
 // Error Page URL
-$_PAGE_URL_ERROR = '/contact/error.html';
+$_PAGE_URL_ERROR = '/school/schola/contact/error.html';
 // 完了ページURL
 // Result Page URL
-$_PAGE_URL_RESULT = '/contact/result.html';
+$_PAGE_URL_RESULT = '/school/schola/contact/result.html';
 
 // 企業名
 // Company name
