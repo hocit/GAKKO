@@ -11,11 +11,6 @@
 $route[':any/index.html'] = '$1/index';
 
 // For School
-$route['cms'] = ' /index';
-$route['cms/'] = 'cms/index';
-$route['cms/index.html'] = 'cms/index';
-
-// For School
 $route['school'] = 'school/index';
 $route['school/'] = 'school/index';
 $route['school/index.html'] = 'school/index';

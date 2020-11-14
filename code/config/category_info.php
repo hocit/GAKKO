@@ -12,5 +12,7 @@ $category_info['visible_class'][1] = 'success';
 $category_info['visible_class'][2] = 'danger';
 // NEWS
 $category_info['news'] = array();
-$category_info['news']['info']    = 'お知らせ';
-$category_info['news']['recruit'] = '採用情報';
+$category_info['news']['yinyama_style_scola_premiere']    = '陰山式スコーラプレミア';
+$category_info['news']['mpi_english_club'] = 'mpi英語倶楽部';
+$category_info['news']['other']    = 'その他';
+$category_info['news']['ploglab'] = 'PlogLAB';
