@@ -227,7 +227,7 @@
         </div>
         <div class="list">
             <div class="item">
-                <a href="#" class="btnBasic01 btn btnBasic01#232448">
+                <a href="{{ base }}/school/schola/contact/" class="btnBasic01 btn btnBasic01#232448">
                     <div class="txt">
                         <div class="title">
                             修正する
@@ -249,7 +249,7 @@
                 </a>
             </div>
             <div class="item">
-                <a href="#" class="btnBasic01 btn btnBasic01O#232448">
+                <a href="{{ base }}/school/schola/contact/complete.html" class="btnBasic01 btn btnBasic01O#232448">
                     <div class="txt">
                         <div class="title">
                             送信する
