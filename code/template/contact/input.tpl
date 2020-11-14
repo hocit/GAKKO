@@ -93,7 +93,8 @@
                         <div class="grid">
                             <div class="item item01">
                                 <label for="label_01" class="chkBasic01 chk01">
-                                    <input type="checkbox" id="label_01">
+                                    {{ assign $type_request = 'type_request' }}
+                                    <input type="checkbox" id="label_01" name="{{ $type_request }}">
                                     <span class="mark">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
                                             viewBox="0 0 16.562 10.917">
@@ -149,7 +150,8 @@
                         </div>
                     </div>
                     <div class="col02">
-                        <input type="text" class="iptBasic01 ipt01" placeholder="山田太郎">
+                        {{ assign $child_name = 'child_name' }}
+                        <input name="{{ $child_name }}" type="text" class="iptBasic01 ipt01" placeholder="山田太郎">
                     </div>
                 </div>
             </div>
@@ -164,7 +166,8 @@
                         </div>
                     </div>
                     <div class="col02">
-                        <input type="text" class="iptBasic01 ipt01" placeholder="やまだたろう">
+                        {{ assign $child_name_furigana = 'child_name_furigana' }}
+                        <input name="{{ $child_name_furigana }}" type="text" class="iptBasic01 ipt01" placeholder="やまだたろう">
                     </div>
                 </div>
             </div>
@@ -179,7 +182,8 @@
                         </div>
                     </div>
                     <div class="col02">
-                        <input type="text" class="iptBasic01 ipt01" placeholder="小学1年生">
+                        {{ assign $child_age = 'child_age' }}
+                        <input name="{{ $child_age }}" type="text" class="iptBasic01 ipt01" placeholder="小学1年生">
                     </div>
                 </div>
             </div>
