@@ -4,8 +4,8 @@
 
 {{ transclude '../template/siteframe' }}
 
-{{ include head './include/head/input' }}
-{{ include foot './include/foot/input' }}
+{{ include head '../include/head/index' }}
+{{ include foot '../include/foot/index' }}
 
 {{ section contents }}
 
