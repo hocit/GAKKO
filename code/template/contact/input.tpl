@@ -92,6 +92,7 @@
                     <div class="col02">
                         <div class="grid">
                             {{ assign $type_request = 'type_request' }}
+                            {{ $page.data[ $type_request ] }}
                             {{ if isset($page.error.type_request )}}
                             <div class="item item01">
                                 <label for="label_01" class="chkBasic01 chkBasic01err chk01">
