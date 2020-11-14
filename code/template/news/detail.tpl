@@ -56,8 +56,6 @@
         <div class="content">{{ $page.data.content|noescape }}</div>
         <div class="pagination">
             <div class="list">
-            {{ code var_dump($page.prev) }}
-
                 <a href="{{ base }}/school/news/detail_{{ $page.prev.news_id }}.html" class="item">
                     Prev
                 </a>
