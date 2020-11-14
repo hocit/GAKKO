@@ -219,8 +219,10 @@
                         </div>
                     </div>
                     <div class="col02">
-                        {{ assign $question = 'question' }}
-                        {{ $page.data[ $question ] }}
+                        {{ assign $iagree = 'iagree' }}
+                        {{ if $page.data[ $iagree ] === '1' }}
+                        同意する
+                        {{ end }}
                     </div>
                 </div>
             </div>

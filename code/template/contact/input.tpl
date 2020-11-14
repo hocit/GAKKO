@@ -470,7 +470,7 @@
                         <div class="iagree">
                             <div class="chk">
                                 <label for="label_04" class="chkBasic01 chk01">
-                                    {{ if $page.data[$iagree ] === '1' }}
+                                    {{ if $page.data[ $iagree ] === '1' }}
                                     <input name="{{ $iagree }}" checked value="1" type="checkbox" id="label_04">
                                     {{ else }}
                                     <input name="{{ $iagree }}" value="1" type="checkbox" id="label_04">
