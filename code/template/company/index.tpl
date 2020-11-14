@@ -1,6 +1,7 @@
 {{ assign $site.title = '企業情報 | ' . $site.title }}
 {{ assign $site.description = 'COMPANY | ' . $site.description }}
 {{ assign $site.url = 'company/' }}
+{{ assign $footer_type = 'type_1' }}
 
 {{ transclude '../template/siteframe' }}
 

@@ -1,4 +1,5 @@
 {{ assign $site.is_index = true }}
+{{ assign $footer_type = 'type_1' }}
 
 {{ transclude './template/siteframe' }}
 

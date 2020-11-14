@@ -1,6 +1,7 @@
 {{ assign $site.title = 'カリキュラム | ' . $site.title }}
 {{ assign $site.description = 'CURRICULUM | ' . $site.description }}
 {{ assign $site.url = 'school/schola/curriculum/' }}
+{{ assign $footer_type = 'type_2' }}
 
 {{ transclude '../template/siteframe' }}
 

@@ -1,6 +1,7 @@
 {{ assign $site.title = '開発者 | ' . $site.title }}
 {{ assign $site.description = 'DEVELOPER | ' . $site.description }}
 {{ assign $site.url = 'school/developer/' }}
+{{ assign $footer_type = 'type_2' }}
 
 {{ transclude '../template/siteframe' }}
 

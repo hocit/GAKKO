@@ -1,6 +1,7 @@
 {{ assign $site.title = 'スクールニュース | ' . $site.title }}
 {{ assign $site.description = 'SCHOOL NEWS| ' . $site.description }}
 {{ assign $site.url = 'school/news/' }}
+{{ assign $footer_type = 'type_1' }}
 
 {{ transclude '../template/siteframe' }}
 

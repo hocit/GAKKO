@@ -1,6 +1,7 @@
 {{ assign $site.title = 'プライバシーポリシー | ' . $site.title }}
 {{ assign $site.description = 'PRIVACY POLICY | ' . $site.description }}
 {{ assign $site.url = 'privacy/' }}
+{{ assign $footer_type = 'type_1' }}
 
 {{ transclude '../template/siteframe' }}
 

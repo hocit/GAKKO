@@ -1,5 +1,4 @@
-{{ $footer_type }}
-{{ if !isset($site.url) || $footer_type === 'type_1' || $site.url === 'school/' || $site.url === 'school/news/' || $site.url === 'company/' || $site.url === 'privacy/' || $site.url === 'sitemap/' }}
+{{ $footer_type === 'type_1' }}
 <section class="secBasic04">
     <div class="backTop">
         <svg xmlns="http://www.w3.org/2000/svg" width="25.693" height="13.054" viewBox="0 0 25.693 13.054">
@@ -101,7 +100,7 @@ PlogLABに関する
         </div>
     </div>
 </section>
-{{ elseif $site.url === 'school/schola/' || $site.url === 'school/schola/curriculum/' || $site.url === 'school/developer/' }}
+{{ elseif $footer_type === 'type_2' }}
 <section class="secBasic05">
     <div class="backTop">
         <svg xmlns="http://www.w3.org/2000/svg" width="25.693" height="13.054" viewBox="0 0 25.693 13.054">
@@ -138,7 +137,7 @@ PlogLABに関する
 </section>
 {{ end }}
 <footer class="footerBasic01">
-    {{ if !isset($site.url) || $footer_type === 'type_1' || $site.url === 'school/' || $site.url === 'school/schola/' || $site.url === 'school/schola/curriculum/' || $site.url === 'school/developer/' || $site.url === 'school/news/' || $site.url === 'school/schola/contact/' || $site.url === 'company/' || $site.url === 'privacy/' || $site.url === 'sitemap/' }}
+    {{ if $footer_type ! 'type_1' }}
     {{ else }}
     <div class="backTop">
         <svg xmlns="http://www.w3.org/2000/svg" width="25.693" height="13.054" viewBox="0 0 25.693 13.054">
