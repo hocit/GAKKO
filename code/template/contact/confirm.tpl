@@ -73,6 +73,7 @@
                         </div>
                     </div>
                     <div class="col02">
+                        {{ assign $type_request = 'type_request' }}
                         {{ if isset($page.data[ $type_request ][0]) }}
                         {{ $page.data[ $type_request ][0] }}
                         {{ else if isset($page.data[ $type_request ][1]) }}
