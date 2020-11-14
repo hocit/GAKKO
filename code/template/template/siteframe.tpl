@@ -9,7 +9,6 @@
     <meta name="keywords" content="{{ $site.keywords }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="canonical" href="{{ $define.FEGG_HTTP_DOMAIN }}/{{ $site.url }}">
-<meta name="robots" content="noindex">
 
     <!-- OGP -->
     <meta property="og:title" content="{{ $site.title }}">
@@ -35,11 +34,8 @@
     <!-- Disabled Auto link TelNo -->
     <meta name="format-detection" content="telephone=no">
 
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Cormorant+Garamond:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ base }}/data/css/styles.css?v={{ $site.version }}">
 </head>
 
