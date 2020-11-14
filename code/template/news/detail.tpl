@@ -1,6 +1,7 @@
 {{ assign $site.title = $page.data.title . ' | ニュース | ' . $site.title }}
 {{ assign $site.description = $page.data.title . ' | ニュース | ' . $site.description }}
 {{ assign $site.url = 'school/news/detail_' . $page.data[$page.id] . '.html' }}
+{{ assign $type = 1 }}
 
 {{ transclude '../template/siteframe' }}
 
