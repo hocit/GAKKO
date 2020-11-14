@@ -459,7 +459,7 @@
                         <div class="iagree">
                             <div class="chk">
                                 <label for="label_04" class="chkBasic01 chk01">
-                                    <input name="{{ $iagree }}" value="1" type="checkbox" id="label_04">
+                                    <input name="{{ $iagree }}" checked value="1" type="checkbox" id="label_04">
                                     <span class="mark">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
                                             viewBox="0 0 16.562 10.917">
