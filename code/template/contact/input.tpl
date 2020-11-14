@@ -204,7 +204,7 @@
                     <div class="col02">
                         {{ assign $child_name = 'child_name' }}
                         {{ if isset($page.error.child_name )}}
-                        <input name="{{ $child_name }}" value="{{ $page.data[ $child_name ] }}" type="text" class="iptBasic01 iptBasic01err ipt01"
+                        <input name="{{ $child_name }}" type="text" class="iptBasic01 iptBasic01err ipt01"
                             placeholder="山田太郎">
                         <div class="tltBasic01 tlt02">
                             <div class="ttl">
@@ -240,7 +240,7 @@
                             <div class="arrow"></div>
                         </div>
                         {{ else }}
-                        <input name="{{ $child_name_furigana }}" type="text" class="iptBasic01 ipt01"
+                        <input name="{{ $child_name_furigana }}" value="{{ $page.data[ $child_name_furigana ] }}" type="text" class="iptBasic01 ipt01"
                             placeholder="やまだたろう">
                         {{ end }}
                     </div>
