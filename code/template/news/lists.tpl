@@ -51,6 +51,7 @@
             {{ foreach $page.data as $key => $post }}
             <a href="{{ base }}/school/news/detail_{{ $post[ $page.id ] }}.html" class="item">
                 <div class="date">{{ $post.post_date|feggDate:$format }}</div>
+                {{$post.category}}
                 <div class="badge badgeBasic01 badgeBasic01#356FBF">{{ $post.category|feggCategoryLabel:'news' }}</div>
                 <div class="title">{{ $post.title }}</div>
             </a>
