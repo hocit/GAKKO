@@ -88,6 +88,10 @@ class Contact extends MyApplication
     {
         $validation = $this->getClass('Validation');
 
+        $name = 'お問い合わせ種別';
+        $id = 'type_request';
+        $validation->required($id, $this->in($id), array('@required',  $name));
+
         $name = 'お子様のお名前';
         $id = 'child_name';
         $validation->required($id, $this->in($id), array('@required',  $name));
