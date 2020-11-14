@@ -79,9 +79,6 @@
             </div>
         </div>
         <form class="form" action="./confirm.html" method="post">
-            {{ foreach $page.error as $key => $value }}
-            {{$key}}{{ $value|noescape }}<br>
-            {{ end }}
             <div class="item">
                 <div class="grid">
                     <div class="col01">
@@ -94,9 +91,78 @@
                     </div>
                     <div class="col02">
                         <div class="grid">
+                            {{ assign $type_request = 'type_request' }}
+                            {{ if isset($page.error.type_request )}}
                             <div class="item item01">
+                                <label for="label_01" class="chkBasic01 chkBasic01err chk01">
+                                    <input type="checkbox" id="label_01" name="{{ $type_request }}">
+                                    <span class="mark">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
+                                            viewBox="0 0 16.562 10.917">
+                                            <path id="Path_220" data-name="Path 220"
+                                                d="M-12674.319,1707.73l5.645,5.644,10.917-10.917-10.917,7.425Z"
+                                                transform="translate(12674.319 -1702.456)" fill="#fff"></path>
+                                        </svg>
+
+                                    </span>
+                                </label>
                                 <label for="label_01" class="chkBasic01 chk01">
-                                    {{ assign $type_request = 'type_request' }}
+                                    <input type="checkbox" id="label_01" name="{{ $type_request }}">
+                                    <span class="mark">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
+                                            viewBox="0 0 16.562 10.917">
+                                            <path id="Path_220" data-name="Path 220"
+                                                d="M-12674.319,1707.73l5.645,5.644,10.917-10.917-10.917,7.425Z"
+                                                transform="translate(12674.319 -1702.456)" fill="#fff"></path>
+                                        </svg>
+
+                                    </span>
+                                </label>
+                                <label for="label_01" class="title">資料請求</label>
+                            </div>
+                            <div class="item item01">
+                                <label for="label_02" class="chkBasic01 chkBasic01err chk01">
+                                    <input type="checkbox" id="label_02">
+                                    <span class="mark">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
+                                            viewBox="0 0 16.562 10.917">
+                                            <path id="Path_220" data-name="Path 220"
+                                                d="M-12674.319,1707.73l5.645,5.644,10.917-10.917-10.917,7.425Z"
+                                                transform="translate(12674.319 -1702.456)" fill="#fff"></path>
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label for="label_02" class="title">体験授業</label>
+                            </div>
+                            <div class="item item01">
+                                <label for="label_03" class="chkBasic01 chkBasic01err chk01">
+                                    <input type="checkbox" id="label_03">
+                                    <span class="mark">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
+                                            viewBox="0 0 16.562 10.917">
+                                            <path id="Path_220" data-name="Path 220"
+                                                d="M-12674.319,1707.73l5.645,5.644,10.917-10.917-10.917,7.425Z"
+                                                transform="translate(12674.319 -1702.456)" fill="#fff"></path>
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label for="label_03" class="title">その他質問など</label>
+                            </div>
+                            {{ else}}
+                            <div class="item item01">
+                                <label for="label_01" class="chkBasic01 chkBasic01err chk01">
+                                    <input type="checkbox" id="label_01" name="{{ $type_request }}">
+                                    <span class="mark">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
+                                            viewBox="0 0 16.562 10.917">
+                                            <path id="Path_220" data-name="Path 220"
+                                                d="M-12674.319,1707.73l5.645,5.644,10.917-10.917-10.917,7.425Z"
+                                                transform="translate(12674.319 -1702.456)" fill="#fff"></path>
+                                        </svg>
+
+                                    </span>
+                                </label>
+                                <label for="label_01" class="chkBasic01 chk01">
                                     <input type="checkbox" id="label_01" name="{{ $type_request }}">
                                     <span class="mark">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
@@ -138,6 +204,7 @@
                                 </label>
                                 <label for="label_03" class="title">その他質問など</label>
                             </div>
+                            {{ end }}
                         </div>
                     </div>
                 </div>
