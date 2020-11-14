@@ -92,6 +92,7 @@
                     <div class="col02">
                         <div class="grid">
                             {{ assign $type_request = 'type_request' }}
+                            
                             {{ if isset($page.error.type_request )}}
                             <div class="item item01">
                                 <label for="label_01" class="chkBasic01 chkBasic01err chk01">
@@ -145,7 +146,7 @@
                             {{ else}}
                             <div class="item item01">
                                 <label for="label_01" class="chkBasic01 chk01">
-                                {{if in_array($type_request,'document')}}
+                                {{if in_array($page.data[ $type_request ],'document')}}
                                     <input type="checkbox" value="document" id="label_01" name="{{ $type_request }}[]">
                                     <span class="mark">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
