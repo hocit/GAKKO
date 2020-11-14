@@ -145,7 +145,7 @@
                             {{ else}}
                             <div class="item item01">
                                 <label for="label_01" class="chkBasic01 chk01">
-                                    {{ if(in_array($page.data[ $type_request ],'document') }}
+                                {{ if in_array($page.data[ $type_request ],'document') }}
                                     <input type="checkbox" value="document" id="label_01" name="{{ $type_request }}[]">
                                     <span class="mark">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
@@ -162,7 +162,7 @@
                             </div>
                             <div class="item item01">
                                 <label for="label_02" class="chkBasic01 chk01">
-                                    {{ if(in_array($page.data[ $type_request ],'lesson') }}
+                                {{ if in_array($page.data[ $type_request ],'lesson') }}
                                     <input type="checkbox" value="lesson" id="label_02" name="{{ $type_request }}[]">
                                     {{ end }}
                                     <span class="mark">
