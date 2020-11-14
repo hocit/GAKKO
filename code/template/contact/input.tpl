@@ -191,7 +191,6 @@
                         {{ else }}
                         <input name="{{ $child_name_furigana }}" type="text" class="iptBasic01 ipt01" placeholder="やまだたろう">
                         {{ end }}
-                        
                     </div>
                 </div>
             </div>
@@ -207,7 +206,17 @@
                     </div>
                     <div class="col02">
                         {{ assign $child_age = 'child_age' }}
+                        {{ if isset($page.error.child_name_furigana )}}
+                        <input name="{{ $child_age }}" type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="小学1年生">
+                        <div class="tltBasic01 tlt02">
+                            <div class="ttl">
+                                必ず入力してください。
+                            </div>
+                           <div class="arrow"></div>
+                        </div>
+                        {{ else }}
                         <input name="{{ $child_age }}" type="text" class="iptBasic01 ipt01" placeholder="小学1年生">
+                        {{ end }}
                     </div>
                 </div>
             </div>
