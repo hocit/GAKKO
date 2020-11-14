@@ -9,6 +9,7 @@
 
 {{ section contents }}
 
+{{$site.url|feggCheck:'school/schola/contact/'}}
 
 <section class="secBasic01 secBasic01contact">
     <div class="container">
