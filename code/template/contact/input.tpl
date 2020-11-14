@@ -284,7 +284,17 @@
                     </div>
                     <div class="col02">
                         {{ assign $email = 'email' }}
+                        {{ if isset($page.error.email )}}
+                        <input name="{{ $email }}" type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="ryouhin@chunichi-shobou.co.jp">
+                        <div class="tltBasic01 tlt02">
+                            <div class="ttl">
+                                必ず入力してください。
+                            </div>
+                           <div class="arrow"></div>
+                        </div>
+                        {{ else }}
                         <input name="{{ $email }}" type="text" class="iptBasic01 ipt01" placeholder="ryouhin@chunichi-shobou.co.jp">
+                        {{ end }}
                     </div>
                 </div>
             </div>
