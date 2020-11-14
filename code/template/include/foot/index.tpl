@@ -14,7 +14,7 @@
                 <div class="subtitle">無料体験・ご入会など
 陰山式スコーラに関する
 お問い合わせはこちら</div>
-                <a href="#" class="btnBasic01 btn btnBasic01O#232448">
+                <a href="{{ base }}/school/schola/contact/" class="btnBasic01 btn btnBasic01O#232448">
                     <div class="txt">
                         <div class="title">
                             お問い合わせ

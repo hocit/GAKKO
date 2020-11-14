@@ -11,9 +11,9 @@
 
 <section class="secIndex01">
     <div class="txt">
-        <h1 class="title">
+        <div class="title">
             より良い未来のために
-        </h1>
+        </div>
         <div class="subtitle">
             For a better future
         </div>
@@ -34,10 +34,9 @@
         <div class="row">
             <div class="col01">
                 <div class="txt">
-                    <h2 class="title">『Libretto』ブランド</h2>
+                    <h2 class="title">店舗事業</h2>
                     <div class="subtitle">
-                        「毎日の生活が楽しくなる」「自分のお気に入りやギフトが探せるショップ」をコンセプトに、『The Libretto』や『Made in
-                        TOKAI』などのブランドで、主に東海地方に出店中。
+                        「毎日の生活が楽しくなる」「自分のお気に入りやギフトが探せるショップ」をコンセプトに、『The Libretto』や『Made in TOKAI』などのブランドで、主に東海地方に出店中。
                     </div>
                     <a href="#" class="btnBasic01 btn btnBasic01O#232448">
                         <div class="txt">
@@ -73,11 +72,10 @@
         <div class="row rowReverse">
             <div class="col01">
                 <div class="txt txtRight">
-                    <h2 class="title">『Libretto School』</h2>
-                    <div class="subtitle">
-                        『陰山式スコーラプレミア』や『mpi英語倶楽部』など、皆さまの学びをサポートしています。
-                    </div>
-                    <a href="#" class="btnBasic01 btn btnBasic01O#232448">
+                    <h2 class="title">教室事業</h2>
+                    <div class="subtitle">『陰山式スコーラプレミア』や『mpi英語倶楽部』など、
+皆さまの学びをサポートしています。</div>
+                    <a href="{{ base }}/school/" class="btnBasic01 btn btnBasic01O#232448">
                         <div class="txt">
                             <div class="title">
                                 修正する
@@ -112,9 +110,8 @@
             <div class="col01">
                 <div class="txt txtLeft">
                     <h2 class="title">教育・防災事業</h2>
-                    <div class="subtitle">
-                        長年の経験と新しい試みで 学校運営の一助となるよう誠実・勤勉に取り組みます
-                    </div>
+                    <div class="subtitle">長年の経験と新しい試みで
+学校運営の一助となるよう誠実・勤勉に取り組みます</div>
                     <a href="#" class="btnBasic01 btn btnBasic01O#232448">
                         <div class="txt">
                             <div class="title">
@@ -145,7 +142,7 @@
 </section>
 
 <section class="secIndex05">
-    <a href="#" class="box">
+    <a href="{{ base }}/company/" class="box">
         <img src="{{ base }}/data/img/img59@2x.png" alt="" class="img">
         <div class="txt">
             <div class="title">
