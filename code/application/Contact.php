@@ -161,7 +161,7 @@ class Contact extends MyApplication
         // エラーチェック
         // Check validation
         $errorMessage = $this->_validatePostedData();
-        
+        var_dump($errorMessage);
         if (! $errorMessage) {
             $this->setTicket($this->contact_config['session_key_ticket']);
 
