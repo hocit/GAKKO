@@ -1,5 +1,4 @@
-{{ $footer_type }}
-{{ if !isset($site.url) || $footer_type === 'type_1' || $site.url === 'school/' || $site.url === 'school/news/' || $site.url === 'company/' || $site.url === 'privacy/' || $site.url === 'sitemap/' }}
+{{ if $footer_type === 'type_1' }}
 <section class="secBasic04">
     <div class="backTop">
         <svg xmlns="http://www.w3.org/2000/svg" width="25.693" height="13.054" viewBox="0 0 25.693 13.054">
