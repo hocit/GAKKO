@@ -44,6 +44,8 @@
 </head>
 
 <body>
+    {{ code $menu_info = feggMenus(); }}
+    {{ $menu_ifon['contact'] }}
     {{ head }}
 
     {{ section contents }}

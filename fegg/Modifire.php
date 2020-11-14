@@ -1,10 +1,10 @@
 <?php
 /*
  * Modifire関数群
- * 
+ *
  * テンプレート向けモディファイア関数群
  * MyApplicationから自動読込
- * 
+ *
  * @author LionHeart Co., Ltd.
  * @version 1.0.0
  */
@@ -17,14 +17,14 @@
  * @param  string $format 日付フォーマット（ルールはdate関数と同じ）
  * @return string         フォーマット変換後の日時
  */
-function feggDate( $time, $format )
+function feggDate($time, $format)
 {
     // $timeが文字列ならタイムスタンプに変換
-    if(! is_numeric( $time ) ) {
-        $time = strtotime( $time );
+    if (! is_numeric($time)) {
+        $time = strtotime($time);
     }
 
-    return date_ja( $format, $time );
+    return date_ja($format, $time);
 }
 
 /**
@@ -35,14 +35,14 @@ function feggDate( $time, $format )
  * @param  string $glue   配列間に挿入する文字列
  * @return string         結合した文字列
  */
-function feggImplode( $pieces, $glue = '' )
+function feggImplode($pieces, $glue = '')
 {
     // 配列じゃなければそのまま表示
-    if(! is_array( $pieces ) ) {
+    if (! is_array($pieces)) {
         return $pieces;
     }
 
-    return implode( $glue, $pieces );
+    return implode($glue, $pieces);
 }
 
 /**
@@ -52,21 +52,21 @@ function feggImplode( $pieces, $glue = '' )
  * @param  string $replace 代替文字列
  * @return mixed           検証変数または代替文字列
  */
-function feggDefault( $param, $replace )
+function feggDefault($param, $replace)
 {
-    if( is_array( $param ) ) {
+    if (is_array($param)) {
         // 配列の場合は要素数で確認
-        if(! count( $param ) ) {
+        if (! count($param)) {
             return $replace;
         }
-    } else if( is_string( $param ) || is_numeric( $param ) ) {
+    } elseif (is_string($param) || is_numeric($param)) {
         // 文字列・数値の場合は文字数で確認
-        if(! strlen( $param ) ) {
+        if (! strlen($param)) {
             return $replace;
         }
     } else {
         // その他はempty関数で確認
-        if( empty( $param ) ) {
+        if (empty($param)) {
             return $replace;
         }
     }
@@ -84,9 +84,9 @@ function feggDefault( $param, $replace )
  * @param  mixed $is_false A!=Bの時に表示
  * @return mixed           $is_true または $is_false
  */
-function feggCheck( $param, $check, $is_true=NULL, $is_false=NULL )
+function feggCheck($param, $check, $is_true=null, $is_false=null)
 {
-    if( $param === $check ) {
+    if ($param === $check) {
         return $is_true;
     } else {
         return $is_false;
@@ -102,9 +102,9 @@ function feggCheck( $param, $check, $is_true=NULL, $is_false=NULL )
  * @param  mixed  $replace 置換する値
  * @return mixed           置換後の値
  */
-function feggReplace( $subject, $search, $replace )
+function feggReplace($subject, $search, $replace)
 {
-    return str_replace( $search, $replace, $subject );
+    return str_replace($search, $replace, $subject);
 }
 
 /**
@@ -117,9 +117,9 @@ function feggReplace( $subject, $search, $replace )
  * @param  integer $limit   置換する回数
  * @return mixed            置換後の値
  */
-function feggPregReplace( $subject, $pattern, $replace, $limit=-1 )
+function feggPregReplace($subject, $pattern, $replace, $limit=-1)
 {
-    return preg_replace( $pattern, $replace, $subject, $limit );
+    return preg_replace($pattern, $replace, $subject, $limit);
 }
 
 /**
@@ -127,20 +127,35 @@ function feggPregReplace( $subject, $pattern, $replace, $limit=-1 )
  * @param string $url
  * @param mixed  $param
  */
-function feggUrlParam( $url, $param = array() )
+function feggUrlParam($url, $param = array())
 {
-    if(! $param) {
+    if (! $param) {
         return $url;
     }
 
     $prefix = '?';
-    if(strpos($url, '?') !== false) {
+    if (strpos($url, '?') !== false) {
         $prefix = '&';
     }
 
-    if(is_array($param) || is_object($param)) {
+    if (is_array($param) || is_object($param)) {
         $param = http_build_query($param);
     }
 
     return $url.$prefix.$param;
+}
+
+function feggMenus()
+{
+    $menu_info = array();
+    $menu_info['developer'] = 'school/schola/developer/';
+    $menu_info['curriculum'] = 'school/schola/curriculum/';
+    $menu_info['news'] = 'school/news/';
+    $menu_info['school'] = 'school/';
+    $menu_info['schola'] = 'school/schola/';
+    $menu_info['company'] = 'company/';
+    $menu_info['privacy'] = 'privacy/';
+    $menu_info['sitemap'] = 'sitemap/';
+    $menu_info['contact'] = 'school/schola/contact/';
+    return $menu_info;
 }
