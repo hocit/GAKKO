@@ -45,7 +45,6 @@
 
 <body>
     {{ code $menu_info = feggMenus() }}
-    {{ $menu_info['contact'] }}
     {{ head }}
 
     {{ section contents }}
