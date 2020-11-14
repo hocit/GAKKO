@@ -147,7 +147,7 @@
                             {{ $page.data[ $type_request ][0] }}
                             {{ $page.data[ $type_request ][1] }}
                             {{ $page.data[ $type_request ][2] }}
-                            {if 'document'|in_array:$page.data[ $type_request ]}EXIST{/if}
+                            {{if 'document'|in_array:$page.data[ $type_request ]}}EXIST{{/if}}
 
                             <div class="item item01">
                                 <label for="label_01" class="chkBasic01 chk01">
