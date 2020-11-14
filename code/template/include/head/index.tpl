@@ -17,7 +17,7 @@
     <div class="right">
         <div class="nav">
             <nav class="list">
-                <a href="{{ base }}" class="item">
+                <a href="/" class="item">
                     店舗事業
                 </a>
                 <a href="{{ base }}/{{ $menu_info['school'] }}" class="item">
@@ -48,7 +48,7 @@
     {{ else }}
     <h1>
         <a href="/" class="logo">
-        <img src="{{ base }}/data/img/logo_header01@2x.png" alt="株式会社学校良品">
+            <img src="{{ base }}/data/img/logo_header01@2x.png" alt="株式会社学校良品">
         </a>
     </h1>
     {{ end }}

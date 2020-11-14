@@ -75,7 +75,7 @@
                     <h2 class="title">教室事業</h2>
                     <div class="subtitle">『陰山式スコーラプレミア』や『mpi英語倶楽部』など、
 皆さまの学びをサポートしています。</div>
-                    <a href="{{ base }}/school/" class="btnBasic01 btn btnBasic01O#232448">
+                    <a href="{{ base }}/{{ $menu_info['school'] }}" class="btnBasic01 btn btnBasic01O#232448">
                         <div class="txt">
                             <div class="title">
                                 修正する
@@ -142,7 +142,7 @@
 </section>
 
 <section class="secIndex05">
-    <a href="{{ base }}/company/" class="box">
+    <a href="{{ base }}/{{ $menu_info['company'] }}" class="box">
         <img src="{{ base }}/data/img/img59@2x.png" alt="" class="img">
         <div class="txt">
             <div class="title">

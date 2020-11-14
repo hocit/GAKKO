@@ -45,9 +45,41 @@ class School extends MyApplication
         $this->page['id'] = $this->_model->getPrimary();
     }
 
+    /**
+     * データ取得
+     *
+     * @param string $internalId 代入したら一件取得 / If assigned, get one row data
+     */
+    private function _setData($internalId = '')
+    {
+        if ($internalId) {
+            // データ取得
+            // Get data
+            $this->page['data'] = $this->_model->id($internalId);
+        } else {
+            // 件数設定
+            // Assignment row count
+            $listMax = 10;
+
+            // データ取得
+            // Get data
+            $this->page['data'] =
+                $this->_model
+                    ->listMax($listMax)
+                    ->current($this->in('p'))
+                    ->order('post_date', 'desc')
+                    ->order('news_id', 'desc')
+                    ->find();
+
+            // ページャーのデータを取得
+            // Get pager data
+            $this->page['pager'] = $this->_model->getPager();
+        }
+    }
 
     public function index()
     {
+        $this->_setData();
         // 処理
         $this->displayPage('school/index');
     }

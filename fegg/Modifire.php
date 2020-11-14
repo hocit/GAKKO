@@ -148,7 +148,7 @@ function feggUrlParam($url, $param = array())
 function feggMenus()
 {
     $menu_info = array();
-    $menu_info['developer'] = 'school/schola/developer/';
+    $menu_info['developer'] = 'school/developer/';
     $menu_info['curriculum'] = 'school/schola/curriculum/';
     $menu_info['news'] = 'school/news/';
     $menu_info['school'] = 'school/';

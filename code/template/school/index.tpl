@@ -23,7 +23,7 @@
 <section class="secBasic03">
     <div class="container">
         <div class="list">
-            <a href="{{ base }}/school/developer/" class="item link">TOP</a>
+            <a href="{{ base }}/{{ $menu_info['developer'] }}" class="item link">TOP</a>
             <div class="item link icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="5.2" height="7.399" viewBox="0 0 5.2 7.399">
                     <path id="Path_44" data-name="Path 44" d="M9291.7,7842.992l4,3-4,3"
@@ -68,7 +68,7 @@
             </div>
         </div>
         <div class="list">
-            <a href="{{ base }}/school/schola/" class="item">
+            <a href="{{ base }}/{{ $menu_info['schola'] }}" class="item">
                 <figure class="img">
                     <img src="{{ base }}/data/img/img26@2x.png" alt="" srcset="" class="pc">
                     <img src="{{ base }}/data/img/img60@2x.png" alt="" srcset="" class="sp">
@@ -77,7 +77,7 @@
                     陰山式スコーラプレミアについて
                 </div>
             </a>
-            <a href="{{ base }}/school/schola/curriculum/" class="item">
+            <a href="{{ base }}/{{ $menu_info['curriculum'] }}{{ base }}" class="item">
                 <figure class="img">
                     <img src="{{ base }}/data/img/img27@2x.png" alt="" srcset="" class="pc">
                     <img src="{{ base }}/data/img/img61@2x.png" alt="" srcset="" class="sp">
@@ -86,7 +86,7 @@
                     カリキュラム
                 </div>
             </a>
-            <a href="{{ base }}/school/developer/" class="item">
+            <a href="{{ base }}/{{ $menu_info['developer'] }}" class="item">
                 <figure class="img">
                     <img src="{{ base }}/data/img/img28@2x.png" alt="" srcset="" class="pc">
                     <img src="{{ base }}/data/img/img62@2x.png" alt="" srcset="" class="sp">
@@ -259,36 +259,27 @@
             NEWS
         </div>
         <div class="list">
-            <a href="" class="item">
-                <div class="date">2020.11.01</div>
-                <div class="badge badgeBasic01 badgeBasic01#356FBF">陰山式スコーラプレミア</div>
-                <div class="title">夏季休業（8月8日～8月16日）のお知らせ</div>
+            {{ assign $format = 'Y.m.d' }}
+            {{ foreach $page.data as $key => $post }}
+            <a href="{{ base }}/school/news/detail_{{ $post[ $page.id ] }}.html" class="item">
+                <div class="date">{{ $post.post_date|feggDate:$format }}</div>
+                {{ if $post.category === 'yinyama_style_scola_premiere' }}
+                <div class="badge badgeBasic01 badgeBasic01#356FBF">{{ $post.category|feggCategoryLabel:'news' }}</div>
+                {{ elseif $post.category === 'mpi_english_club' }}
+                <div class="badge badgeBasic01 badgeBasic01#E57AC0">{{ $post.category|feggCategoryLabel:'news' }}</div>
+                {{ elseif $post.category === 'other' }}
+                <div class="badge badgeBasic01 badgeBasic01#848484">{{ $post.category|feggCategoryLabel:'news' }}</div>
+                {{ elseif $post.category === 'ploglab' }}
+                <div class="badge badgeBasic01 badgeBasic01#F0BB1C">{{ $post.category|feggCategoryLabel:'news' }}</div>
+                {{ end }}
+                <div class="title">{{ $post.title }}</div>
             </a>
-            <a href="" class="item">
-                <div class="date">2020.11.01</div>
-                <div class="badge badgeBasic01 badgeBasic01#E57AC0">陰山式スコーラプレミア</div>
-                <div class="title">夏季休業（8月8日～8月16日）のお知らせ</div>
-            </a>
-            <a href="" class="item">
-                <div class="date">2020.11.01</div>
-                <div class="badge badgeBasic01 badgeBasic01#848484">陰山式スコーラプレミア</div>
-                <div class="title">夏季休業（8月8日～8月16日）のお知らせ</div>
-            </a>
-            <a href="" class="item">
-                <div class="date">2020.11.01</div>
-                <div class="badge badgeBasic01 badgeBasic01#F0BB1C">陰山式スコーラプレミア</div>
-                <div class="title">夏季休業（8月8日～8月16日）のお知らせ</div>
-            </a>
-            <a href="" class="item">
-                <div class="date">2020.11.01</div>
-                <div class="badge badgeBasic01 badgeBasic01#E57AC0">陰山式スコーラプレミア</div>
-                <div class="title">夏季休業（8月8日～8月16日）のお知らせ</div>
-            </a>
+            {{ end foreach }}
         </div>
-        <a href="{{ base }}/school/news/" class="btnBasic01 btn btnBasic01O#232448">
+        <a href="{{ base }}/{{ $menu_info['news'] }}" class="btnBasic01 btn btnBasic01O#232448">
             <div class="txt">
                 <div class="title">
-                    お問い合わせ
+                    一覧を見る
                 </div>
                 <div class="icon iconRight">
                     <svg xmlns="http://www.w3.org/2000/svg" width="19.662" height="11.737" viewBox="0 0 19.662 11.737">
@@ -335,7 +326,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="order">1</div>
+                        <div class="order">4.</div>
                         <div class="title">
                             講師、職員、生徒のマスク装着、検温を徹底します。
                         </div>
