@@ -59,45 +59,22 @@
         <div class="pagination">
             <div class="list">
                 {{ if $page.pager.previous_page }}
-                <a href="./?p={{ $page.pager.previous_page }}" class="item">
-                    Prev
-                </a>
+                <a href="./?p={{ $page.pager.previous_page }}" class="item">Prev</a>
                 {{ end }}
                 {{ loop $i = $page.pager.page_min to $page.pager.page_max }}
                 {{ if $i == $page.pager.current_page }}
-                <a href="./?p={{ $i }}" class="item">
-                    {{ $i }}
-                </a>
+                <a href="./?p={{ $i }}" class="item">{{ $i }}</a>
+                {{ else }}
+                <a href="./?p={{ $i }}" class="item">{{ $i }}</a>
                 {{ end }}
                 {{ end }}
                 {{ if $page.pager.next_page }}
-                <a href="./?p={{ $page.pager.next_page }}" class="item">
-                    Next
-                </a>
+                <a href="./?p={{ $page.pager.next_page }}" class="item">Next</a>
                 {{ end }}
             </div>
         </div>
         {{ end }}
-
-        {{ if $page.pager.page_max > 1 }}
-    <ul class="c-pagination">
-        {{ if $page.pager.previous_page }}
-        <li class="c-pagination__list"><a href="./?p={{ $page.pager.previous_page }}">&lt;</a></li>
-        {{ end }}
-        {{ loop $i = $page.pager.page_min to $page.pager.page_max }}
-        <li class="c-pagination__list">
-            {{ if $i == $page.pager.current_page }}
-            <span>{{ $i }}</span>
-            {{ else }}
-            <a href="./?p={{ $i }}">{{ $i }}</a>
-            {{ end }}
-        </li>
-        {{ end }}
-        {{ if $page.pager.next_page }}
-        <li class="c-pagination__list"><a href="./?p={{ $page.pager.next_page }}">&gt;</a></li>
-        {{ end }}
-    </ul>
-    {{ end }}
+        
     </div>
 </section>
 
