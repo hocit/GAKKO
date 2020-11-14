@@ -56,7 +56,9 @@
             {{ end foreach }}
         </div>
         {{ if $page.pager.page_max > 1 }}
+        <div class="pagination">
 
+        </div>
         {{ end }}
     </div>
 </section>
