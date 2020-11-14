@@ -60,7 +60,8 @@
                 {{ elseif $post.category === 'ploglab' }}
                 <div class="badge badgeBasic01 badgeBasic01#F0BB1C">{{ $post.category|feggCategoryLabel:'news' }}</div>
                 {{ end }}
-                <div class="title">{{ $post.title }}</div>
+                {{ code $title = feggSubstr($post.title) }}
+                <div class="title">{{ $title }}</div>
             </a>
             {{ end foreach }}
         </div>

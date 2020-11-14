@@ -159,3 +159,8 @@ function feggMenus()
     $menu_info['contact'] = 'school/schola/contact/';
     return $menu_info;
 }
+
+function feggSubstr($string)
+{
+    return substr($string, 0, 45).'...';
+}
