@@ -78,7 +78,7 @@
                 <div class="title">送信</div>
             </div>
         </div>
-        <div class="form">
+        <form class="form" action="./confirm.html" method="post">
             <div class="item">
                 <div class="grid">
                     <div class="col01">
@@ -302,7 +302,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="btnBasic01 btn btnBasic01O#232448">
+        <button type="submit" class="btnBasic01 btn btnBasic01O#232448">
             <div class="txt">
                 <div class="title">
                     入力内容の確認
@@ -320,8 +320,9 @@
                     </svg>
                 </div>
             </div>
-        </a>
-    </div>
+        </button>
+        {{ hidden }}
+    </form>
 </section>
 
 
