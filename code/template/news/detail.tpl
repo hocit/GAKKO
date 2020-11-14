@@ -50,7 +50,15 @@
         <div class="meta">
             {{ assign $format = 'Y.m.d' }}
             <div class="date">{{ $page.data.post_date|feggDate:$format }}</div>
-            <div class="badgeBasic01 badgeBasic01Small badgeBasic01#356FBF">{{ $page.data.category|feggCategoryLabel:'news' }}</div>
+            {{ if $post.category === 'yinyama_style_scola_premiere' }}
+                <div class="badge badgeBasic01 badgeBasic01Small  badgeBasic01#356FBF">{{ $page.data.category|feggCategoryLabel:'news' }}</div>
+                {{ elseif $post.category === 'mpi_english_club' }}
+                <div class="badge badgeBasic01 badgeBasic01Small  badgeBasic01#E57AC0">{{ $page.data.category|feggCategoryLabel:'news' }}</div>
+                {{ elseif $post.category === 'other' }}
+                <div class="badge badgeBasic01 badgeBasic01Small  badgeBasic01#848484">{{ $page.data.category|feggCategoryLabel:'news' }}</div>
+                {{ elseif $post.category === 'ploglab' }}
+                <div class="badge badgeBasic01 badgeBasic01Small  badgeBasic01#F0BB1C">{{ $page.data.category|feggCategoryLabel:'news' }}</div>
+                {{ end }}
         </div>
         <div class="ttl">{{ $page.data.title }}</div>
         <div class="content">{{ $page.data.content|noescape }}</div>
