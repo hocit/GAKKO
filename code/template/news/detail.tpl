@@ -66,7 +66,7 @@
                 <a href="" class="item">
                     Next
                 </a>
-                {{ code var_dump($page.prev )}}
+                {{ code var_dump($page.prev) }}
             </div>
         </div>
     </div>
