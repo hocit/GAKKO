@@ -162,5 +162,6 @@ function feggMenus()
 
 function feggExcerpt45($string)
 {
-    return substr($string, 0, 45).'...';
+    mb_internal_encoding("UTF-8");
+    return mb_substr($string, 0, 45).'...';
 }
