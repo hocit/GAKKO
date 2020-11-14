@@ -310,7 +310,17 @@
                     </div>
                     <div class="col02">
                         {{ assign $tel = 'tel' }}
+                        {{ if isset($page.error.tel )}}
+                        <input name="{{ $tel }}" type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="052-931-0400">
+                        <div class="tltBasic01 tlt02">
+                            <div class="ttl">
+                                必ず入力してください。
+                            </div>
+                           <div class="arrow"></div>
+                        </div>
+                        {{ else }}
                         <input name="{{ $tel }}" type="text" class="iptBasic01 ipt01" placeholder="052-931-0400">
+                        {{ end }}
                     </div>
                 </div>
             </div>
@@ -326,7 +336,17 @@
                     </div>
                     <div class="col02">
                         {{ assign $address = 'address' }}
+                        {{ if isset($page.error.address )}}
+                        <input name="{{ $address }}" type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="愛知県名古屋市東区代官町34番15号">
+                        <div class="tltBasic01 tlt02">
+                            <div class="ttl">
+                                必ず入力してください。
+                            </div>
+                           <div class="arrow"></div>
+                        </div>
+                        {{ else }}
                         <input name="{{ $address }}" type="text" class="iptBasic01 ipt01" placeholder="愛知県名古屋市東区代官町34番15号">
+                        {{ end }}
                     </div>
                 </div>
             </div>
