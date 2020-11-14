@@ -195,7 +195,7 @@
                     </div>
                     <div class="col02">
                         {{ assign $parent_name = 'parent_name' }}
-                        <input name="{{ parent_name }}" type="text" class="iptBasic01 ipt01" placeholder="山田太郎">
+                        <input name="{{ $parent_name }}" type="text" class="iptBasic01 ipt01" placeholder="山田太郎">
                     </div>
                 </div>
             </div>
@@ -211,7 +211,7 @@
                     </div>
                     <div class="col02">
                         {{ assign $parent_name_furigana = 'parent_name_furigana' }}
-                        <input name="{{ parent_name_furigana }}" type="text" class="iptBasic01 ipt01" placeholder="やまだたろう">
+                        <input name="{{ $parent_name_furigana }}" type="text" class="iptBasic01 ipt01" placeholder="やまだたろう">
                     </div>
                 </div>
             </div>
@@ -227,7 +227,7 @@
                     </div>
                     <div class="col02">
                         {{ assign $email = 'email' }}
-                        <input name="{{ email }}" type="text" class="iptBasic01 ipt01" placeholder="ryouhin@chunichi-shobou.co.jp">
+                        <input name="{{ $email }}" type="text" class="iptBasic01 ipt01" placeholder="ryouhin@chunichi-shobou.co.jp">
                     </div>
                 </div>
             </div>
@@ -243,7 +243,7 @@
                     </div>
                     <div class="col02">
                         {{ assign $tel = 'tel' }}
-                        <input name="{{ tel }}" type="text" class="iptBasic01 ipt01" placeholder="052-931-0400">
+                        <input name="{{ $tel }}" type="text" class="iptBasic01 ipt01" placeholder="052-931-0400">
                     </div>
                 </div>
             </div>
@@ -259,7 +259,7 @@
                     </div>
                     <div class="col02">
                         {{ assign $address = 'address' }}
-                        <input name="{{ address }}" type="text" class="iptBasic01 ipt01" placeholder="愛知県名古屋市東区代官町34番15号">
+                        <input name="{{ $address }}" type="text" class="iptBasic01 ipt01" placeholder="愛知県名古屋市東区代官町34番15号">
                     </div>
                 </div>
             </div>
@@ -271,7 +271,7 @@
                     </div>
                     <div class="col02">
                         {{ assign $question = 'question' }}
-                        <textarea name="{{ question }}" id="" cols="30" rows="10" class="txtBasic01 txt01"
+                        <textarea name="{{ $question }}" id="" cols="30" rows="10" class="txtBasic01 txt01"
                             placeholder="お問い合わせ内容をご記入ください"></textarea>
                     </div>
                 </div>
@@ -291,7 +291,7 @@
                             <div class="chk">
                                 <label for="label_04" class="chkBasic01 chk01">
                                     {{ assign $iagree = 'iagree' }}
-                                    <input name="{{ iagree }}" type="checkbox" id="label_04">
+                                    <input name="{{ $iagree }}" type="checkbox" id="label_04">
                                     <span class="mark">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
                                             viewBox="0 0 16.562 10.917">
