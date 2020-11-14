@@ -23,7 +23,7 @@
 <section class="secBasic03">
     <div class="container">
         <div class="list">
-            <a href="" class="item link">TOP</a>
+            <a href="/" class="item link">TOP</a>
             <div class="item link icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="5.2" height="7.399" viewBox="0 0 5.2 7.399">
                     <path id="Path_44" data-name="Path 44" d="M9291.7,7842.992l4,3-4,3"
@@ -41,7 +41,7 @@
         <div class="grid">
             <div class="col col01">
                 <div class="nav">
-                    <a href="" class="item item01">
+                    <a href="/" class="item item01">
                         <svg xmlns="http://www.w3.org/2000/svg" width="9.207" height="17.414"
                             viewBox="0 0 9.207 17.414">
                             <path id="Path_44" data-name="Path 44" d="M9291.7,7842.993l8,8-8,8"
@@ -119,7 +119,7 @@
         <div class="grid">
             <div class="col col01">
                 <div class="nav">
-                    <a href="" class="item item01">
+                    <a href="{{ base }}/{{ $menu_info['school'] }}" class="item item01">
                         <svg xmlns="http://www.w3.org/2000/svg" width="9.207" height="17.414"
                             viewBox="0 0 9.207 17.414">
                             <path id="Path_44" data-name="Path 44" d="M9291.7,7842.993l8,8-8,8"
@@ -127,7 +127,7 @@
                                 stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
                         </svg>
                         教室事業</a>
-                    <a href="" class="item">
+                    <a href="{{ base }}/{{ $menu_info['schola'] }}" class="item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="9.207" height="17.414"
                             viewBox="0 0 9.207 17.414">
                             <path id="Path_44" data-name="Path 44" d="M9291.7,7842.993l8,8-8,8"
@@ -135,21 +135,21 @@
                                 stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
                         </svg>
                         陰山式スコーラプレミア</a>
-                    <a href="" class="item item02">
+                    <a href="{{ base }}/{{ $menu_info['curriculum'] }}" class="item item02">
                         <svg xmlns="http://www.w3.org/2000/svg" width="9" height="1" viewBox="0 0 9 1">
                             <path id="Path_44" data-name="Path 44" d="M9299.7,7858.993h-8"
                                 transform="translate(-9291.2 -7858.493)" fill="none" stroke="#080808"
                                 stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
                         </svg>
                         カリキュラム</a>
-                    <a href="" class="item item02">
+                    <a href="{{ base }}/{{ $menu_info['developer'] }}" class="item item02">
                         <svg xmlns="http://www.w3.org/2000/svg" width="9" height="1" viewBox="0 0 9 1">
                             <path id="Path_44" data-name="Path 44" d="M9299.7,7858.993h-8"
                                 transform="translate(-9291.2 -7858.493)" fill="none" stroke="#080808"
                                 stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
                         </svg>
                         開発者</a>
-                    <a href="" class="item item02">
+                    <a href="{{ base }}/{{ $menu_info['contact'] }}" class="item item02">
                         <svg xmlns="http://www.w3.org/2000/svg" width="9" height="1" viewBox="0 0 9 1">
                             <path id="Path_44" data-name="Path 44" d="M9299.7,7858.993h-8"
                                 transform="translate(-9291.2 -7858.493)" fill="none" stroke="#080808"

@@ -31,7 +31,7 @@
                         stroke-linejoin="round" stroke-width="1"></path>
                 </svg>
             </div>
-            <a href="{{ base }}/school/" class="item link">スクール事業</a>
+            <a href="{{ base }}/{{ $menu_info['school'] }}" class="item link">スクール事業</a>
             <div class="item link icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="5.2" height="7.399" viewBox="0 0 5.2 7.399">
                     <path id="Path_44" data-name="Path 44" d="M9291.7,7842.992l4,3-4,3"
@@ -1017,7 +1017,7 @@
 <section class="secSchool03 secSchool03curriculum">
     <div class="container">
         <div class="list">
-            <a href="{{ base }}/school/schola/" class="item">
+            <a href="{{ base }}/{{ $menu_info['schola'] }}" class="item">
                 <figure class="img">
                     <img src="{{ base }}/data/img/img72@2x.png" alt="" srcset="" class="pc">
                     <img src="{{ base }}/data/img/img73@2x.png" alt="" srcset="" class="sp">
@@ -1026,7 +1026,7 @@
                     陰山式スコーラプレミアについて
                 </div>
             </a>
-            <a href="{{ base }}/school/developer/" class="item">
+            <a href="{{ base }}/{{ $menu_info['developer'] }}" class="item">
                 <figure class="img">
                     <img src="{{ base }}/data/img/img28@2x.png" alt="" srcset="" class="pc">
                     <img src="{{ base }}/data/img/img62@2x.png" alt="" srcset="" class="sp">
