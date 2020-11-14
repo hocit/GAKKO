@@ -64,6 +64,7 @@
                 </a>
                 {{ end }}
                 {{ loop $i = $page.pager.page_min to $page.pager.page_max }}
+                {{ $page.pager.page_max }}
                 {{ if $i == $page.pager.current_page }}
                 <a href="./?p={{ $i }}" class="item">
                     {{ $i }}
