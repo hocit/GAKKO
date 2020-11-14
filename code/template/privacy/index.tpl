@@ -79,7 +79,8 @@
             <p>
                 当サイトでは、Google LLCが提供するアクセス解析ツール「Googleアナリティクス」を利用しています。
                 Googleアナリティクスは、トラフィックデータの収集のためにCookieを使用しています。このトラフィックデータは匿名で収集されており、個人を特定するものではありません。この機能はCookieを無効にすることで収集を拒否することが出来ます。
-                Googleアナリティクスの詳細は「<a href="#">Googleアナリティクス利用規約</a>」をご覧ください。
+                Googleアナリティクスの詳細は「<a href="https://marketingplatform.google.com/about/analytics/terms/jp/
+" target="_blank">Googleアナリティクス利用規約</a>」をご覧ください。
             </p>
             <h3>
                 法令等の遵守

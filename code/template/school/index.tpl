@@ -284,7 +284,7 @@
                 <div class="title">夏季休業（8月8日～8月16日）のお知らせ</div>
             </a>
         </div>
-        <a href="#" class="btnBasic01 btn btnBasic01O#232448">
+        <a href="{{ base }}/school/news/" class="btnBasic01 btn btnBasic01O#232448">
             <div class="txt">
                 <div class="title">
                     お問い合わせ

@@ -19,7 +19,7 @@
     <div class="right">
         <div class="nav">
             <nav class="list">
-                <a href="#" class="item">
+                <a href="{{ base }}" class="item">
                     店舗事業
                 </a>
                 <a href="#" class="item">
