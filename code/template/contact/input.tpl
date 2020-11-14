@@ -79,6 +79,9 @@
             </div>
         </div>
         <form class="form" action="./confirm.html" method="post">
+        {{ foreach $page.error as $key => $value }}
+                            {{ $value|noescape }}<br>
+                            {{ end }}
             <div class="item">
                 <div class="grid">
                     <div class="col01">

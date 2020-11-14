@@ -292,9 +292,9 @@ class Contact extends MyApplication
      * 送信完了画面
      * Result window
      */
-    public function complete()
+    public function result()
     {
-        $this->displayPage($this->contact_config['template'].'/complete');
+        $this->displayPage($this->contact_config['template'].'/result');
     }
 }
 /* End Of File: code/application/Contact.php */
