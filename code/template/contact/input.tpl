@@ -387,7 +387,7 @@
                     </div>
                     <div class="col02">
                         {{ assign $iagree = 'iagree' }}
-                        {{ if isset($page.error.address )}}
+                        {{ if isset($page.error.iagree )}}
                         <div class="tltBasic01 tlt03">
                             <div class="ttl">
                                 必ず入力してください。
