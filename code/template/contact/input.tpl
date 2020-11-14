@@ -156,7 +156,7 @@
                                         </svg>
 
                                     </span>
-                                    {end}
+                                    {{end}}
                                 </label>
                                 <label for="label_01" class="title">資料請求</label>
                             </div>
