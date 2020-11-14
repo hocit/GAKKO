@@ -88,45 +88,41 @@ class Contact extends MyApplication
     {
         $validation = $this->getClass('Validation');
 
-        $name = 'お問い合わせ内容';
-        $id = 'cont';
+        $name = 'お子様のお名前';
+        $id = 'child_name';
         $validation->required($id, $this->in($id), array('@required',  $name));
 
-        $id = 'name';
-        $name = 'お名前';
+        $name = 'ふりがな';
+        $id = 'child_name_furigana';
         $validation->required($id, $this->in($id), array('@required',  $name));
 
-        $id = 'furi';
-        $name = 'フリガナ';
+        $name = 'お子様の年齢・学年';
+        $id = 'child_age';
         $validation->required($id, $this->in($id), array('@required',  $name));
 
-        $id = 'zip1';
-        if (! $this->in('zip1') || ! $this->in('zip2')) {
-            $validation->_setError($id, '<strong>郵便番号</strong> をご入力ください');
-        }
-        $id = 'pref';
-        if (! $this->in('pref') || ! $this->in('address1') || ! $this->in('address2')) {
-            $validation->_setError($id, '<strong>ご住所</strong> をご入力ください');
-        }
+        $name = '保護者様のお名前';
+        $id = 'parent_name';
+        $validation->required($id, $this->in($id), array('@required',  $name));
+
+        $name = 'ふりがな';
+        $id = 'parent_name_furigana';
+        $validation->required($id, $this->in($id), array('@required',  $name));
 
         $name = 'メールアドレス';
-        $id = 'mail';
-        $validation->required($id, $this->in($id), array('@required',  $name));
-        $validation->email($id, $this->in($id), array('@email',     $name));
-
-        $id = 'tel1';
-        if (! $this->in('tel1') || ! $this->in('tel2') || ! $this->in('tel3')) {
-            $validation->_setError($id, '<strong>電話番号</strong> をご入力ください');
-        }
-
-        $name = '内容';
-        $id = 'body';
+        $id = 'email';
         $validation->required($id, $this->in($id), array('@required',  $name));
 
-        $id = 'personal';
-        if ($this->in('personal') != '同意する') {
-            $validation->_setError($id, '<strong>個人情報のお取り扱いについて</strong> をご確認し同意下さい');
-        }
+        $name = 'お電話番号';
+        $id = 'tel';
+        $validation->required($id, $this->in($id), array('@required',  $name));
+
+        $name = 'ご住所';
+        $id = 'address';
+        $validation->required($id, $this->in($id), array('@required',  $name));
+
+        $name = '同意する';
+        $id = 'iagree';
+        $validation->required($id, $this->in($id), array('@required',  $name));
 
         // 正当性確認
         // Return validate result
@@ -161,7 +157,7 @@ class Contact extends MyApplication
         // エラーチェック
         // Check validation
         $errorMessage = $this->_validatePostedData();
-        var_dump($errorMessage);
+
         if (! $errorMessage) {
             $this->setTicket($this->contact_config['session_key_ticket']);
 

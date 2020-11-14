@@ -30,7 +30,7 @@ $validation_error_message['@password'] = '<strong>%s</strong> は登録できな
 // @item should be mixing of alphanumeric.
 $validation_error_message['@password_mixed_letters'] = '<strong>%s</strong> は半角英数の混合で入力してください';
 // @item is required.
-$validation_error_message['@required'] = '<strong>%s</strong> をご入力ください';
+$validation_error_message['@required'] = '必ず入力してください。';
 // @item is not Tel format.
 $validation_error_message['@tel'] = '<stron>%s</strong> は登録できない形式です';
 // @item is not Time format.
