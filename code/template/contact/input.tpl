@@ -155,7 +155,7 @@
                     <div class="col02">
                         {{ assign $child_name = 'child_name' }}
                         {{ if isset($page.error.child_name )}}
-                        <input name="{{ $child_name }}" type="text" class="iptBasic01 ipt01" placeholder="山田太郎">
+                        <input name="{{ $child_name }}" type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="山田太郎">
                         <div class="tltBasic01 tlt02">
                             <div class="ttl">
                                 必ず入力してください。
@@ -163,7 +163,7 @@
                            <div class="arrow"></div>
                         </div>
                         {{ else }}
-                        <input name="{{ $child_name }}" type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="山田太郎">
+                        <input name="{{ $child_name }}" type="text" class="iptBasic01 ipt01" placeholder="山田太郎">
                         {{ end }}
                     </div>
                 </div>
