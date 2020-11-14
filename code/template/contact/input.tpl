@@ -180,7 +180,18 @@
                     </div>
                     <div class="col02">
                         {{ assign $child_name_furigana = 'child_name_furigana' }}
+                        {{ if isset($page.error.child_name_furigana )}}
+                        <input name="{{ $child_name_furigana }}" type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="やまだたろう">
+                        <div class="tltBasic01 tlt02">
+                            <div class="ttl">
+                                必ず入力してください。
+                            </div>
+                           <div class="arrow"></div>
+                        </div>
+                        {{ else }}
                         <input name="{{ $child_name_furigana }}" type="text" class="iptBasic01 ipt01" placeholder="やまだたろう">
+                        {{ end }}
+                        
                     </div>
                 </div>
             </div>
