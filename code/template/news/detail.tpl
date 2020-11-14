@@ -56,15 +56,19 @@
         <div class="content">{{ $page.data.content|noescape }}</div>
         <div class="pagination">
             <div class="list">
+                {{ if isset($page.prev.news_id) }}
                 <a href="{{ base }}/school/news/detail_{{ $page.prev.news_id }}.html" class="item">
                     Prev
                 </a>
-                <a href="." class="item">
+                {{ end }}
+                <a href="{{ base }}/{{ $menu_info['news'] }}" class="item">
                     一覧へ戻る
                 </a>
+                {{ if isset($page.prev.news_id) }}
                 <a href="{{ base }}/school/news/detail_{{ $page.next.news_id }}.html" class="item">
                     Next
                 </a>
+                {{ end }}
             </div>
         </div>
     </div>
