@@ -50,13 +50,13 @@
         <div class="meta">
             {{ assign $format = 'Y.m.d' }}
             <div class="date">{{ $page.data.post_date|feggDate:$format }}</div>
-            {{ if $post.category === 'yinyama_style_scola_premiere' }}
+                {{ if $page.data.category === 'yinyama_style_scola_premiere' }}
                 <div class="badgeBasic01 badgeBasic01Small badgeBasic01#356FBF">{{ $page.data.category|feggCategoryLabel:'news' }}</div>
-                {{ elseif $post.category === 'mpi_english_club' }}
+                {{ elseif $page.data.category === 'mpi_english_club' }}
                 <div class="badgeBasic01 badgeBasic01Small badgeBasic01#E57AC0">{{ $page.data.category|feggCategoryLabel:'news' }}</div>
-                {{ elseif $post.category === 'other' }}
+                {{ elseif $page.data.category === 'other' }}
                 <div class="badgeBasic01 badgeBasic01Small badgeBasic01#848484">{{ $page.data.category|feggCategoryLabel:'news' }}</div>
-                {{ elseif $post.category === 'ploglab' }}
+                {{ elseif $page.data.category === 'ploglab' }}
                 <div class="badgeBasic01 badgeBasic01Small badgeBasic01#F0BB1C">{{ $page.data.category|feggCategoryLabel:'news' }}</div>
                 {{ end }}
         </div>
