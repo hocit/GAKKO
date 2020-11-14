@@ -59,7 +59,7 @@ class School extends MyApplication
         } else {
             // 件数設定
             // Assignment row count
-            $listMax = 10;
+            $listMax = 5;
 
             // データ取得
             // Get data
