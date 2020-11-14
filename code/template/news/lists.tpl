@@ -55,28 +55,7 @@
             </a>
             {{ end foreach }}
         </div>
-        {{ if $page.pager.page_max > 1 }}
-        <div class="pagination">
-            <div class="list">
-                {{ if $page.pager.previous_page }}
-                <a href="./?p={{ $page.pager.previous_page }}" class="item">
-                    Prev
-                </a>
-                {{ end }}
-                {{ loop $i = $page.pager.page_min to $page.pager.page_max }}
-                {{ if $i == $page.pager.current_page }}
-                <a href="./?p={{ $i }}" class="item">
-                    {{ $i }}
-                </a>
-                {{ end }}
-                {{ if $page.pager.next_page }}
-                <a href="./?p={{ $page.pager.next_page }}" class="item">
-                    Next
-                </a>
-                {{ end }}
-            </div>
-        </div>
-        {{ end }}
+
     </div>
 </section>
 
