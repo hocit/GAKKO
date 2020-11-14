@@ -1,5 +1,5 @@
-{{ assign $site.title = 'プライバシーポリシー | ' . $site.title }}
-{{ assign $site.description = 'PRIVACY POLICY | ' . $site.description }}
+{{ assign $site.title = 'サイトマップ | ' . $site.title }}
+{{ assign $site.description = 'SITE MAP | ' . $site.description }}
 {{ assign $site.url = 'sitemap/' }}
 {{ assign $footer_type = 'type_1' }}
 
@@ -14,8 +14,8 @@
 <section class="secBasic01 secBasic01sitemap">
     <div class="container">
         <div class="txt">
-            <h1 class="title">プライバシーポリシー</h1>
-            <div class="subtitle">PRIVACY POLICY</div>
+            <h1 class="title">サイトマップ</h1>
+            <div class="subtitle">SITE MAP</div>
         </div>
     </div>
 </section>
