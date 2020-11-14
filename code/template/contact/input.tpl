@@ -268,7 +268,7 @@
                             <div class="arrow"></div>
                         </div>
                         {{ else }}
-                        <input name="{{ $child_age }}" type="text" class="iptBasic01 ipt01" placeholder="小学1年生">
+                        <input name="{{ $child_age }}" value="{{ $page.data[ $child_age ] }}"  type="text" class="iptBasic01 ipt01" placeholder="小学1年生">
                         {{ end }}
                     </div>
                 </div>
@@ -295,7 +295,7 @@
                             <div class="arrow"></div>
                         </div>
                         {{ else }}
-                        <input name="{{ $parent_name }}" type="text" class="iptBasic01 ipt01" placeholder="山田太郎">
+                        <input name="{{ $parent_name }}" value="{{ $page.data[ $parent_name ] }}" type="text" class="iptBasic01 ipt01" placeholder="山田太郎">
                         {{ end }}
                     </div>
                 </div>
@@ -322,7 +322,7 @@
                             <div class="arrow"></div>
                         </div>
                         {{ else }}
-                        <input name="{{ $parent_name_furigana }}" type="text" class="iptBasic01 ipt01"
+                        <input name="{{ $parent_name_furigana }}" value="{{ $page.data[ $parent_name_furigana ] }}" type="text" class="iptBasic01 ipt01"
                             placeholder="やまだたろう">
                         {{ end }}
                     </div>
@@ -341,8 +341,7 @@
                     <div class="col02">
                         {{ assign $email = 'email' }}
                         {{ if isset($page.error.email )}}
-                        <input name="{{ $email }}" type="text" class="iptBasic01 iptBasic01err ipt01"
-                            placeholder="ryouhin@chunichi-shobou.co.jp">
+                        <input name="{{ $email }}" type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="ryouhin@chunichi-shobou.co.jp">
                         <div class="tltBasic01 tlt02">
                             <div class="ttl">
                                 必ず入力してください。
@@ -350,8 +349,7 @@
                             <div class="arrow"></div>
                         </div>
                         {{ else }}
-                        <input name="{{ $email }}" type="text" class="iptBasic01 ipt01"
-                            placeholder="ryouhin@chunichi-shobou.co.jp">
+                        <input name="{{ $email }}" value="{{ $page.data[ $email ] }}" type="text" class="iptBasic01 ipt01" placeholder="ryouhin@chunichi-shobou.co.jp">
                         {{ end }}
                     </div>
                 </div>
@@ -369,8 +367,7 @@
                     <div class="col02">
                         {{ assign $tel = 'tel' }}
                         {{ if isset($page.error.tel )}}
-                        <input name="{{ $tel }}" type="text" class="iptBasic01 iptBasic01err ipt01"
-                            placeholder="052-931-0400">
+                        <input name="{{ $tel }}" type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="052-931-0400">
                         <div class="tltBasic01 tlt02">
                             <div class="ttl">
                                 必ず入力してください。
@@ -378,7 +375,7 @@
                             <div class="arrow"></div>
                         </div>
                         {{ else }}
-                        <input name="{{ $tel }}" type="text" class="iptBasic01 ipt01" placeholder="052-931-0400">
+                        <input name="{{ $tel }}" value="{{ $page.data[ $tel ] }}" type="text" class="iptBasic01 ipt01" placeholder="052-931-0400">
                         {{ end }}
                     </div>
                 </div>
@@ -396,8 +393,7 @@
                     <div class="col02">
                         {{ assign $address = 'address' }}
                         {{ if isset($page.error.address )}}
-                        <input name="{{ $address }}" type="text" class="iptBasic01 iptBasic01err ipt01"
-                            placeholder="愛知県名古屋市東区代官町34番15号">
+                        <input name="{{ $address }}" type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="愛知県名古屋市東区代官町34番15号">
                         <div class="tltBasic01 tlt02">
                             <div class="ttl">
                                 必ず入力してください。
@@ -405,8 +401,7 @@
                             <div class="arrow"></div>
                         </div>
                         {{ else }}
-                        <input name="{{ $address }}" type="text" class="iptBasic01 ipt01"
-                            placeholder="愛知県名古屋市東区代官町34番15号">
+                        <input name="{{ $address }}" value="{{ $page.data[ $address ] }}" type="text" class="iptBasic01 ipt01" placeholder="愛知県名古屋市東区代官町34番15号">
                         {{ end }}
                     </div>
                 </div>
@@ -464,7 +459,7 @@
                         <div class="iagree">
                             <div class="chk">
                                 <label for="label_04" class="chkBasic01 chk01">
-                                    <input name="{{ $iagree }}" type="checkbox" id="label_04">
+                                    <input name="{{ $iagree }}" value="1" type="checkbox" id="label_04">
                                     <span class="mark">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
                                             viewBox="0 0 16.562 10.917">
