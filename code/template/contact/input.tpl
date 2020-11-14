@@ -9,7 +9,7 @@
 
 {{ section contents }}
 
-{{ test|feggCheck:$site.url:'school/schola/contact/' }}
+{{ $test|feggCheck:$site.url:'school/schola/contact/' }}
 
 <section class="secBasic01 secBasic01contact">
     <div class="container">
