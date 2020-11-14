@@ -49,7 +49,7 @@
         <div class="list">
             {{ assign $format = 'Y.m.d' }}
             {{ foreach $page.data as $key => $post }}
-            <a href="./detail_{{ $post[ $page.id ] }}.html" class="item">
+            <a href="{{ base }}/school/news/detail_{{ $post[ $page.id ] }}.html" class="item">
                 <div class="date">{{ $post.post_date|feggDate:$format }}</div>
                 <div class="badge badgeBasic01 badgeBasic01#356FBF">{{ $post.category|feggCategoryLabel:'news' }}</div>
                 <div class="title">{{ $post.title }}</div>
@@ -60,17 +60,17 @@
         <div class="pagination">
             <div class="list">
                 {{ if $page.pager.previous_page }}
-                <a href="./?p={{ $page.pager.previous_page }}" class="item">Prev</a>
+                <a href="{{ base }}/school/news/?p={{ $page.pager.previous_page }}" class="item">Prev</a>
                 {{ end }}
                 {{ loop $i = $page.pager.page_min to $page.pager.page_max }}
                 {{ if $i == $page.pager.current_page }}
-                <a href="./?p={{ $i }}" class="item itemActive">{{ $i }}</a>
+                <a href="{{ base }}/school/news/?p={{ $i }}" class="item itemActive">{{ $i }}</a>
                 {{ else }}
-                <a href="./?p={{ $i }}" class="item">{{ $i }}</a>
+                <a href="{{ base }}/school/news/?p={{ $i }}" class="item">{{ $i }}</a>
                 {{ end }}
                 {{ end }}
                 {{ if $page.pager.next_page }}
-                <a href="./?p={{ $page.pager.next_page }}" class="item">Next</a>
+                <a href="{{ base }}/school/news/?p={{ $page.pager.next_page }}" class="item">Next</a>
                 {{ end }}
             </div>
         </div>
