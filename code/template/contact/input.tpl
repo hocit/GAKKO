@@ -1,6 +1,7 @@
 {{ assign $site.title = 'スコーラについてのお問い合わせ | ' . $site.title }}
 {{ assign $site.description = 'CONTACT | ' . $site.description }}
 {{ assign $site.url = 'school/schola/contact/' }}
+{{ assign $type = 1 }}
 
 {{ transclude '../template/siteframe' }}
 
