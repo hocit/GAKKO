@@ -95,7 +95,8 @@
                         <div class="grid">
                             <div class="item item01">
                                 <label for="label_01" class="chkBasic01 chkBasic01err chk01">
-                                    <input type="checkbox" id="label_01">
+                                    {{ assign $type_request = 'type_request' }}
+                                    <input type="checkbox" id="label_01" name="{{ $type_request }}">
                                     <span class="mark">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
                                             viewBox="0 0 16.562 10.917">
@@ -157,7 +158,8 @@
                         </div>
                     </div>
                     <div class="col02">
-                        <input type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="山田太郎">
+                        {{ assign $child_name = 'child_name' }}
+                        <input name="{{ $child_name }}" type="text" class="iptBasic01 ipt01" placeholder="山田太郎">
                         <div class="tltBasic01 tlt02">
                             <div class="ttl">
                                 必ず入力してください。
@@ -178,7 +180,8 @@
                         </div>
                     </div>
                     <div class="col02">
-                        <input type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="やまだたろう">
+                        {{ assign $child_name_furigana = 'child_name_furigana' }}
+                        <input name="{{ $child_name_furigana }}" type="text" class="iptBasic01 ipt01" placeholder="やまだたろう">
                         <div class="tltBasic01 tlt02">
                             <div class="ttl">
                                 必ず入力してください。
@@ -199,7 +202,8 @@
                         </div>
                     </div>
                     <div class="col02">
-                        <input type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="小学1年生">
+                        {{ assign $child_age = 'child_age' }}
+                        <input name="{{ $child_age }}" type="text" class="iptBasic01 ipt01" placeholder="小学1年生">
                         <div class="tltBasic01 tlt02">
                             <div class="ttl">
                                 必ず入力してください。
@@ -220,7 +224,8 @@
                         </div>
                     </div>
                     <div class="col02">
-                        <input type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="山田太郎">
+                        {{ assign $parent_name = 'parent_name' }}
+                        <input name="{{ $parent_name }}" type="text" class="iptBasic01 ipt01" placeholder="山田太郎">
                         <div class="tltBasic01 tlt02">
                             <div class="ttl">
                                 必ず入力してください。
@@ -241,7 +246,8 @@
                         </div>
                     </div>
                     <div class="col02">
-                        <input type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="やまだたろう">
+                        {{ assign $parent_name_furigana = 'parent_name_furigana' }}
+                        <input name="{{ $parent_name_furigana }}" type="text" class="iptBasic01 ipt01" placeholder="やまだたろう">
                         <div class="tltBasic01 tlt02">
                             <div class="ttl">
                                 必ず入力してください。
@@ -262,8 +268,8 @@
                         </div>
                     </div>
                     <div class="col02">
-                        <input type="text" class="iptBasic01 iptBasic01err ipt01"
-                            placeholder="ryouhin@chunichi-shobou.co.jp">
+                        {{ assign $email = 'email' }}
+                        <input name="{{ $email }}" type="text" class="iptBasic01 ipt01" placeholder="ryouhin@chunichi-shobou.co.jp">
                         <div class="tltBasic01 tlt02">
                             <div class="ttl">
                                 必ず入力してください。
@@ -284,7 +290,8 @@
                         </div>
                     </div>
                     <div class="col02">
-                        <input type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="052-931-0400">
+                        {{ assign $tel = 'tel' }}
+                        <input name="{{ $tel }}" type="text" class="iptBasic01 ipt01" placeholder="052-931-0400">
                         <div class="tltBasic01 tlt02">
                             <div class="ttl">
                                 必ず入力してください。
@@ -305,7 +312,8 @@
                         </div>
                     </div>
                     <div class="col02">
-                        <input type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="愛知県名古屋市東区代官町34番15号">
+                        {{ assign $address = 'address' }}
+                        <input name="{{ $address }}" type="text" class="iptBasic01 ipt01" placeholder="愛知県名古屋市東区代官町34番15号">
                         <div class="tltBasic01 tlt02">
                             <div class="ttl">
                                 必ず入力してください。
@@ -322,7 +330,8 @@
                             ご記入ください</div>
                     </div>
                     <div class="col02">
-                        <textarea name="" id="" cols="30" rows="10" class="txtBasic01 txt01"
+                        {{ assign $question = 'question' }}
+                        <textarea name="{{ $question }}" id="" cols="30" rows="10" class="txtBasic01 txt01"
                             placeholder="お問い合わせ内容をご記入ください"></textarea>
                     </div>
                 </div>
@@ -347,7 +356,8 @@
                         <div class="iagree">
                             <div class="chk">
                                 <label for="label_04" class="chkBasic01 chkBasic01err chk01">
-                                    <input type="checkbox" id="label_04">
+                                    {{ assign $iagree = 'iagree' }}
+                                    <input name="{{ $iagree }}" type="checkbox" id="label_04">
                                     <span class="mark">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
                                             viewBox="0 0 16.562 10.917">
