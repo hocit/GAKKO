@@ -257,50 +257,50 @@
         <div class="grid">
             <div class="col col01">
                 <div class="nav">
-                    <a href="" class="item item01">
+                    <a href="{{ base }}/{{ $menu_info['company'] }}" class="item item01">
                         <svg xmlns="http://www.w3.org/2000/svg" width="9.207" height="17.414"
                             viewBox="0 0 9.207 17.414">
                             <path id="Path_44" data-name="Path 44" d="M9291.7,7842.993l8,8-8,8"
                                 transform="translate(-9290.992 -7842.286)" fill="none" stroke="#080808"
                                 stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
                         </svg>
-                        その他スクール</a>
+                        企業情報</a>
                 </div>
             </div>
             <div class="col col02">
                 <div class="nav">
-                    <a href="" class="item item01">
+                    <a href="{{ base }}/{{ $menu_info['privacy'] }}" class="item item01">
                         <svg xmlns="http://www.w3.org/2000/svg" width="9.207" height="17.414"
                             viewBox="0 0 9.207 17.414">
                             <path id="Path_44" data-name="Path 44" d="M9291.7,7842.993l8,8-8,8"
                                 transform="translate(-9290.992 -7842.286)" fill="none" stroke="#080808"
                                 stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
                         </svg>
-                        その他スクール</a>
+                        プライバシーポリシー</a>
                 </div>
             </div>
             <div class="col col03">
                 <div class="nav">
-                    <a href="" class="item item01">
+                    <a href="{{ base }}/{{ $menu_info['sitemap'] }}" class="item item01">
                         <svg xmlns="http://www.w3.org/2000/svg" width="9.207" height="17.414"
                             viewBox="0 0 9.207 17.414">
                             <path id="Path_44" data-name="Path 44" d="M9291.7,7842.993l8,8-8,8"
                                 transform="translate(-9290.992 -7842.286)" fill="none" stroke="#080808"
                                 stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
                         </svg>
-                        その他スクール</a>
+                        サイトマップ</a>
                 </div>
             </div>
             <div class="col col04">
                 <div class="nav">
-                    <a href="" class="item item01">
+                    <a href="{{ base }}/{{ $menu_info['contact'] }}" class="item item01">
                         <svg xmlns="http://www.w3.org/2000/svg" width="9.207" height="17.414"
                             viewBox="0 0 9.207 17.414">
                             <path id="Path_44" data-name="Path 44" d="M9291.7,7842.993l8,8-8,8"
                                 transform="translate(-9290.992 -7842.286)" fill="none" stroke="#080808"
                                 stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
                         </svg>
-                        その他スクール</a>
+                        お問い合わせ</a>
                 </div>
             </div>
         </div>
