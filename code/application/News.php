@@ -100,7 +100,7 @@ class News extends MyApplication
         $this->_setData($id);
 
         if (! $this->page['data']) {
-            $this->redirect('news');
+            $this->redirect('news/');
         }
 
         $this->displayPage('news/detail');
