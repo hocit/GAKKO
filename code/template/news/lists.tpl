@@ -23,7 +23,7 @@
 <section class="secBasic03">
     <div class="container">
         <div class="list">
-            <a href="#" class="item link">TOP</a>
+            <a href="/" class="item link">TOP</a>
             <div class="item link icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="5.2" height="7.399" viewBox="0 0 5.2 7.399">
                     <path id="Path_44" data-name="Path 44" d="M9291.7,7842.992l4,3-4,3"
