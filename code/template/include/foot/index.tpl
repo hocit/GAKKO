@@ -137,6 +137,7 @@ PlogLABに関する
 </section>
 {{ end }}
 <footer class="footerBasic01">
+    {{ $className|feggCheck:$site.url:'school/schola/contact/' }}
     {{ if !isset($site.url) || $site.url === 'school/' || $site.url === 'school/schola/' || $site.url === 'school/schola/curriculum/' || $site.url === 'school/developer/' || $site.url === 'school/news/' || $site.url === 'school/schola/contact/' || $site.url === 'company/' || $site.url === 'privacy/' || $site.url === 'sitemap/' }}
     {{ else }}
     <div class="backTop">
