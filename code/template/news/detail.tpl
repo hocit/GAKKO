@@ -64,7 +64,7 @@
                 <a href="{{ base }}/{{ $menu_info['news'] }}" class="item">
                     一覧へ戻る
                 </a>
-                {{ if isset($page.prev.news_id) }}
+                {{ if isset($page.next.news_id) }}
                 <a href="{{ base }}/school/news/detail_{{ $page.next.news_id }}.html" class="item">
                     Next
                 </a>
