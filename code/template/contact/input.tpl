@@ -178,7 +178,7 @@
                             </div>
                             <div class="item item01">
                                 <label for="label_03" class="chkBasic01 chk01">
-                                    {{ if(in_array($page.data[ $type_request ],'question') }}
+                                    {{ if in_array($page.data[ $type_request ],'question') }}
                                     <input type="checkbox" value="question" id="label_03" name="{{ $type_request }}[]">
                                     {{ end }}
                                     <span class="mark">
