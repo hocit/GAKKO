@@ -94,7 +94,8 @@
                         </div>
                     </div>
                     <div class="col02">
-                        山田太郎
+                        {{ assign $child_name = 'child_name' }}
+                        {{ $page.data[ $child_name ] }}
                     </div>
                 </div>
             </div>
@@ -107,7 +108,8 @@
 
                     </div>
                     <div class="col02">
-                        やまだたろう
+                        {{ assign $child_name_furigana = 'child_name_furigana' }}
+                        {{ $page.data[ $child_name_furigana ] }}
                     </div>
                 </div>
             </div>
@@ -120,7 +122,8 @@
 
                     </div>
                     <div class="col02">
-                        小学1年生
+                        {{ assign $child_age = 'child_age' }}
+                        {{ $page.data[ $child_age ] }}
                     </div>
                 </div>
             </div>
@@ -133,7 +136,8 @@
 
                     </div>
                     <div class="col02">
-                        山田太郎
+                        {{ assign $parent_name = 'parent_name' }}
+                        {{ $page.data[ $parent_name ] }}
                     </div>
                 </div>
             </div>
@@ -146,7 +150,8 @@
 
                     </div>
                     <div class="col02">
-                        やまだたろう
+                        {{ assign $parent_name_furigana = 'parent_name_furigana' }}
+                        {{ $page.data[ $parent_name_furigana ] }}
                     </div>
                 </div>
             </div>
@@ -159,7 +164,8 @@
 
                     </div>
                     <div class="col02">
-                        ryouhin@chunichi-shobou.co.jp
+                        {{ assign $email = 'email' }}
+                        {{ $page.data[ $email ] }}
                     </div>
                 </div>
             </div>
@@ -172,7 +178,8 @@
 
                     </div>
                     <div class="col02">
-                        愛知県名古屋市東区代官町34番15号
+                        {{ assign $address = 'address' }}
+                        {{ $page.data[ $address ] }}
                     </div>
                 </div>
             </div>
@@ -185,7 +192,8 @@
 
                     </div>
                     <div class="col02">
-                        052-931-0400
+                        {{ assign $tel = 'tel' }}
+                        {{ $page.data[ $tel ] }}
                     </div>
                 </div>
             </div>
@@ -197,7 +205,8 @@
                     </div>
                     <div class="col02">
                         <div class="txt">
-                            お問い合わせ内容が入ります。この文章はダミーです。お問い合わせ内容が入ります。この文章はダミーです。お問い合わせ内容が入ります。この文章はダミーです。お問い合わせ内容が入ります。この文章はダミーです。お問い合わせ内容が入ります。この文章はダミーです。お問い合わせ内容が入ります。この文章はダミーです。お問い合わせ内容が入ります。この文章はダミーです。お問い合わせ内容が入ります。この文章はダミーです。お問い合わせ内容が入ります。この文章はダミーです。お問い合わせ内容が入ります。この文章はダミーです。お問い合わせ内容が入ります。この文章はダミーです。お問い合わせ内容が入ります。この文章はダミーです。お問い合わせ内容が入ります。この文章はダミーです。お問い合わせ内容が入ります。この文章はダミーです。お問い合わせ内容が入ります。この文章はダミーです。
+                            {{ assign $question = 'question' }}
+                            {{ $page.data[ $question ] }}
                         </div>
                     </div>
                 </div>
@@ -208,10 +217,10 @@
                         <div class="title">
                             個人情報保護方針
                         </div>
-
                     </div>
                     <div class="col02">
-                        同意する
+                        {{ assign $question = 'question' }}
+                        {{ $page.data[ $question ] }}
                     </div>
                 </div>
             </div>
