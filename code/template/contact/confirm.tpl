@@ -92,7 +92,6 @@
                         <div class="title">
                             お子様のお名前
                         </div>
-
                     </div>
                     <div class="col02">
                         山田太郎

@@ -95,7 +95,7 @@
                             {{ if isset($page.error.type_request )}}
                             <div class="item item01">
                                 <label for="label_01" class="chkBasic01 chkBasic01err chk01">
-                                    <input type="checkbox" value="document" id="label_01" name="{{ $type_request }}[]">
+                                    <input type="checkbox" value="資料請求" id="label_01" name="{{ $type_request }}[]">
                                     <span class="mark">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
                                             viewBox="0 0 16.562 10.917">
@@ -110,7 +110,7 @@
                             </div>
                             <div class="item item01">
                                 <label for="label_02" class="chkBasic01 chkBasic01err chk01">
-                                    <input type="checkbox" value="lesson" id="label_02" name="{{ $type_request }}[]">
+                                    <input type="checkbox" value="体験授業" id="label_02" name="{{ $type_request }}[]">
                                     <span class="mark">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
                                             viewBox="0 0 16.562 10.917">
@@ -124,7 +124,7 @@
                             </div>
                             <div class="item item01">
                                 <label for="label_03" class="chkBasic01 chkBasic01err chk01">
-                                    <input type="checkbox" value="question" id="label_03" name="{{ $type_request }}[]">
+                                    <input type="checkbox" value="その他質問など" id="label_03" name="{{ $type_request }}[]">
                                     <span class="mark">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
                                             viewBox="0 0 16.562 10.917">
@@ -145,10 +145,10 @@
                             {{ else}}
                             <div class="item item01">
                                 <label for="label_01" class="chkBasic01 chk01">
-                                    {{ if $page.data[ $type_request ][0] === 'document' }}
+                                    {{ if $page.data[ $type_request ][0] === '資料請求' }}
                                     <input type="checkbox" checked value="document" id="label_01" name="{{ $type_request }}[]">
                                     {{ else }}
-                                    <input type="checkbox" value="document" id="label_01" name="{{ $type_request }}[]">
+                                    <input type="checkbox" value="資料請求" id="label_01" name="{{ $type_request }}[]">
                                     {{ end }}
                                     <span class="mark">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
@@ -164,7 +164,7 @@
                             </div>
                             <div class="item item01">
                                 <label for="label_02" class="chkBasic01 chk01">
-                                    {{ if $page.data[ $type_request ][0] === 'lesson' || $page.data[ $type_request ][1] === 'lesson' }}
+                                    {{ if $page.data[ $type_request ][0] === '体験授業' || $page.data[ $type_request ][1] === '体験授業' }}
                                     <input type="checkbox" checked value="lesson" id="label_02" name="{{ $type_request }}[]">
                                     {{ else }}
                                     <input type="checkbox" value="lesson" id="label_02" name="{{ $type_request }}[]">
@@ -182,7 +182,7 @@
                             </div>
                             <div class="item item01">
                                 <label for="label_03" class="chkBasic01 chk01">
-                                    {{ if $page.data[ $type_request ][0] === 'question' || $page.data[ $type_request ][1] === 'question' || $page.data[ $type_request ][2] === 'question' }}
+                                    {{ if $page.data[ $type_request ][0] === 'その他質問など' || $page.data[ $type_request ][1] === 'その他質問など' || $page.data[ $type_request ][2] === 'その他質問など' }}
                                     <input type="checkbox" checked value="question" id="label_03" name="{{ $type_request }}[]">
                                     {{ else }}
                                     <input type="checkbox" value="question" id="label_03" name="{{ $type_request }}[]">
