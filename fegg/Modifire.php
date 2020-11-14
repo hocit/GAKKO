@@ -160,7 +160,7 @@ function feggMenus()
     return $menu_info;
 }
 
-function feggExcerpt($string)
+function feggExcerpt45($string)
 {
     return substr($string, 0, 45).'...';
 }
