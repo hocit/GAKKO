@@ -58,7 +58,7 @@
                 <a href="" class="item">
                     Prev
                 </a>
-                <a href="" class="item">
+                <a href="./news/" class="item">
                     一覧へ戻る
                 </a>
                 <a href="" class="item">
