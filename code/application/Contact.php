@@ -69,7 +69,7 @@ class Contact extends MyApplication
         parent::__init();
 
         $this->loadConfig('site_info');
-        foreach($this->config['site_info'] as $key => $val) {
+        foreach ($this->config['site_info'] as $key => $val) {
             $this->setSiteInfo($key, $val);
         }
 
@@ -101,21 +101,21 @@ class Contact extends MyApplication
         $validation->required($id, $this->in($id), array('@required',  $name));
 
         $id = 'zip1';
-        if(! $this->in('zip1') || ! $this->in('zip2')) {
+        if (! $this->in('zip1') || ! $this->in('zip2')) {
             $validation->_setError($id, '<strong>郵便番号</strong> をご入力ください');
         }
         $id = 'pref';
-        if(! $this->in('pref') || ! $this->in('address1') || ! $this->in('address2')) {
+        if (! $this->in('pref') || ! $this->in('address1') || ! $this->in('address2')) {
             $validation->_setError($id, '<strong>ご住所</strong> をご入力ください');
         }
 
         $name = 'メールアドレス';
         $id = 'mail';
         $validation->required($id, $this->in($id), array('@required',  $name));
-        $validation->email(   $id, $this->in($id), array('@email',     $name));
+        $validation->email($id, $this->in($id), array('@email',     $name));
 
         $id = 'tel1';
-        if(! $this->in('tel1') || ! $this->in('tel2') || ! $this->in('tel3')) {
+        if (! $this->in('tel1') || ! $this->in('tel2') || ! $this->in('tel3')) {
             $validation->_setError($id, '<strong>電話番号</strong> をご入力ください');
         }
 
@@ -124,7 +124,7 @@ class Contact extends MyApplication
         $validation->required($id, $this->in($id), array('@required',  $name));
 
         $id = 'personal';
-        if($this->in('personal') != '同意する') {
+        if ($this->in('personal') != '同意する') {
             $validation->_setError($id, '<strong>個人情報のお取り扱いについて</strong> をご確認し同意下さい');
         }
 
@@ -140,7 +140,7 @@ class Contact extends MyApplication
      */
     public function index()
     {
-        if($this->getSession($this->contact_config['session_key_form'])) {
+        if ($this->getSession($this->contact_config['session_key_form'])) {
             $this->page['data'] = $this->getSession($this->contact_config['session_key_form']);
             $this->unsetSession($this->contact_config['session_key_form']);
         }
@@ -162,7 +162,7 @@ class Contact extends MyApplication
         // Check validation
         $errorMessage = $this->_validatePostedData();
 
-        if(! $errorMessage) {
+        if (! $errorMessage) {
             $this->setTicket($this->contact_config['session_key_ticket']);
 
             $this->displayPage($this->contact_config['template'].'/confirm');
@@ -172,7 +172,6 @@ class Contact extends MyApplication
             $this->setSession($this->contact_config['session_key_error'], $errorMessage);
             $this->redirect($this->contact_config['error_url']);
         }
-
     }
 
 
@@ -182,8 +181,7 @@ class Contact extends MyApplication
      */
     public function error()
     {
-
-        if(! $this->getSession($this->contact_config['session_key_form'])) {
+        if (! $this->getSession($this->contact_config['session_key_form'])) {
             $this->redirect($this->contact_config['input_url']);
         }
 
@@ -202,7 +200,7 @@ class Contact extends MyApplication
      */
     public function post()
     {
-        if(
+        if (
             ! $this->useTicket($this->contact_config['session_key_ticket']) ||
             ! $this->getSession($this->contact_config['session_key_form'])
         ) {
@@ -217,11 +215,11 @@ class Contact extends MyApplication
         // 返信先設定
         // Setting reply to
         $cli_address = array();
-        foreach(explode(',', $this->page['data'][$this->contact_config['client_mail']]) as $address) {
+        foreach (explode(',', $this->page['data'][$this->contact_config['client_mail']]) as $address) {
             $cli_address[] = $address;
         }
         $cli_name = array();
-        foreach(explode(',', $this->page['data'][$this->contact_config['client_name']]) as $name) {
+        foreach (explode(',', $this->page['data'][$this->contact_config['client_name']]) as $name) {
             $cli_name[] = $name;
         }
         $cli_name = implode(' ', $cli_name);
@@ -255,7 +253,7 @@ class Contact extends MyApplication
         );
 
         $_FLAG = true;
-        foreach($cli_address as $address) {
+        foreach ($cli_address as $address) {
             $_FLAG =
                 $_FLAG &&
                 $cli_mail->send(
@@ -265,7 +263,7 @@ class Contact extends MyApplication
                 );
         }
 
-        if(
+        if (
             $_FLAG &&
             $adm_mail->send(
                 $this->contact_config['admin_mail'],
@@ -288,17 +286,15 @@ class Contact extends MyApplication
             );
             $this->redirect($this->contact_config['error_url']);
         }
-
     }
 
     /**
      * 送信完了画面
      * Result window
      */
-    public function result()
+    public function complete()
     {
-        $this->displayPage($this->contact_config['template'].'/result');
+        $this->displayPage($this->contact_config['template'].'/complete');
     }
-
 }
 /* End Of File: code/application/Contact.php */

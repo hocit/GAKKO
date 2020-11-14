@@ -44,7 +44,7 @@ $route['school/schola/contact/']                = 'contact/index';
 $route['school/schola/contact/index.html']      = 'contact/index';
 $route['school/schola/contact/confirm.html']    = 'contact/confirm';
 $route['school/schola/contact/error.html']      = 'contact/error';
-$route['school/schola/contact/result.html']     = 'contact/result';
+$route['school/schola/contact/complete.html']     = 'contact/complete';
 
 // For Company
 $route['company'] = 'company/index';
