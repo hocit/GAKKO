@@ -137,7 +137,7 @@ PlogLABに関する
 </section>
 {{ end }}
 <footer class="footerBasic01">
-    {{ assgin $test = '<p>bar</p>' }}
+    {{ assign $test = '<p>bar</p>' }}
 
     {{ $test|noescape }}
     {{$site.url}}
