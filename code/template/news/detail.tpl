@@ -56,6 +56,7 @@
         <div class="content">{{ $page.data.content|noescape }}</div>
         <div class="pagination">
             <div class="list">
+            {{ $page.next.title }}
                 <a href="{{ base }}" class="item">
                     Prev
                 </a>
