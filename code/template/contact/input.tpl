@@ -213,7 +213,7 @@
                             <div class="arrow"></div>
                         </div>
                         {{ else }}
-                        <input name="{{ $child_name }}" type="text" class="iptBasic01 ipt01" placeholder="山田太郎">
+                        <input name="{{ $child_name }}" value="{{ $page.data[ $id ] }}" type="text" class="iptBasic01 ipt01" placeholder="山田太郎">
                         {{ end }}
                     </div>
                 </div>
