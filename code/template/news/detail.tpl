@@ -57,7 +57,6 @@
         <div class="pagination">
             <div class="list">
             {{ code var_dump($page.next.title) }}
-            {{ code var_dump($page.prev.title) }}
                 <a href="{{ base }}" class="item">
                     Prev
                 </a>
