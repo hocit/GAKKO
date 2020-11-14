@@ -58,13 +58,13 @@
             <div class="list">
             {{ code var_dump($page.prev) }}
 
-                <a href="{{ base }}" class="item">
+                <a href="{{ base }}/school/news/detail_{{ $page.prev.news_id }}.html" class="item">
                     Prev
                 </a>
                 <a href="." class="item">
                     一覧へ戻る
                 </a>
-                <a href="{{ base }}/school/news/detail_{{ $page.next.id }}.html" class="item">
+                <a href="{{ base }}/school/news/detail_{{ $page.next.news_id }}.html" class="item">
                     Next
                 </a>
             </div>
