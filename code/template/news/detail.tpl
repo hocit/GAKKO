@@ -56,17 +56,17 @@
         <div class="content">{{ $page.data.content|noescape }}</div>
         <div class="pagination">
             <div class="list">
-            {{ code var_dump($page.next.title) }}
+            {{ code var_dump($page.prev) }}
+
                 <a href="{{ base }}" class="item">
                     Prev
                 </a>
                 <a href="." class="item">
                     一覧へ戻る
                 </a>
-                <a href="" class="item">
+                <a href="{{ base }}/school/news/detail_{{ $page.next.id }}.html" class="item">
                     Next
                 </a>
-                {{ code var_dump($page.prev) }}
             </div>
         </div>
     </div>
