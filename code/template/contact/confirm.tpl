@@ -1,6 +1,6 @@
 {{ assign $site.title = 'お問い合わせ [確認] | ' . $site.title }}
 {{ assign $site.description = 'お問い合わせ [確認] | ' . $site.description }}
-{{ assign $site.url = 'school/schola/contact/' }}
+{{ assign $site.url = 'school/schola/contact/confirm.html' }}
 
 {{ transclude '../template/siteframe' }}
 
