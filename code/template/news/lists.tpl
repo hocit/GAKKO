@@ -46,7 +46,7 @@
 <section class="secBasic02 secBasic02school">
     <div class="container">
         <div class="list">
-            {{ assign $format = 'Y.m/d' }}
+            {{ assign $format = 'Y.m.d' }}
             {{ foreach $page.data as $key => $post }}
             <a href="./detail_{{ $post[ $page.id ] }}.html" class="item">
                 <div class="date">{{ $post.post_date|feggDate:$format }}</div>
