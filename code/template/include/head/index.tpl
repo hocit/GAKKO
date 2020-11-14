@@ -4,12 +4,12 @@
 <header class="headerBasic01 headerBasic01aa">
 {{ end }}
     {{ if !isset($site.url) }}
-    <a href="{{ base }}" class="logo">
+    <a href="/" class="logo">
     <img src="{{ base }}/data/img/logo@2x.png" alt="株式会社学校良品" srcset="">
     </a>
     {{ else }}
     <h1>
-        <a href="{{ base }}" class="logo">
+        <a href="/" class="logo">
             <img src="{{ base }}/data/img/logo@2x.png" alt="株式会社学校良品" srcset="">
         </a>
     </h1>
@@ -20,18 +20,18 @@
                 <a href="{{ base }}" class="item">
                     店舗事業
                 </a>
-                <a href="{{ base }}/school/" class="item">
+                <a href="{{ base }}/{{ $menu_info['school'] }}" class="item">
                     教室事業
                 </a>
                 <a href="#" class="item">
                     防災・教材事業
                 </a>
-                <a href="{{ base }}/company/" class="item">
+                <a href="{{ base }}/{{ $menu_info['company'] }}" class="item">
                     企業情報
                 </a>
             </nav>
         </div>
-        <a href="{{ base }}/school/schola/contact/" class="contact">
+        <a href="{{ base }}/{{ $menu_info['contact'] }}" class="contact">
             <div class="txt">
                 <div class="title">CONTACT</div>
                 <div class="subtitle">お問い合わせ</div>
@@ -41,9 +41,17 @@
 </header>
 
 <header class="headerBasic02">
-    <div class="logo">
-        <img src="{{ base }}/data/img/logo_header01@2x.png" alt="LOGO">
+    {{ if !isset($site.url) }}
+    <a href="/" class="logo">
+        <img src="{{ base }}/data/img/logo_header01@2x.png" alt="株式会社学校良品">
     </div>
+    {{ else }}
+    <h1>
+        <a href="/" class="logo">
+        <img src="{{ base }}/data/img/logo_header01@2x.png" alt="株式会社学校良品">
+        </a>
+    </h1>
+    {{ end }}
     <div class="icon iconOpen">
         <svg xmlns="http://www.w3.org/2000/svg" width="34.5" height="44.5" viewBox="0 0 34.5 44.5">
             <g id="icn_menu" transform="translate(-258.5 -15.5)">
