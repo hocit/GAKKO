@@ -155,12 +155,15 @@
                     <div class="col02">
                         {{ assign $child_name = 'child_name' }}
                         <input name="{{ $child_name }}" type="text" class="iptBasic01 ipt01" placeholder="山田太郎">
+           
+                        {{if isset($page.error.child_name)}}
                         <div class="tltBasic01 tlt02">
                             <div class="ttl">
                                 必ず入力してください。
                             </div>
                            <div class="arrow"></div>
                         </div>
+                        {{ end }}
                     </div>
                 </div>
             </div>
