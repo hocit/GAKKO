@@ -1,3 +1,4 @@
+{{ $type }}
 {{ if !isset($site.url) || $type === '1' || $site.url === 'school/' || $site.url === 'school/news/' || $site.url === 'company/' || $site.url === 'privacy/' || $site.url === 'sitemap/' }}
 <section class="secBasic04">
     <div class="backTop">
