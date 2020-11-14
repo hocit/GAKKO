@@ -1,4 +1,4 @@
-{{ $footer_type === 'type_1' }}
+{{ if $footer_type === 'type_1' }}
 <section class="secBasic04">
     <div class="backTop">
         <svg xmlns="http://www.w3.org/2000/svg" width="25.693" height="13.054" viewBox="0 0 25.693 13.054">
