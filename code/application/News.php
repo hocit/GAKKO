@@ -33,7 +33,7 @@ class News extends MyApplication
 
         // LH用汎用クラスを読込
         // Load general class for LH Fegg
-        $this->_lh = $this->getClass( 'LH_FW', 'news' );
+        $this->_lh = $this->getClass('LH_FW', 'news');
 
         // モデルクラスを指定
         // Setup model class
@@ -51,16 +51,16 @@ class News extends MyApplication
      *
      * @param string $internalId 代入したら一件取得 / If assigned, get one row data
      */
-    private function _setData( $internalId = '' )
+    private function _setData($internalId = '')
     {
-        if( $internalId ) {
+        if ($internalId) {
             // データ取得
             // Get data
-            $this->page['data'] = $this->_model->id( $internalId );
+            $this->page['data'] = $this->_model->id($internalId);
         } else {
             // 件数設定
             // Assignment row count
-            $listMax = 20;
+            $listMax = 10;
 
             // データ取得
             // Get data
@@ -87,7 +87,7 @@ class News extends MyApplication
     {
         $this->_setData();
 
-        $this->displayPage( 'news/lists' );
+        $this->displayPage('news/lists');
     }
 
 
@@ -95,16 +95,15 @@ class News extends MyApplication
      * 詳細ページ
      * Detail page
      */
-    public function detail( $id )
+    public function detail($id)
     {
-        $this->_setData( $id );
+        $this->_setData($id);
 
-        if(! $this->page['data'] ) {
-            $this->redirect( 'news' );
+        if (! $this->page['data']) {
+            $this->redirect('news');
         }
 
-        $this->displayPage( 'news/detail' );
+        $this->displayPage('news/detail');
     }
-
 }
 /* End Of File: code/application/admin/News.php */

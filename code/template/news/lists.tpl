@@ -46,56 +46,14 @@
 <section class="secBasic02 secBasic02school">
     <div class="container">
         <div class="list">
-            <a href="" class="item">
-                <div class="date">2020.11.01</div>
-                <div class="badge badgeBasic01 badgeBasic01#356FBF">陰山式スコーラプレミア</div>
-                <div class="title">夏季休業（8月8日～8月16日）のお知らせ</div>
+            {{ assign $format = 'Y/m/d' }}
+            {{ foreach $page.data as $key => $post }}
+            <a href="./post_{{ $post[ $page.id ] }}.html" class="item">
+                <div class="date">{{ $post.post_date|feggDate:$format }}</div>
+                <div class="badge badgeBasic01 badgeBasic01#356FBF">{{ $post.category|feggCategoryLabel:'news' }}</div>
+                <div class="title">{{ $post.title }}</div>
             </a>
-            <a href="" class="item">
-                <div class="date">2020.11.01</div>
-                <div class="badge badgeBasic01 badgeBasic01#E57AC0">mpi英語倶楽部</div>
-                <div class="title">セミナー開催のお知らせ</div>
-            </a>
-            <a href="" class="item">
-                <div class="date">2020.11.01</div>
-                <div class="badge badgeBasic01 badgeBasic01#848484">その他</div>
-                <div class="title">ダミータイトルです。ダミータイトルです。ダミータイトルです。ダミータイトルです。</div>
-            </a>
-            <a href="" class="item">
-                <div class="date">2020.11.01</div>
-                <div class="badge badgeBasic01 badgeBasic01#F0BB1C">PlogLAB</div>
-                <div class="title">ダミータイトルです。ダミータイトルです。ダミータイトルです。ダミータイトルです。</div>
-            </a>
-            <a href="" class="item">
-                <div class="date">2020.11.01</div>
-                <div class="badge badgeBasic01 badgeBasic01#E57AC0">mpi英語倶楽部</div>
-                <div class="title">ダミータイトルです。ダミータイトルです。ダミータイトルです。ダミータイトルです。</div>
-            </a>
-            <a href="" class="item">
-                <div class="date">2020.11.01</div>
-                <div class="badge badgeBasic01 badgeBasic01#356FBF">その他</div>
-                <div class="title">ダミータイトルです。ダミータイトルです。ダミータイトルです。ダミータイトルです。</div>
-            </a>
-            <a href="" class="item">
-                <div class="date">2020.11.01</div>
-                <div class="badge badgeBasic01 badgeBasic01#E57AC0">陰山式スコーラプレミア</div>
-                <div class="title">ダミータイトルです。ダミータイトルです。ダミータイトルです。ダミータイトルです。</div>
-            </a>
-            <a href="" class="item">
-                <div class="date">2020.11.01</div>
-                <div class="badge badgeBasic01 badgeBasic01#848484">mpi英語倶楽部</div>
-                <div class="title">ダミータイトルです。ダミータイトルです。ダミータイトルです。ダミータイトルです。</div>
-            </a>
-            <a href="" class="item">
-                <div class="date">2020.11.01</div>
-                <div class="badge badgeBasic01 badgeBasic01#F0BB1C">PlogLAB</div>
-                <div class="title">ダミータイトルです。ダミータイトルです。ダミータイトルです。ダミータイトルです。</div>
-            </a>
-            <a href="" class="item">
-                <div class="date">2020.11.01</div>
-                <div class="badge badgeBasic01 badgeBasic01#E57AC0">その他</div>
-                <div class="title">ダミータイトルです。ダミータイトルです。ダミータイトルです。ダミータイトルです。</div>
-            </a>
+            {{ end foreach }}
         </div>
         <div class="pagination">
             <div class="list">
