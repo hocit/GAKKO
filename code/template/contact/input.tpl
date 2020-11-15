@@ -59,8 +59,8 @@
         </div>
         <div class="contact">
             <div class="txt">
-                <div class="tel">
-                    TEL：052-931-0400
+                <a href="{{ $site.tel.url }}" class="tel">
+                    TEL：{{ $site.tel.num }}
                 </div>
                 <div class="line"></div>
                 <div class="time">受付時間：9時～18時

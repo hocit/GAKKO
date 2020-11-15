@@ -3,7 +3,7 @@
 {{ else }}
 <header class="headerBasic01 headerBasic01aa">
 {{ end }}
-    {{ if !isset($site.url) }}
+    {{ if isset($site.url) }}
     <a href="/" class="logo">
     <img src="{{ base }}/data/img/Logo@2x.png" alt="株式会社学校良品" srcset="">
     </a>

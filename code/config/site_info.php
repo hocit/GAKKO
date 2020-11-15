@@ -25,5 +25,10 @@ $site_info = array(
     'picture'     => array(
         'sp' => '(max-width: 640px)',
         'pc' => '(min-width: 641px)',
+  
     ),
+    'tel' => array(
+        'url'=>'tel:0529310400',
+        'num'=>'052-931-0400'
+    )
 );

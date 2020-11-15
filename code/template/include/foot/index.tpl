@@ -155,7 +155,7 @@ PlogLABに関する
                 <div class="address">〒461-0002
 愛知県名古屋市東区代官町34番15号</div>
                 <div class="contact">
-                    Tel :<a href="tel:0529310400">052-931-0400</a> Fax:052-932-2878
+                    Tel :<a href="{{ $site.tel.url }}">{{ $site.tel.num }}</a> Fax:052-932-2878
                 </div>
             </div>
             <div class="col02">

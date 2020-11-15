@@ -77,7 +77,7 @@
                     陰山式スコーラプレミアについて
                 </div>
             </a>
-            <a href="{{ base }}/{{ $menu_info['curriculum'] }}{{ base }}" class="item">
+            <a href="{{ base }}/{{ $menu_info['curriculum'] }}" class="item">
                 <figure class="img">
                     <img src="{{ base }}/data/img/img27@2x.png" alt="" srcset="" class="pc">
                     <img src="{{ base }}/data/img/img61@2x.png" alt="" srcset="" class="sp">
