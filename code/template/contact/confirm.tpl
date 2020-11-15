@@ -64,7 +64,7 @@
                 <div class="title">送信</div>
             </div>
         </div>
-        <div class="form">
+        <form class="form" action="./post" method="post">
             <div class="item">
                 <div class="grid">
                     <div class="col01">
@@ -226,7 +226,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
         <div class="list">
             <div class="item">
                 <a href="{{ base }}/school/schola/contact/" class="btnBasic01 btn btnBasic01#232448">
@@ -251,7 +251,7 @@
                 </a>
             </div>
             <div class="item">
-                <a href="{{ base }}/school/schola/contact/complete.html" class="btnBasic01 btn btnBasic01O#232448">
+                <button type="submit" class="btnBasic01 btn btnBasic01O#232448">
                     <div class="txt">
                         <div class="title">
                             送信する
@@ -272,7 +272,7 @@
                             </svg>
                         </div>
                     </div>
-                </a>
+                </button>
             </div>
         </div>
     </div>

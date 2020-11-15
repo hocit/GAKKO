@@ -294,6 +294,7 @@ class Contact extends MyApplication
      */
     public function result()
     {
+        $this->post();
         $this->displayPage($this->contact_config['template'].'/result');
     }
 }
