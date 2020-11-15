@@ -113,7 +113,7 @@
                 お問い合わせは、下記までご連絡ください。</div>
             <div class="logo">株式会社学校良品</div>
             <div class="address">愛知県名古屋市東区代官町34番15号</div>
-            <div class="contact">Tel :052-931-0400　　Fax:052-932-2878</div>
+            <div class="contact">Tel :<a href="{{ $site.tel.url }}">{{ $site.tel.num }}</a>　　Fax:052-932-2878</div>
         </div>
     </div>
 </section>
