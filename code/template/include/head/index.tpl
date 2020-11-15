@@ -41,7 +41,7 @@
 </header>
 
 <header class="headerBasic02">
-    {{ if !isset($site.url) }}
+    {{ if isset($site.url) }}
     <a href="/" class="logo">
         <img src="{{ base }}/data/img/logo_header01@2x.png" alt="株式会社学校良品">
     </div>
