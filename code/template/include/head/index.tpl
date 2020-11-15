@@ -90,7 +90,7 @@
         </div>
         <ul class="list">
             <li class="item">
-                <a href="" class="link">
+                <a href="/" class="link">
                     トップページ
                     <svg xmlns="http://www.w3.org/2000/svg" width="8.061" height="14.707" viewBox="0 0 8.061 14.707">
                         <path id="Path_223" data-name="Path 223" d="M491.516,470.418l7,7-7,7"
@@ -132,7 +132,7 @@
                 </ul>
             </li>
             <li class="item">
-                <a href="" class="link">
+                <a href="{{ base }}/{{ $menu_info['school'] }}" class="link">
                     教室事業
                     <svg xmlns="http://www.w3.org/2000/svg" width="8.061" height="14.707" viewBox="0 0 8.061 14.707">
                         <path id="Path_223" data-name="Path 223" d="M491.516,470.418l7,7-7,7"
@@ -141,7 +141,7 @@
                 </a>
                 <ul class="list">
                     <li class="item">
-                        <a href="" class="link">
+                        <a href="{{ base }}/{{ $menu_info['schola'] }}" class="link">
                             陰山式スコーラプレミア
                             <svg xmlns="http://www.w3.org/2000/svg" width="8.061" height="14.707"
                                 viewBox="0 0 8.061 14.707">
@@ -198,7 +198,7 @@
                 </ul>
             </li>
             <li class="item">
-                <a href="" class="link">
+                <a href="{{ base }}/{{ $menu_info['news'] }}" class="link">
                     教育事業・防災事業
                     <svg xmlns="http://www.w3.org/2000/svg" width="8.061" height="14.707" viewBox="0 0 8.061 14.707">
                         <path id="Path_223" data-name="Path 223" d="M491.516,470.418l7,7-7,7"
@@ -221,17 +221,16 @@
 
             </li>
             <li class="item">
-                <a href="" class="link">
+                <a href="{{ base }}/{{ $menu_info['company'] }}" class="link">
                     企業案内
                     <svg xmlns="http://www.w3.org/2000/svg" width="8.061" height="14.707" viewBox="0 0 8.061 14.707">
                         <path id="Path_223" data-name="Path 223" d="M491.516,470.418l7,7-7,7"
                             transform="translate(-491.162 -470.064)" fill="none" stroke="#fff" stroke-width="1" />
                     </svg>
                 </a>
-
             </li>
             <li class="item">
-                <a href="" class="link">
+                <a href="{{ base }}/{{ $menu_info['privacy'] }}" class="link">
                     プライバシポリシー
                     <svg xmlns="http://www.w3.org/2000/svg" width="8.061" height="14.707" viewBox="0 0 8.061 14.707">
                         <path id="Path_223" data-name="Path 223" d="M491.516,470.418l7,7-7,7"
@@ -241,7 +240,7 @@
 
             </li>
             <li class="item">
-                <a href="" class="link">
+                <a href="{{ base }}/{{ $menu_info['sitemap'] }}" class="link">
                     サイトマップ
                     <svg xmlns="http://www.w3.org/2000/svg" width="8.061" height="14.707" viewBox="0 0 8.061 14.707">
                         <path id="Path_223" data-name="Path 223" d="M491.516,470.418l7,7-7,7"
@@ -251,7 +250,7 @@
 
             </li>
             <li class="item">
-                <a href="" class="link">
+                <a href="{{ base }}/{{ $menu_info['contact'] }}" class="link">
                     お問い合わせ
                     <svg xmlns="http://www.w3.org/2000/svg" width="8.061" height="14.707" viewBox="0 0 8.061 14.707">
                         <path id="Path_223" data-name="Path 223" d="M491.516,470.418l7,7-7,7"
