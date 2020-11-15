@@ -64,7 +64,7 @@
                 <div class="title">送信</div>
             </div>
         </div>
-        <form class="form" action="./post" method="post">
+        <form action="./post" method="post">
             <div class="form">
                 <div class="item">
                     <div class="grid">
