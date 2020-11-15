@@ -61,7 +61,7 @@
             <div class="txt">
                 <a href="{{ $site.tel.url }}" class="tel">
                     TEL：{{ $site.tel.num }}
-                </div>
+                </a>
                 <div class="line"></div>
                 <div class="time">受付時間：9時～18時
                     土日祝日、夏季休暇、年末年始を除く）</div>
