@@ -182,7 +182,7 @@
             <div class="a">〒464-8661 愛知県名古屋市千種区星が丘元町14-14 星ヶ丘三越　5F ザ・リブレット内
             </div>
             <div class="contact">
-                TEL:052-931-0400 FAX:052-932-2878
+                TEL:<a href="{{ $site.tel.url }}">{{ $site.tel.num }}</a> FAX:052-932-2878
             </div>
         </div>
     </div>
