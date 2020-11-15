@@ -78,7 +78,7 @@
                 <div class="title">送信</div>
             </div>
         </div>
-        <form class="form" action="{{ base }}/school/schola/contact/confirm.html" method="post">
+        <form action="{{ base }}/school/schola/contact/confirm.html" method="post">
             <div class="form">
                 <div class="item">
                     <div class="grid">
