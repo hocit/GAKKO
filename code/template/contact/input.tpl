@@ -492,7 +492,6 @@
                     </div>
                 </div>
             </div>
-    </div>
     <button type="submit" class="btnBasic01 btn btnBasic01O#232448">
         <div class="txt">
             <div class="title">

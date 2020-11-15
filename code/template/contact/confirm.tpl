@@ -276,6 +276,7 @@
                     </button>
                 </div>
             </div>
+            {{ hidden }}
         </form>
     </div>
 </section>
