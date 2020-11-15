@@ -200,7 +200,6 @@ class Contact extends MyApplication
      */
     public function post()
     {
-        var_dump("a");
         if (
             ! $this->useTicket($this->contact_config['session_key_ticket']) ||
             ! $this->getSession($this->contact_config['session_key_form'])

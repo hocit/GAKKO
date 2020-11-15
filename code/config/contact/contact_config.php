@@ -26,7 +26,7 @@ $_PAGE_URL_CONFIRM = '/school/schola/contact/confirm.html';
 $_PAGE_URL_ERROR = '/school/schola/contact/error.html';
 // 完了ページURL
 // Result Page URL
-$_PAGE_URL_RESULT = '/school/schola/contact/result.html';
+$_PAGE_URL_RESULT = '/school/schola/contact/complete.html';
 
 // 企業名
 // Company name
