@@ -1,5 +1,5 @@
 {{ assign $site.title = '教室事業 | 株式会社学校良品' }}
-{{ assign $site.description = ''学校良品は、まったく新しい「学び」と「物販」の融合、LIBRETTO SCHOOLを展開しています。' }}
+{{ assign $site.description = '学校良品は、まったく新しい「学び」と「物販」の融合、LIBRETTO SCHOOLを展開しています。' }}
 {{ assign $site.url = 'school/' }}
 {{ assign $footer_type = 'type_1' }}
 
