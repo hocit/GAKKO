@@ -1,5 +1,5 @@
-{{ assign $site.title = 'カリキュラム | ' . $site.title }}
-{{ assign $site.description = 'CURRICULUM | ' . $site.description }}
+{{ assign $site.title = 'カリキュラム | 教室事業 | 株式会社学校良品' }}
+{{ assign $site.description = '学校良品の教室事業、陰山式スコーラプレミアの50分の流れと年間スケジュール。' }}
 {{ assign $site.url = 'school/schola/curriculum/' }}
 {{ assign $footer_type = 'type_2' }}
 

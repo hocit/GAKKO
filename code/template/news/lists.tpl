@@ -1,5 +1,5 @@
-{{ assign $site.title = 'スクールニュース | ' . $site.title }}
-{{ assign $site.description = 'SCHOOL NEWS| ' . $site.description }}
+{{ assign $site.title = 'スクールニュース | 株式会社学校良品' }}
+{{ assign $site.description = '学校良品の教室事業からの様々なニュースをお届けします。' }}
 {{ assign $site.url = 'school/news/' }}
 {{ assign $footer_type = 'type_1' }}
 

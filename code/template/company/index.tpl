@@ -1,5 +1,5 @@
-{{ assign $site.title = '企業情報 | ' . $site.title }}
-{{ assign $site.description = 'COMPANY | ' . $site.description }}
+{{ assign $site.title = '会社情報 | 株式会社学校良品' }}
+{{ assign $site.description = 'モノとコトの融合を様々な形で提供する学校良品の会社情報。' }}
 {{ assign $site.url = 'company/' }}
 {{ assign $footer_type = 'type_1' }}
 

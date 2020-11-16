@@ -1,5 +1,5 @@
-{{ assign $site.title = '開発者 | ' . $site.title }}
-{{ assign $site.description = 'DEVELOPER | ' . $site.description }}
+{{ assign $site.title = '開発者 | 教室事業 | 株式会社学校良品' }}
+{{ assign $site.description = '学校良品の教室事業、陰山式スコーラプレミアの開発者、陰山英男氏について。' }}
 {{ assign $site.url = 'school/developer/' }}
 {{ assign $footer_type = 'type_2' }}
 

@@ -1,5 +1,5 @@
-{{ assign $site.title = 'プライバシーポリシー | ' . $site.title }}
-{{ assign $site.description = 'PRIVACY POLICY | ' . $site.description }}
+{{ assign $site.title = 'プライバシーポリシー | 株式会社学校良品' }}
+{{ assign $site.description = 'モノとコトの融合を様々な形で提供する学校良品のプライバシーポリシー。' }}
 {{ assign $site.url = 'privacy/' }}
 {{ assign $footer_type = 'type_1' }}
 
