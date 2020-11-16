@@ -262,7 +262,7 @@ class Contact extends MyApplication
                     $this->contact_config['admin_from']
                 );
         }
-        var_dump($_FLAG);
+
         // if (
         //     $_FLAG &&
         //     $adm_mail->send(
