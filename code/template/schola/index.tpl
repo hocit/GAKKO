@@ -1,5 +1,5 @@
-{{ assign $site.title = '陰山式スコーラプレミアについて | ' . $site.title }}
-{{ assign $site.description = 'ABOUT SCHOLA | ' . $site.description }}
+{{ assign $site.title = '陰山式スコーラプレミアについて | 教室事業 | 株式会社学校良品 | ' . $site.title }}
+{{ assign $site.description = '学校良品の教室事業、陰山式スコーラプレミアは脳を効果的に使うトレーニングです。| ' . $site.description }}
 {{ assign $site.url = 'school/schola/' }}
 {{ assign $footer_type = 'type_2' }}
 

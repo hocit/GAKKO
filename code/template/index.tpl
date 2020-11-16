@@ -1,3 +1,5 @@
+{{ assign $site.title = '株式会社学校良品 | ' . $site.title }}
+{{ assign $site.description = 'モノとコトの融合を様々な形で提供する学校良品は、より良い未来のために各種教室の運営、書籍、文具、雑貨などの販売を行います。 | ' . $site.description }}
 {{ assign $site.is_index = true }}
 {{ assign $footer_type = 'type_1' }}
 

@@ -2,10 +2,10 @@
 
 // `$_is_debug`有効時は、`$_ADMIN_TEST`宛にメールを送ります
 // If `$_is_debug` is true, This form send to `$_ADMIN_TEST` address.
-$_is_debug = true;
+$_is_debug = false;
 // `$_is_send_debug`有効時はメールを送らず、`/code/data/log`にログを出力します
 // If `$_is_send_debug` is true, Don't send E-mail and export log text to `/code/data/log`
-$_is_send_debug = true;
+$_is_send_debug = false;
 
 // セッションキー（複製したら変更すること）
 // Session key (If you duplicate config file, you must change this value)
@@ -30,30 +30,30 @@ $_PAGE_URL_RESULT = '/school/schola/contact/complete.html';
 
 // 企業名
 // Company name
-$_ADMIN_NAME = 'お客様名';
+$_ADMIN_NAME = '株式会社学校良品';
 // 企業ドメイン
 // Company domain
-$_ADMIN_DOMAIN = 'example.com';
+$_ADMIN_DOMAIN = 'gakkou-ryouhin.com';
 
 // 管理者アドレス
 // Adoministrator's address
 $_ADMIN_MAIL    = 'nguyentrunghung.19091989@gmail.com';
 // テスト用アドレス
 // Tester's address
-$_ADMIN_TEST    = 'nguyentrunghung.19091989@gmail.com';
+$_ADMIN_TEST    = 'check@lionheart.co.jp	';
 // 閲覧者向け送信元アドレス
 // Send from address for viewers
-$_ADMIN_FROM    = 'do-not-reply@'.$_ADMIN_DOMAIN;
+$_ADMIN_FROM    = 'nguyentrunghung.19091989@gmail.com';
 // 管理者向けメール件名
 // Subject for administrator
-$_ADMIN_SUBJECT = 'ホームページからお問い合わせがありました';
+$_ADMIN_SUBJECT = 'ホームページからスコーラについてお問い合わせがありました';
 
 // 閲覧者アドレスフィールド（カンマ区切りで複数指定可）
 // Input field name that viewer's address
-$_CLIENT_MAIL    = 'mail';
+$_CLIENT_MAIL    = 'email';
 // 閲覧者名フィールド（カンマ区切りで複数指定可）
 // Input field name that viewer's name
-$_CLIENT_NAME    = 'name';
+$_CLIENT_NAME    = 'parent_name';
 // 閲覧者向けメール件名
 // Subject for Viewers
 $_CLIENT_SUBJECT = '【'.$_ADMIN_NAME.'】お問い合わせありがとうございます';
