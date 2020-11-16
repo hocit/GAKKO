@@ -442,18 +442,18 @@
                             </div>
                         </div>
                         <div class="col02">
-                            {{ assign $iagree = 'iagree' }}
-                            {{ if isset($page.error.iagree )}}
+                            {{ assign $privacy = 'privacy' }}
+                            {{ if isset($page.error.privacy )}}
                             <div class="tltBasic01 tlt03">
                                 <div class="ttl">
                                     必ず入力してください。
                                 </div>
                                 <div class="arrow"></div>
                             </div>
-                            <div class="iagree">
+                            <div class="privacy">
                                 <div class="chk">
                                     <label for="label_04" class="chkBasic01 chkBasic01err chk01">
-                                        <input name="{{ $iagree }}" type="checkbox" id="label_04">
+                                        <input name="{{ $privacy }}" type="checkbox" id="label_04">
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
                                                 viewBox="0 0 16.562 10.917">
@@ -468,13 +468,13 @@
                                 <div class="title">※個人情報の取り扱いについては、<a href="#">プライバシーポリシー</a>をご覧ください。</div>
                             </div>
                             {{ else }}
-                            <div class="iagree">
+                            <div class="privacy">
                                 <div class="chk">
                                     <label for="label_04" class="chkBasic01 chk01">
-                                        {{ if $page.data[ $iagree ] === '1' }}
-                                        <input name="{{ $iagree }}" checked value="1" type="checkbox" id="label_04">
+                                        {{ if $page.data[ $privacy ] === '1' }}
+                                        <input name="{{ $privacy }}" checked value="1" type="checkbox" id="label_04">
                                         {{ else }}
-                                        <input name="{{ $iagree }}" value="1" type="checkbox" id="label_04">
+                                        <input name="{{ $privacy }}" value="1" type="checkbox" id="label_04">
                                         {{ end }}
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"

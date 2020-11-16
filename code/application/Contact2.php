@@ -125,7 +125,7 @@ class Contact2 extends MyApplication
         $validation->required($id, $this->in($id), array('@required',  $name));
 
         $name = '同意する';
-        $id = 'iagree';
+        $id = 'privacy';
         $validation->required($id, $this->in($id), array('@required',  $name));
 
         // 正当性確認
