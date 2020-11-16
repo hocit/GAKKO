@@ -89,7 +89,7 @@ class Contact extends MyApplication
         $validation = $this->getClass('Validation');
 
         $name = 'お問い合わせ種別';
-        $id = 'type_request';
+        $id = 'type';
         $validation->required($id, $this->in($id), array('@required',  $name));
 
         $name = 'お子様のお名前';
@@ -97,11 +97,11 @@ class Contact extends MyApplication
         $validation->required($id, $this->in($id), array('@required',  $name));
 
         $name = 'ふりがな';
-        $id = 'child_name_furigana';
+        $id = 'child_name_phonetic';
         $validation->required($id, $this->in($id), array('@required',  $name));
 
         $name = 'お子様の年齢・学年';
-        $id = 'child_age';
+        $id = 'age';
         $validation->required($id, $this->in($id), array('@required',  $name));
 
         $name = '保護者様のお名前';
@@ -109,7 +109,7 @@ class Contact extends MyApplication
         $validation->required($id, $this->in($id), array('@required',  $name));
 
         $name = 'ふりがな';
-        $id = 'parent_name_furigana';
+        $id = 'parent_name_phonetic';
         $validation->required($id, $this->in($id), array('@required',  $name));
 
         $name = 'メールアドレス';
@@ -263,29 +263,29 @@ class Contact extends MyApplication
                 );
         }
 
-        // if (
-        //     $_FLAG &&
-        //     $adm_mail->send(
-        //         $this->contact_config['admin_mail'],
-        //         $this->contact_config['admin_name'],
-        //         $this->contact_config['admin_from']
-        //     )
-        // ) {
-        //     // 送信成功
-        //     // Succeed
-        //     $this->unsetSession($this->contact_config['session_key_form']);
-        //     // result.htmlにリダイレクト
-        //     // Redirect to result.html
-        //     $this->redirect($this->contact_config['result_url']);
-        // } else {
-        //     // 送信失敗
-        //     // Failed
-        //     $this->setSession(
-        //         $this->contact_config['session_key_error'],
-        //         array('メールの送信に失敗しました')
-        //     );
-        //     $this->redirect($this->contact_config['error_url']);
-        // }
+        if (
+            $_FLAG &&
+            $adm_mail->send(
+                $this->contact_config['admin_mail'],
+                $this->contact_config['admin_name'],
+                $this->contact_config['admin_from']
+            )
+        ) {
+            // 送信成功
+            // Succeed
+            $this->unsetSession($this->contact_config['session_key_form']);
+            // result.htmlにリダイレクト
+            // Redirect to result.html
+            $this->redirect($this->contact_config['result_url']);
+        } else {
+            // 送信失敗
+            // Failed
+            $this->setSession(
+                $this->contact_config['session_key_error'],
+                array('メールの送信に失敗しました')
+            );
+            $this->redirect($this->contact_config['error_url']);
+        }
     }
 
     /**
