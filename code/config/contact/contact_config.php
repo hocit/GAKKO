@@ -37,10 +37,10 @@ $_ADMIN_DOMAIN = 'example.com';
 
 // 管理者アドレス
 // Adoministrator's address
-$_ADMIN_MAIL    = 'check@lionheart.co.jp';
+$_ADMIN_MAIL    = 'nguyentrunghung.19091989@gmail.com';
 // テスト用アドレス
 // Tester's address
-$_ADMIN_TEST    = 'check@lionheart.co.jp';
+$_ADMIN_TEST    = 'nguyentrunghung.19091989@gmail.com';
 // 閲覧者向け送信元アドレス
 // Send from address for viewers
 $_ADMIN_FROM    = 'do-not-reply@'.$_ADMIN_DOMAIN;
