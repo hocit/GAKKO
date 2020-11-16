@@ -39,13 +39,13 @@ $route['school/news/detail_:num.html'] = 'news/detail/$1';
 
 // お問い合わせ
 // For contact
-$route['school/schola/contact']                = 'contact/index';
-$route['school/schola/contact/']                = 'contact/index';
-$route['school/schola/contact/post']                = 'contact/post';
-$route['school/schola/contact/index.html']      = 'contact/index';
-$route['school/schola/contact/confirm.html']    = 'contact/confirm';
-$route['school/schola/contact/error.html']      = 'contact/error';
-$route['school/schola/contact/complete.html']     = 'contact/result';
+$route['school/schola/contact']                = 'contact2/index';
+$route['school/schola/contact/']                = 'contact2/index';
+$route['school/schola/contact/post']                = 'contact2/post';
+$route['school/schola/contact/index.html']      = 'contact2/index';
+$route['school/schola/contact/confirm.html']    = 'contact2/confirm';
+$route['school/schola/contact/error.html']      = 'contact2/error';
+$route['school/schola/contact/complete.html']     = 'contact2/result';
 
 // For Company
 $route['company'] = 'company/index';
@@ -61,5 +61,14 @@ $route['privacy/index.html'] = 'privacy/index';
 $route['sitemap'] = 'sitemap/index';
 $route['sitemap/'] = 'sitemap/index';
 $route['sitemap/index.html'] = 'sitemap/index';
+
+// For Contact
+$route['contact']                = 'contact/index';
+$route['contact/']                = 'contact/index';
+$route['contact/post']                = 'contact/post';
+$route['contact/index.html']      = 'contact/index';
+$route['contact/confirm.html']    = 'contact/confirm';
+$route['contact/error.html']      = 'contact/error';
+$route['contact/complete.html']     = 'contact/result';
 
 /* End of file routes.php */
