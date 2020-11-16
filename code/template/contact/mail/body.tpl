@@ -2,23 +2,21 @@
 ご入力内容
 -----------------------------
 
-■お問い合わせ内容：{{ $page.data.cont }}
+■お問い合わせ種別：{{ if isset($page.data.type[0]) }}{{ $page.data.type[0] }}{{ end }}{{ if isset($page.data.type[1]) }}, {{ $page.data.type[1] }}{{ end }}{{ if isset($page.data.type[2]) }}, {{ $page.data.type[1] }}{{ end }}
 
-■お名前　：{{ $page.data.name }}
-■フリガナ：{{ $page.data.furi }}
-■貴社名　：{{ $page.data.company }}
+■お子様のお名前　    ：{{ $page.data.child_name }}
+■ふりがな　　　　    ：{{ $page.data.child_name_phonetic }}
+■お子様の年齢・学年：{{ $page.data.age }}
 
-■郵便番号：{{ $page.data.zip1 }}-{{ $page.data.zip2 }}
-■ご住所　：
-{{ $page.data.pref }}
-{{ $page.data.address1 }}
-{{ $page.data.address2 }}
+■保護者のお名前　：{{ $page.data.parent_name }}
+■ふりがな　　　　：{{ page.data.parent_name_phonetic }}
 
-■E-mail　：{{ $page.data.mail }}
-■電話番号：{{ $page.data.tel1 }}-{{ $page.data.tel2 }}-{{ $page.data.tel3 }}
+■メールアドレス    ：{{ $page.data.email }}
+■ご住所　：{{ $page.data.address }}
+■お電話番号   ：{{ $page.data.tel }}
 
-■内容：
-{{ $page.data.body }}
+■お問い合わせ内容：
+{{ $page.data.content }}
 
------------------------------
+
 

@@ -92,11 +92,11 @@
                         </div>
                         <div class="col02">
                             <div class="grid">
-                                {{ assign $type_request = 'type_request' }}
-                                {{ if isset($page.error.type_request )}}
+                                {{ assign $type = 'type' }}
+                                {{ if isset($page.error.type )}}
                                 <div class="item item01">
                                     <label for="label_01" class="chkBasic01 chkBasic01err chk01">
-                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type_request }}[]">
+                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]">
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
                                                 viewBox="0 0 16.562 10.917">
@@ -111,7 +111,7 @@
                                 </div>
                                 <div class="item item01">
                                     <label for="label_02" class="chkBasic01 chkBasic01err chk01">
-                                        <input type="checkbox" value="体験授業" id="label_02" name="{{ $type_request }}[]">
+                                        <input type="checkbox" value="体験授業" id="label_02" name="{{ $type }}[]">
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
                                                 viewBox="0 0 16.562 10.917">
@@ -125,7 +125,7 @@
                                 </div>
                                 <div class="item item01">
                                     <label for="label_03" class="chkBasic01 chkBasic01err chk01">
-                                        <input type="checkbox" value="その他質問など" id="label_03" name="{{ $type_request }}[]">
+                                        <input type="checkbox" value="その他質問など" id="label_03" name="{{ $type }}[]">
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
                                                 viewBox="0 0 16.562 10.917">
@@ -146,10 +146,10 @@
                                 {{ else}}
                                 <div class="item item01">
                                     <label for="label_01" class="chkBasic01 chk01">
-                                        {{ if $page.data[ $type_request ][0] === '資料請求' }}
-                                        <input type="checkbox" checked value="document" id="label_01" name="{{ $type_request }}[]">
+                                        {{ if $page.data[ $type ][0] === '資料請求' }}
+                                        <input type="checkbox" checked value="document" id="label_01" name="{{ $type }}[]">
                                         {{ else }}
-                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type_request }}[]">
+                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]">
                                         {{ end }}
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
@@ -165,10 +165,10 @@
                                 </div>
                                 <div class="item item01">
                                     <label for="label_02" class="chkBasic01 chk01">
-                                        {{ if $page.data[ $type_request ][0] === '体験授業' || $page.data[ $type_request ][1] === '体験授業' }}
-                                        <input type="checkbox" checked value="lesson" id="label_02" name="{{ $type_request }}[]">
+                                        {{ if $page.data[ $type ][0] === '体験授業' || $page.data[ $type ][1] === '体験授業' }}
+                                        <input type="checkbox" checked value="lesson" id="label_02" name="{{ $type }}[]">
                                         {{ else }}
-                                        <input type="checkbox" value="lesson" id="label_02" name="{{ $type_request }}[]">
+                                        <input type="checkbox" value="lesson" id="label_02" name="{{ $type }}[]">
                                         {{ end }}
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
@@ -183,10 +183,10 @@
                                 </div>
                                 <div class="item item01">
                                     <label for="label_03" class="chkBasic01 chk01">
-                                        {{ if $page.data[ $type_request ][0] === 'その他質問など' || $page.data[ $type_request ][1] === 'その他質問など' || $page.data[ $type_request ][2] === 'その他質問など' }}
-                                        <input type="checkbox" checked value="question" id="label_03" name="{{ $type_request }}[]">
+                                        {{ if $page.data[ $type ][0] === 'その他質問など' || $page.data[ $type ][1] === 'その他質問など' || $page.data[ $type ][2] === 'その他質問など' }}
+                                        <input type="checkbox" checked value="question" id="label_03" name="{{ $type }}[]">
                                         {{ else }}
-                                        <input type="checkbox" value="question" id="label_03" name="{{ $type_request }}[]">
+                                        <input type="checkbox" value="question" id="label_03" name="{{ $type }}[]">
                                         {{ end }}
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
@@ -241,9 +241,9 @@
                             </div>
                         </div>
                         <div class="col02">
-                            {{ assign $child_name_furigana = 'child_name_furigana' }}
-                            {{ if isset($page.error.child_name_furigana )}}
-                            <input name="{{ $child_name_furigana }}" type="text" class="iptBasic01 iptBasic01err ipt01"
+                            {{ assign $child_name_phonetic = 'child_name_phonetic' }}
+                            {{ if isset($page.error.child_name_phonetic )}}
+                            <input name="{{ $child_name_phonetic }}" type="text" class="iptBasic01 iptBasic01err ipt01"
                                 placeholder="やまだたろう">
                             <div class="tltBasic01 tlt02">
                                 <div class="ttl">
@@ -252,7 +252,7 @@
                                 <div class="arrow"></div>
                             </div>
                             {{ else }}
-                            <input name="{{ $child_name_furigana }}" value="{{ $page.data[ $child_name_furigana ] }}" type="text" class="iptBasic01 ipt01"
+                            <input name="{{ $child_name_phonetic }}" value="{{ $page.data[ $child_name_phonetic ] }}" type="text" class="iptBasic01 ipt01"
                                 placeholder="やまだたろう">
                             {{ end }}
                         </div>
@@ -269,9 +269,9 @@
                             </div>
                         </div>
                         <div class="col02">
-                            {{ assign $child_age = 'child_age' }}
-                            {{ if isset($page.error.child_age )}}
-                            <input name="{{ $child_age }}" type="text" class="iptBasic01 iptBasic01err ipt01"
+                            {{ assign $age = 'age' }}
+                            {{ if isset($page.error.age )}}
+                            <input name="{{ $age }}" type="text" class="iptBasic01 iptBasic01err ipt01"
                                 placeholder="小学1年生">
                             <div class="tltBasic01 tlt02">
                                 <div class="ttl">
@@ -280,7 +280,7 @@
                                 <div class="arrow"></div>
                             </div>
                             {{ else }}
-                            <input name="{{ $child_age }}" value="{{ $page.data[ $child_age ] }}"  type="text" class="iptBasic01 ipt01" placeholder="小学1年生">
+                            <input name="{{ $age }}" value="{{ $page.data[ $age ] }}"  type="text" class="iptBasic01 ipt01" placeholder="小学1年生">
                             {{ end }}
                         </div>
                     </div>
@@ -323,9 +323,9 @@
                             </div>
                         </div>
                         <div class="col02">
-                            {{ assign $parent_name_furigana = 'parent_name_furigana' }}
-                            {{ if isset($page.error.parent_name_furigana )}}
-                            <input name="{{ $parent_name_furigana }}" type="text" class="iptBasic01 iptBasic01err ipt01"
+                            {{ assign $parent_name_phonetic = 'parent_name_phonetic' }}
+                            {{ if isset($page.error.parent_name_phonetic )}}
+                            <input name="{{ $parent_name_phonetic }}" type="text" class="iptBasic01 iptBasic01err ipt01"
                                 placeholder="やまだたろう">
                             <div class="tltBasic01 tlt02">
                                 <div class="ttl">
@@ -334,7 +334,7 @@
                                 <div class="arrow"></div>
                             </div>
                             {{ else }}
-                            <input name="{{ $parent_name_furigana }}" value="{{ $page.data[ $parent_name_furigana ] }}" type="text" class="iptBasic01 ipt01"
+                            <input name="{{ $parent_name_phonetic }}" value="{{ $page.data[ $parent_name_phonetic ] }}" type="text" class="iptBasic01 ipt01"
                                 placeholder="やまだたろう">
                             {{ end }}
                         </div>
@@ -425,8 +425,8 @@
                                 ご記入ください</div>
                         </div>
                         <div class="col02">
-                            {{ assign $question = 'question' }}
-                            <textarea name="{{ $question }}" id="" cols="30" rows="10" class="txtBasic01 txt01"
+                            {{ assign $content = 'content' }}
+                            <textarea name="{{ $content }}" id="" cols="30" rows="10" class="txtBasic01 txt01"
                                 placeholder="お問い合わせ内容をご記入ください"></textarea>
                         </div>
                     </div>

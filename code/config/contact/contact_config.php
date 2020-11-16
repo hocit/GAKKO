@@ -56,7 +56,7 @@ $_CLIENT_MAIL    = 'email';
 $_CLIENT_NAME    = 'parent_name';
 // 閲覧者向けメール件名
 // Subject for Viewers
-$_CLIENT_SUBJECT = '【'.$_ADMIN_NAME.'】お問い合わせありがとうございます';
+$_CLIENT_SUBJECT = '【'.$_CLIENT_NAME.'】スコーラについてお問い合わせありがとうございます';
 
 
 /**

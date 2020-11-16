@@ -74,15 +74,15 @@
                             </div>
                         </div>
                         <div class="col02">
-                            {{ assign $type_request = 'type_request' }}
-                            {{ if isset($page.data[ $type_request ][0]) }}
-                            {{ $page.data[ $type_request ][0] }}
+                            {{ assign $type = 'type' }}
+                            {{ if isset($page.data[ $type ][0]) }}
+                            {{ $page.data[ $type ][0] }}
                             {{ end }}
-                            {{ if isset($page.data[ $type_request ][1]) }}
-                            , {{ $page.data[ $type_request ][1] }}
+                            {{ if isset($page.data[ $type ][1]) }}
+                            , {{ $page.data[ $type ][1] }}
                             {{ end }}
-                            {{ if isset($page.data[ $type_request ][2]) }}
-                            , {{ $page.data[ $type_request ][1] }}
+                            {{ if isset($page.data[ $type ][2]) }}
+                            , {{ $page.data[ $type ][1] }}
                             {{ end }}
                         </div>
                     </div>
@@ -109,8 +109,8 @@
 
                         </div>
                         <div class="col02">
-                            {{ assign $child_name_furigana = 'child_name_furigana' }}
-                            {{ $page.data[ $child_name_furigana ] }}
+                            {{ assign $child_name_phonetic = 'child_name_phonetic' }}
+                            {{ $page.data[ $child_name_phonetic ] }}
                         </div>
                     </div>
                 </div>
@@ -123,8 +123,8 @@
 
                         </div>
                         <div class="col02">
-                            {{ assign $child_age = 'child_age' }}
-                            {{ $page.data[ $child_age ] }}
+                            {{ assign $age = 'age' }}
+                            {{ $page.data[ $age ] }}
                         </div>
                     </div>
                 </div>
@@ -151,8 +151,8 @@
 
                         </div>
                         <div class="col02">
-                            {{ assign $parent_name_furigana = 'parent_name_furigana' }}
-                            {{ $page.data[ $parent_name_furigana ] }}
+                            {{ assign $parent_name_phonetic = 'parent_name_phonetic' }}
+                            {{ $page.data[ $parent_name_phonetic ] }}
                         </div>
                     </div>
                 </div>
@@ -206,8 +206,8 @@
                         </div>
                         <div class="col02">
                             <div class="txt">
-                                {{ assign $question = 'question' }}
-                                {{ $page.data[ $question ] }}
+                                {{ assign $content = 'content' }}
+                                {{ $page.data[ $content ] }}
                             </div>
                         </div>
                     </div>
