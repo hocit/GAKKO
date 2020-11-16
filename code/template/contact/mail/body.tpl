@@ -18,5 +18,6 @@
 ■お問い合わせ内容：
 {{ $page.data.content }}
 
-
+■個人情報保護方針：
+{{ privacy }}
 
