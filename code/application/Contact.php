@@ -263,29 +263,29 @@ class Contact extends MyApplication
                 );
         }
         var_dump($_FLAG);
-        if (
-            $_FLAG &&
-            $adm_mail->send(
-                $this->contact_config['admin_mail'],
-                $this->contact_config['admin_name'],
-                $this->contact_config['admin_from']
-            )
-        ) {
-            // 送信成功
-            // Succeed
-            $this->unsetSession($this->contact_config['session_key_form']);
-            // result.htmlにリダイレクト
-            // Redirect to result.html
-            $this->redirect($this->contact_config['result_url']);
-        } else {
-            // 送信失敗
-            // Failed
-            $this->setSession(
-                $this->contact_config['session_key_error'],
-                array('メールの送信に失敗しました')
-            );
-            $this->redirect($this->contact_config['error_url']);
-        }
+        // if (
+        //     $_FLAG &&
+        //     $adm_mail->send(
+        //         $this->contact_config['admin_mail'],
+        //         $this->contact_config['admin_name'],
+        //         $this->contact_config['admin_from']
+        //     )
+        // ) {
+        //     // 送信成功
+        //     // Succeed
+        //     $this->unsetSession($this->contact_config['session_key_form']);
+        //     // result.htmlにリダイレクト
+        //     // Redirect to result.html
+        //     $this->redirect($this->contact_config['result_url']);
+        // } else {
+        //     // 送信失敗
+        //     // Failed
+        //     $this->setSession(
+        //         $this->contact_config['session_key_error'],
+        //         array('メールの送信に失敗しました')
+        //     );
+        //     $this->redirect($this->contact_config['error_url']);
+        // }
     }
 
     /**
