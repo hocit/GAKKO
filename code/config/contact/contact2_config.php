@@ -13,7 +13,7 @@ $_SESSION_KEY = 'contact_ses_';
 
 // テンプレートパス
 // Template path
-$_TEMPLATE_PATH = 'contact';
+$_TEMPLATE_PATH = 'contact2';
 
 // 入力ページURL
 // Input Page URL
