@@ -450,7 +450,7 @@
                                 </div>
                                 <div class="arrow"></div>
                             </div>
-                            <div class="privacy">
+                            <div class="iagree">
                                 <div class="chk">
                                     <label for="label_04" class="chkBasic01 chkBasic01err chk01">
                                         <input name="{{ $privacy }}" type="checkbox" id="label_04">
