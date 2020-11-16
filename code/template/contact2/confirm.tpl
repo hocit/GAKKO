@@ -220,8 +220,8 @@
                             </div>
                         </div>
                         <div class="col02">
-                            {{ assign $iagree = 'iagree' }}
-                            {{ if $page.data[ $iagree ] === '1' }}
+                            {{ assign $privacy = 'privacy' }}
+                            {{ if $page.data[ $privacy ] === '1' }}
                             同意する
                             {{ end }}
                         </div>

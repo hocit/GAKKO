@@ -9,7 +9,7 @@
 ■お子様の年齢・学年：{{ $page.data.age }}
 
 ■保護者のお名前　：{{ $page.data.parent_name }}
-■ふりがな　　　　：{{ page.data.parent_name_phonetic }}
+■ふりがな　　　　：{{ $page.data[ 'parent_name_phonetic' ] }}
 
 ■メールアドレス    ：{{ $page.data.email }}
 ■ご住所　：{{ $page.data.address }}
