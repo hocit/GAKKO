@@ -64,26 +64,19 @@
                 <div class="title">送信</div>
             </div>
         </div>
-        <form action="{{ base }}/school/schola/contact/post" method="post">
+        <form action="{{ base }}/contact/post" method="post">
             <div class="form">
+
                 <div class="item">
                     <div class="grid">
                         <div class="col01">
                             <div class="title">
-                                お問い合わせ種別
+                                会社名
                             </div>
                         </div>
                         <div class="col02">
-                            {{ assign $type = 'type' }}
-                            {{ if isset($page.data[ $type ][0]) }}
-                            {{ $page.data[ $type ][0] }}
-                            {{ end }}
-                            {{ if isset($page.data[ $type ][1]) }}
-                            , {{ $page.data[ $type ][1] }}
-                            {{ end }}
-                            {{ if isset($page.data[ $type ][2]) }}
-                            , {{ $page.data[ $type ][1] }}
-                            {{ end }}
+                            {{ assign $company = 'company' }}
+                            {{ $page.data[ $company ] }}
                         </div>
                     </div>
                 </div>
@@ -91,12 +84,13 @@
                     <div class="grid">
                         <div class="col01">
                             <div class="title">
-                                お子様のお名前
+                                お名前
                             </div>
+
                         </div>
                         <div class="col02">
-                            {{ assign $child_name = 'child_name' }}
-                            {{ $page.data[ $child_name ] }}
+                            {{ assign $name = 'name' }}
+                            {{ $page.data[ $name ] }}
                         </div>
                     </div>
                 </div>
@@ -109,50 +103,8 @@
 
                         </div>
                         <div class="col02">
-                            {{ assign $child_name_phonetic = 'child_name_phonetic' }}
-                            {{ $page.data[ $child_name_phonetic ] }}
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="grid">
-                        <div class="col01">
-                            <div class="title">
-                                お子様の年齢・学年
-                            </div>
-
-                        </div>
-                        <div class="col02">
-                            {{ assign $age = 'age' }}
-                            {{ $page.data[ $age ] }}
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="grid">
-                        <div class="col01">
-                            <div class="title">
-                                保護者様のお名前
-                            </div>
-
-                        </div>
-                        <div class="col02">
-                            {{ assign $parent_name = 'parent_name' }}
-                            {{ $page.data[ $parent_name ] }}
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="grid">
-                        <div class="col01">
-                            <div class="title">
-                                ふりがな
-                            </div>
-
-                        </div>
-                        <div class="col02">
-                            {{ assign $parent_name_phonetic = 'parent_name_phonetic' }}
-                            {{ $page.data[ $parent_name_phonetic ] }}
+                            {{ assign $phonetic = 'phonetic' }}
+                            {{ $page.data[ $phonetic ] }}
                         </div>
                     </div>
                 </div>
@@ -198,11 +150,12 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="item itemBig">
                     <div class="grid">
                         <div class="col01">
                             <div class="title title01">お問い合わせ内容を
-                                ご記入ください</div>
+ご記入ください</div>
                         </div>
                         <div class="col02">
                             <div class="txt">
