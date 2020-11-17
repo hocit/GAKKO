@@ -156,7 +156,8 @@ function feggMenus()
     $menu_info['company'] = 'company/';
     $menu_info['privacy'] = 'privacy/';
     $menu_info['sitemap'] = 'sitemap/';
-    $menu_info['contact'] = 'school/schola/contact/';
+    $menu_info['contact'] = 'contact/';
+    $menu_info['contact2'] = 'school/schola/contact/';
     return $menu_info;
 }
 
