@@ -17,16 +17,16 @@ $_TEMPLATE_PATH = 'contact';
 
 // 入力ページURL
 // Input Page URL
-$_PAGE_URL_INPUT = '/school/schola/contact/';
+$_PAGE_URL_INPUT = '/contact/';
 // 確認ページURL
 // Confirm Page URL
-$_PAGE_URL_CONFIRM = '/school/schola/contact/confirm.html';
+$_PAGE_URL_CONFIRM = '/contact/confirm.html';
 // エラーページURL
 // Error Page URL
-$_PAGE_URL_ERROR = '/school/schola/contact/error.html';
+$_PAGE_URL_ERROR = '/contact/error.html';
 // 完了ページURL
 // Result Page URL
-$_PAGE_URL_RESULT = '/school/schola/contact/complete.html';
+$_PAGE_URL_RESULT = '/contact/complete.html';
 
 // 企業名
 // Company name
@@ -46,17 +46,17 @@ $_ADMIN_TEST    = 'check@lionheart.co.jp';
 $_ADMIN_FROM    = 'nguyentrunghung.19091989@gmail.com';
 // 管理者向けメール件名
 // Subject for administrator
-$_ADMIN_SUBJECT = 'ホームページからスコーラについてお問い合わせがありました';
+$_ADMIN_SUBJECT = 'ホームページからお問い合わせがありました';
 
 // 閲覧者アドレスフィールド（カンマ区切りで複数指定可）
 // Input field name that viewer's address
 $_CLIENT_MAIL    = 'email';
 // 閲覧者名フィールド（カンマ区切りで複数指定可）
 // Input field name that viewer's name
-$_CLIENT_NAME    = 'parent_name';
+$_CLIENT_NAME    = 'name';
 // 閲覧者向けメール件名
 // Subject for Viewers
-$_CLIENT_SUBJECT = '【'.$_CLIENT_NAME.'】スコーラについてお問い合わせありがとうございます';
+$_CLIENT_SUBJECT = 'スコーラについてお問い合わせありがとうございます';
 
 
 /**

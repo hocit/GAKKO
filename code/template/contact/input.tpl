@@ -250,7 +250,7 @@
                         <div class="col02">
                             {{ assign $content = 'content' }}
                             <textarea name="{{ $content }}" id="" cols="30" rows="10" class="txtBasic01 txt01"
-                                placeholder="お問い合わせ内容をご記入ください"></textarea>
+                                placeholder="お問い合わせ内容をご記入ください">{{ $page.data[ $content ] }}</textarea>
                         </div>
                     </div>
                 </div>

@@ -88,44 +88,29 @@ class Contact extends MyApplication
     {
         $validation = $this->getClass('Validation');
 
-        $name = 'お問い合わせ種別';
-        $id = 'type';
-        $validation->required($id, $this->in($id), array('@required',  $name));
 
-        $name = 'お子様のお名前';
-        $id = 'child_name';
+        $name = 'お名前';
+        $id = 'name';
         $validation->required($id, $this->in($id), array('@required',  $name));
 
         $name = 'ふりがな';
-        $id = 'child_name_phonetic';
-        $validation->required($id, $this->in($id), array('@required',  $name));
-
-        $name = 'お子様の年齢・学年';
-        $id = 'age';
-        $validation->required($id, $this->in($id), array('@required',  $name));
-
-        $name = '保護者様のお名前';
-        $id = 'parent_name';
-        $validation->required($id, $this->in($id), array('@required',  $name));
-
-        $name = 'ふりがな';
-        $id = 'parent_name_phonetic';
+        $id = 'phonetic';
         $validation->required($id, $this->in($id), array('@required',  $name));
 
         $name = 'メールアドレス';
         $id = 'email';
         $validation->required($id, $this->in($id), array('@required',  $name));
 
-        $name = 'お電話番号';
-        $id = 'tel';
+        $name = '保護者様のお名前';
+        $id = 'parent_name';
         $validation->required($id, $this->in($id), array('@required',  $name));
 
-        $name = 'ご住所';
-        $id = 'address';
+        $name = 'お問い合わせ内容をご記入ください';
+        $id = 'content';
         $validation->required($id, $this->in($id), array('@required',  $name));
 
-        $name = '同意する';
-        $id = 'iagree';
+        $name = '個人情報保護方針';
+        $id = 'privacy';
         $validation->required($id, $this->in($id), array('@required',  $name));
 
         // 正当性確認
@@ -234,7 +219,7 @@ class Contact extends MyApplication
          */
         $cli_subject = $this->contact_config['to_client_subject'];
         $cli_body    = $this->fetchPage('/'.$this->contact_config['template'].'/mail/to_client');
-        $cli_mail    = new Mail($cli_subject, $cli_body);
+        $cli_mail    = new Mail('【'.$this->page['data']['name'].'】' . $cli_subject, $cli_body);
         $cli_mail->setDebugFlag(
             $this->contact_config['send_debug'],
             FEGG_CODE_DIR.'/data/log/'.$this->contact_config['template'].'_client.log'

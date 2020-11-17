@@ -2,14 +2,10 @@
 ご入力内容
 -----------------------------
 
-■お問い合わせ種別：{{ if isset($page.data.type[0]) }}{{ $page.data.type[0] }}{{ end }}{{ if isset($page.data.type[1]) }}, {{ $page.data.type[1] }}{{ end }}{{ if isset($page.data.type[2]) }}, {{ $page.data.type[1] }}{{ end }}
+■会社名：{{ $page.data.company }}
 
-■お子様のお名前　    ：{{ $page.data.child_name }}
-■ふりがな　　　　    ：{{ $page.data.child_name_phonetic }}
-■お子様の年齢・学年：{{ $page.data.age }}
-
-■保護者のお名前　：{{ $page.data.parent_name }}
-■ふりがな　　　　：{{ page.data.parent_name_phonetic }}
+■お名前　    ：{{ $page.data.name }}
+■ふりがな　：{{ $page.data.phonetic }}
 
 ■メールアドレス    ：{{ $page.data.email }}
 ■ご住所　：{{ $page.data.address }}
@@ -19,5 +15,4 @@
 {{ $page.data.content }}
 
 ■個人情報保護方針：
-{{ privacy }}
-
+同意する
