@@ -468,7 +468,7 @@
                                 <div class="title">※個人情報の取り扱いについては、<a href="#">プライバシーポリシー</a>をご覧ください。</div>
                             </div>
                             {{ else }}
-                            <div class="privacy">
+                            <div class="iagree">
                                 <div class="chk">
                                     <label for="label_04" class="chkBasic01 chk01">
                                         {{ if $page.data[ $privacy ] === '1' }}
