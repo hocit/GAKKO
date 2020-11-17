@@ -44,7 +44,7 @@
     {{ if isset($site.url) }}
     <a href="/" class="logo">
         <img src="{{ base }}/data/img/logo_header01@2x.png" alt="株式会社学校良品">
-    </div>
+    </a>
     {{ else }}
     <h1>
         <a href="/" class="logo">

@@ -234,7 +234,7 @@ class Contact2 extends MyApplication
          */
         $cli_subject = $this->contact_config['to_client_subject'];
         $cli_body    = $this->fetchPage('/'.$this->contact_config['template'].'/mail/to_client');
-        $cli_mail    = new Mail($cli_subject, $cli_body);
+        $cli_mail    = new Mail('【{{ $page.data.parent_name }}】' . $cli_subject, $cli_body);
         $cli_mail->setDebugFlag(
             $this->contact_config['send_debug'],
             FEGG_CODE_DIR.'/data/log/'.$this->contact_config['template'].'_client.log'
