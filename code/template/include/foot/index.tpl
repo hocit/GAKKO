@@ -70,9 +70,9 @@ mpi英語倶楽部に関する
         </div>
         <div class="item">
             <div class="txt">
-                <div class="title">PlogLAB</div>
+                <div class="title">プログラボ</div>
                 <div class="subtitle">無料体験・ご入会など
-PlogLABに関する
+プログラボに関する
 お問い合わせはこちら</div>
                 <a href="#" class="btnBasic01 btn btnBasic01O#232448">
                     <div class="txt">
