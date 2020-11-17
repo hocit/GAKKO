@@ -80,7 +80,7 @@
                     <a href="{{ base }}/{{ $menu_info['school'] }}" class="btnBasic01 btn btnBasic01O#232448">
                         <div class="txt">
                             <div class="title">
-                                修正する
+                                詳しく見る
                             </div>
                             <div class="icon iconRight">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="19.662" height="11.737"
@@ -117,7 +117,7 @@
                     <a href="#" class="btnBasic01 btn btnBasic01O#232448">
                         <div class="txt">
                             <div class="title">
-                                修正する
+                                詳しく見る
                             </div>
                             <div class="icon iconRight">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="19.662" height="11.737"
