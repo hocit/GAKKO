@@ -50,6 +50,7 @@
     {{ foot }}
 
     <script src="{{ base }}/data/js/jquery.js"></script>
+    <script src="{{ base }}/data/js/wow.min.js"></script>
     <script src="{{ base }}/data/js/script.js"></script>
 </body>
 
