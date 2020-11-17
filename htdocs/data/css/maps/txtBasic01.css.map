@@ -1,1 +1,0 @@
-{"version":3,"sources":["txtBasic01.scss"],"names":[],"mappings":"AAAA,YACI,OAAA,IAAA,MAAA,QACA,OAAA,MACA,MAAA,KACA,QAAA,KACA,QAAA","file":"../txtBasic01.css","sourcesContent":[".txtBasic01 {\n    border: 1px solid #979797;\n    height: 191px;\n    width: 100%;\n    padding: 15px;\n    outline: none;\n}"]}

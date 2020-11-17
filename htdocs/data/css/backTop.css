@@ -1,2 +1,0 @@
-.backTop{height:50px;width:50px;background:#232448;position:absolute;top:-50px;right:0;display:-webkit-box;display:-ms-flexbox;display:flex;cursor:pointer;-webkit-transition:all .5s;-o-transition:all .5s;transition:all .5s}@media screen and (max-width:768px){.backTop{height:40px;width:40px;top:-40px}}.backTop>svg{margin:auto}
-/*# sourceMappingURL=maps/backTop.css.map */
