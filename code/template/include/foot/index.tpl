@@ -168,7 +168,7 @@ mpi英語倶楽部に関する
                                     <path id="Path_187" data-name="Path 187" d="M491.516,470.418l4,4-4,4"
                                         transform="translate(-491.162 -470.064)" fill="none" stroke="#232448"
                                         stroke-width="1" />
-                                </svg>『Libretto』ブランド</a>
+                                </svg>店舗事業</a>
                             <a href="" class="item">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="5.061" height="8.707"
                                     viewBox="0 0 5.061 8.707">
@@ -193,7 +193,7 @@ mpi英語倶楽部に関する
                                     <path id="Path_187" data-name="Path 187" d="M491.516,470.418l4,4-4,4"
                                         transform="translate(-491.162 -470.064)" fill="none" stroke="#232448"
                                         stroke-width="1" />
-                                </svg>『Libretto School』</a>
+                                </svg>教室事業</a>
                             <a href="{{ base }}/{{ $menu_info['schola'] }}" class="item">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="5.061" height="8.707"
                                     viewBox="0 0 5.061 8.707">
@@ -214,7 +214,7 @@ mpi英語倶楽部に関する
                                     <path id="Path_187" data-name="Path 187" d="M491.516,470.418l4,4-4,4"
                                         transform="translate(-491.162 -470.064)" fill="none" stroke="#232448"
                                         stroke-width="1" />
-                                </svg>PlogLAB</a>
+                                </svg>プログラボ</a>
                             <a href="" class="item">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="5.061" height="8.707"
                                     viewBox="0 0 5.061 8.707">
@@ -228,7 +228,7 @@ mpi英語倶楽部に関する
                                     <path id="Path_187" data-name="Path 187" d="M491.516,470.418l4,4-4,4"
                                         transform="translate(-491.162 -470.064)" fill="none" stroke="#232448"
                                         stroke-width="1" />
-                                </svg>School NEWS</a>
+                                </svg>スクールニュース</a>
                         </div>
                     </div>
                     <div class="col">
