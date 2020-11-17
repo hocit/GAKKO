@@ -17,18 +17,10 @@
     <div class="right">
         <div class="nav">
             <nav class="list">
-                <a href="/" class="item">
-                    店舗事業
-                </a>
-                <a href="{{ base }}/{{ $menu_info['school'] }}" class="item">
-                    教室事業
-                </a>
-                <a href="#" class="item">
-                    防災・教材事業
-                </a>
-                <a href="{{ base }}/{{ $menu_info['company'] }}" class="item">
-                    企業情報
-                </a>
+                <a href="/" class="item">店舗事業</a>
+                <a href="{{ base }}/{{ $menu_info['school'] }}" class="item">教室事業</a>
+                <a href="#" class="item">防災・教材事業</a>
+                <a href="{{ base }}/{{ $menu_info['company'] }}" class="item">企業情報</a>
             </nav>
         </div>
         <a href="{{ base }}/{{ $menu_info['contact'] }}" class="contact">

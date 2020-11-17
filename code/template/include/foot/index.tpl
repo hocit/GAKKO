@@ -114,7 +114,7 @@ mpi英語倶楽部に関する
         </div>
         <div class="subtitle">無料体験・ご入会など
 陰山式スコーラプレミアに関するお問い合わせはこちら</div>
-        <a href="{{ base }}/{{ $menu_info['contact'] }}" class="btnBasic01 btn btnBasic01O#232448">
+        <a href="{{ base }}/{{ $menu_info['contact2'] }}" class="btnBasic01 btn btnBasic01O#232448">
             <div class="txt">
                 <div class="title">
                     お問い合わせ
