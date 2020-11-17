@@ -101,10 +101,6 @@ class Contact extends MyApplication
         $id = 'email';
         $validation->required($id, $this->in($id), array('@required',  $name));
 
-        $name = '保護者様のお名前';
-        $id = 'parent_name';
-        $validation->required($id, $this->in($id), array('@required',  $name));
-
         $name = 'お問い合わせ内容をご記入ください';
         $id = 'content';
         $validation->required($id, $this->in($id), array('@required',  $name));
