@@ -20,7 +20,7 @@ $site_info = array(
     // Twitter account
     'twitter'     => null,
     // Version number ( for Cached data )
-    'version'     => '0.2.68',
+    'version'     => '0.2.69',
     // Responsive Break Point
     'picture'     => array(
         'sp' => '(max-width: 640px)',
