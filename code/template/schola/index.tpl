@@ -162,13 +162,10 @@
     <div class="subtitle">
         ACCESS
     </div>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6563695638256!2d106.66630401479334!3d10.76094449233206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ee4ecfa255d%3A0x9e5ec3fa6801b7d6!2zMjc5IE5ndXnhu4VuIFRyaSBQaMawxqFuZywgUGjGsOG7nW5nIDUsIFF14bqtbiAxMCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1604552185203!5m2!1svi!2s"
-        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-        tabindex="0"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.796876520786!2d136.98205551523847!3d35.161686230318786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003654dc75475b1%3A0x2d9959433fb91305!2z44K244O744Oq44OW44Os44OD44OIIOS4iei2iuaYn-ODtuS4mOW6lw!5e0!3m2!1svi!2s!4v1605666035549!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <div class="container">
         <div class="txt">
-            <div class="map">
+            <a target="_blank" href="https://www.google.com/maps/place/%E3%82%B6%E3%83%BB%E3%83%AA%E3%83%96%E3%83%AC%E3%83%83%E3%83%88+%E4%B8%89%E8%B6%8A%E6%98%9F%E3%83%B6%E4%B8%98%E5%BA%97/@35.1616862,136.9820555,17z/data=!3m1!5s0x6003654db8adf3bf:0xdb78b1e01ce0f14!4m8!1m2!2m1!1z5oSb55-l55yM5ZCN5Y-k5bGL5biC5Y2D56iu5Yy65pif44GM5LiY5YWD55S6MTQtMTQg5pif44O25LiY5LiJ6LaK44CANUYg44K244O744Oq44OW44Os44OD44OI5YaF!3m4!1s0x6003654dc75475b1:0x2d9959433fb91305!8m2!3d35.1616579!4d136.9839197?hl=vi-VN" class="map">
                 <svg xmlns="http://www.w3.org/2000/svg" width="5.2" height="7.399" viewBox="0 0 5.2 7.399">
                     <g id="arr" transform="translate(-331.255 -214.291)">
                         <path id="Path_44" data-name="Path 44" d="M9291.7,7842.992l4,3-4,3"
@@ -176,7 +173,7 @@
                             stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
                     </g>
                 </svg>大きな地図で見る
-            </div>
+            </a>
             <div class="title">陰山式スコーラプレミア 星ヶ丘三越教室</div>
             <div class="a">〒464-8661 愛知県名古屋市千種区星が丘元町14-14 星ヶ丘三越　5F ザ・リブレット内
             </div>
