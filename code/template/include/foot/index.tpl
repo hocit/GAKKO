@@ -162,7 +162,7 @@ mpi英語倶楽部に関する
                 <div class="grid gridComp03">
                     <div class="col">
                         <div class="list">
-                            <a href="" class="item">
+                            <a href="" class="item item02">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="5.061" height="8.707"
                                     viewBox="0 0 5.061 8.707">
                                     <path id="Path_187" data-name="Path 187" d="M491.516,470.418l4,4-4,4"
@@ -187,7 +187,7 @@ mpi英語倶楽部に関する
                     </div>
                     <div class="col">
                         <div class="list">
-                            <a href="" class="item">
+                            <a href="" class="item item02">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="5.061" height="8.707"
                                     viewBox="0 0 5.061 8.707">
                                     <path id="Path_187" data-name="Path 187" d="M491.516,470.418l4,4-4,4"
@@ -233,7 +233,7 @@ mpi英語倶楽部に関する
                     </div>
                     <div class="col">
                         <div class="list">
-                            <a href="" class="item"><i class="icon-arrow"></i>
+                            <a href="" class="item item02"><i class="icon-arrow"></i>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="5.061" height="8.707"
                                     viewBox="0 0 5.061 8.707">
                                     <path id="Path_187" data-name="Path 187" d="M491.516,470.418l4,4-4,4"
@@ -251,28 +251,28 @@ mpi英語倶楽部に関する
                     </div>
                     <div class="col">
                         <div class="list">
-                            <a href="{{ base }}/{{ $menu_info['company'] }}" class="item item01">
+                            <a href="{{ base }}/{{ $menu_info['company'] }}" class="item item01 item02">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="5.061" height="8.707"
                                     viewBox="0 0 5.061 8.707">
                                     <path id="Path_187" data-name="Path 187" d="M491.516,470.418l4,4-4,4"
                                         transform="translate(-491.162 -470.064)" fill="none" stroke="#232448"
                                         stroke-width="1" />
                                 </svg>企業情報</a>
-                            <a href="{{ base }}/{{ $menu_info['privacy'] }}" class="item">
+                            <a href="{{ base }}/{{ $menu_info['privacy'] }}" class="item item02">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="5.061" height="8.707"
                                     viewBox="0 0 5.061 8.707">
                                     <path id="Path_187" data-name="Path 187" d="M491.516,470.418l4,4-4,4"
                                         transform="translate(-491.162 -470.064)" fill="none" stroke="#232448"
                                         stroke-width="1" />
                                 </svg>プライバシーポリシー</a>
-                            <a href="{{ base }}/{{ $menu_info['sitemap'] }}" class="item">
+                            <a href="{{ base }}/{{ $menu_info['sitemap'] }}" class="item item02">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="5.061" height="8.707"
                                     viewBox="0 0 5.061 8.707">
                                     <path id="Path_187" data-name="Path 187" d="M491.516,470.418l4,4-4,4"
                                         transform="translate(-491.162 -470.064)" fill="none" stroke="#232448"
                                         stroke-width="1" />
                                 </svg>サイトマップ</a>
-                            <a href="{{ base }}/{{ $menu_info['contact'] }}" class="item">
+                            <a href="{{ base }}/{{ $menu_info['contact'] }}" class="item item02">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="5.061" height="8.707"
                                     viewBox="0 0 5.061 8.707">
                                     <path id="Path_187" data-name="Path 187" d="M491.516,470.418l4,4-4,4"
