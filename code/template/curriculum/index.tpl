@@ -52,8 +52,8 @@
 
 <section class="secCurriculum01">
     <div class="box">
-        <div class="list animatedParent animateOnce" data-appear-top-offset='-300'>
-            <div class="item itemMedium item01 animated fadeIn slowest">
+        <div class="list animatedParent animateOnce" data-appear-top-offset='-300' data-sequence='500'>
+            <div class="item itemMedium item01 animated fadeIn slowest" data-id='1'>
                 <div class="txt">
                     <div class="arrow pc">
                         <svg class="pc" xmlns="http://www.w3.org/2000/svg" width="29" height="32.575"
@@ -103,7 +103,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item itemSmall item02 animated fadeIn slowest">
+            <div class="item itemSmall item02 animated fadeIn slowest" data-id='2'>
                 <div class="txt">
                     <div class="arrow pc">
                         <svg class="pc" xmlns="http://www.w3.org/2000/svg" width="29" height="32.575"
@@ -176,7 +176,7 @@
                 </div>
 
             </div>
-            <div class="item itemBig item03 animated fadeIn slowest">
+            <div class="item itemBig item03 animated fadeIn slowest" data-id='3'>
                 <div class="txt">
                     <div class="arrow pc">
                         <svg class="pc" xmlns="http://www.w3.org/2000/svg" width="29" height="32.575"
@@ -229,7 +229,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item itemSmall item04 animated fadeIn slowest">
+            <div class="item itemSmall item04 animated fadeIn slowest" data-id='4'>
                 <div class="txt">
                     <div class="arrow pc">
                         <svg class="pc" xmlns="http://www.w3.org/2000/svg" width="29" height="32.575"
@@ -284,7 +284,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item itemBig item05 animated fadeIn slowest">
+            <div class="item itemBig item05 animated fadeIn slowest" data-id='5'>
                 <div class="txt">
                     <div class="arrow pc">
                         <svg class="pc" xmlns="http://www.w3.org/2000/svg" width="29" height="32.575"
