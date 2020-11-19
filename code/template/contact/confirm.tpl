@@ -158,10 +158,8 @@
 ご記入ください</div>
                         </div>
                         <div class="col02">
-                            <div class="txt">
                                 {{ assign $content = 'content' }}
                                 {{ $page.data[ $content ] }}
-                            </div>
                         </div>
                     </div>
                 </div>
