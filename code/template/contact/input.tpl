@@ -188,9 +188,10 @@
                                 <div class="arrow"></div>
                             </div>
                             {{ else }}
-                            <input name="{{ $email }}" value="{{ $page.data[ $email ] }}" type="text"
+                            <input name="{{ $email }}" value="{{ $page.data[ $email ] }}" type="email"
                                 class="iptBasic01 ipt01" placeholder="ryouhin@chunichi-shobou.co.jp" required=""
                                 data-parsley-class-handler="#email" data-parsley-errors-container="#email"
+                                data-parsley-type-message="メールアドレスは登録できない形式です。"
                                 data-parsley-error-message="必ず入力してください。">
                             {{ end }}
                         </div>
@@ -246,7 +247,7 @@
                                 <div class="arrow"></div>
                             </div>
                             {{ else }}
-                            <input name="{{ $tel }}" value="{{ $page.data[ $tel ] }}" type="text"
+                            <input name="{{ $tel }}" value="{{ $page.data[ $tel ] }}" type="tel"
                                 class="iptBasic01 ipt01" placeholder="052-931-0400">
                             {{ end }}
                         </div>
