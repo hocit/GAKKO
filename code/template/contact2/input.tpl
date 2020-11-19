@@ -310,7 +310,7 @@
                 </div>
                 <div class="item">
                     <div class="grid">
-                        <div class="col01" id="parent_name">
+                        <div class="col01">
                             <div class="title">
                                 保護者様のお名前
                             </div>
