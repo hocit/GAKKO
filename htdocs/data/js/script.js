@@ -17,6 +17,8 @@ $('.backTop').on('click', function (e) {
     }, '300');
 });
 
-$('#contact-form').parsley().on('form:submit', function () {
-    return false; // Don't submit form for this demo
+$(function () {
+    $('#contact-form').parsley().on('form:submit', function () {
+        return false; // Don't submit form for this demo
+    });
 });
