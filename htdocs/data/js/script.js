@@ -17,11 +17,6 @@ $('.backTop').on('click', function (e) {
     }, '300');
 });
 
-$(function () {
-    $('#contact-form').parsley().on('field:validated', function () {
-
-        .on('form:submit', function () {
-            return false;
-        });
-    });
+$('#contact-form').parsley().on('form:submit', function () {
+    return false; // Don't submit form for this demo
 });
