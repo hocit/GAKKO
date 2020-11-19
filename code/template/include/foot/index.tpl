@@ -155,7 +155,7 @@ mpi英語倶楽部に関する
                 <div class="address">〒461-0002
 愛知県名古屋市東区代官町34番15号</div>
                 <div class="contact">
-                    Tel :<a href="{{ $site.tel.url }}">{{ $site.tel.num }}</a><span> Fax:052-932-2878</span>
+                    Tel :<a href="{{ $site.tel.url }}">{{ $site.tel.num }}</a><span>  Fax:052-932-2878</span>
                 </div>
             </div>
             <div class="col02">
