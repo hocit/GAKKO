@@ -73,7 +73,7 @@
                 <div class="right">
                     〒461‐0002<br>
                     愛知県名古屋市東区代官町34番15号<br>
-                    TEL（052）931‐0400　／　FAX（052）932‐2878<br>
+                    TEL<a href="{{ $site.tel.url }}">（052）931‐0400</a>　／　FAX（052）932‐2878<br>
                 </div>
             </div>
             <div class="item">
