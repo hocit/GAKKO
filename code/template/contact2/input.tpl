@@ -96,7 +96,7 @@
                                 {{ if isset($page.error.type )}}
                                 <div class="item item01">
                                     <label for="label_01" class="chkBasic01 chkBasic01err chk01">
-                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required=""data-parsley-class-handler="#test2">
+                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required="" data-parsley-class-handler="#test2">
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
                                                 viewBox="0 0 16.562 10.917">
@@ -214,10 +214,10 @@
                                 必須
                             </div>
                         </div>
-                        <div class="col02">
+                        <div class="col02" id="child_name">
                             {{ assign $child_name = 'child_name' }}
                             {{ if isset($page.error.child_name )}}
-                            <input name="{{ $child_name }}" type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="山田太郎">
+                            <input name="{{ $child_name }}" type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="山田太郎"  required="">
                             <div class="tltBasic01 tlt02">
                                 <div class="ttl">
                                     必ず入力してください。
@@ -225,7 +225,7 @@
                                 <div class="arrow"></div>
                             </div>
                             {{ else }}
-                            <input name="{{ $child_name }}" value="{{ $page.data[ $child_name ] }}" type="text" class="iptBasic01 ipt01" placeholder="山田太郎">
+                            <input name="{{ $child_name }}" value="{{ $page.data[ $child_name ] }}" type="text" class="iptBasic01 ipt01" placeholder="山田太郎" required=""  data-parsley-class-handler="#child_name" data-parsley-errors-container="#child_name" data-parsley-error-message="必ず入力してください。">
                             {{ end }}
                         </div>
                     </div>
