@@ -56,9 +56,7 @@
     <script src="{{ base }}/data/js/script.js"></script>
     <script type="text/javascript">
         $(function () {
-            $('#contact-form').parsley().on('form:submit', function () {
-                return false; // Don't submit form for this demo
-            });
+            $('#contact-form').parsley();
         });
     </script>
 </body>
