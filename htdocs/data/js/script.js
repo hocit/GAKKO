@@ -1,4 +1,3 @@
-var $ = jQuery.noConflict();
 $(".iconOpen").click(function () {
     $(".menu").slideDown("slow");
     // $('body').addClass("menu-open");
