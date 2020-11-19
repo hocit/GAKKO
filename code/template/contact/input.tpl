@@ -192,7 +192,7 @@
                                 class="iptBasic01 ipt01" placeholder="ryouhin@chunichi-shobou.co.jp" required=""
                                 data-parsley-class-handler="#email" data-parsley-errors-container="#email"
                                 data-parsley-type-message="メールアドレスは登録できない形式です。"
-                                data-parsley-error-message="必ず入力してください。">
+                                data-parsley-required-message="必ず入力してください。">
                             {{ end }}
                         </div>
                     </div>
