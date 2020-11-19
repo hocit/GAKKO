@@ -147,9 +147,9 @@
                                 <div class="item item01">
                                     <label for="label_01" class="chkBasic01 chk01">
                                         {{ if $page.data[ $type ][0] === '資料請求' }}
-                                        <input type="checkbox" checked value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required="" data-parsley-class-handler="#type">
+                                        <input type="checkbox" checked value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required="" data-parsley-class-handler="#type" data-parsley-errors-container="#type" data-parsley-error-message="my message">
                                         {{ else }}
-                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required="" data-parsley-class-handler="#type">
+                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required="" data-parsley-class-handler="#type" data-parsley-errors-container="#type" data-parsley-error-message="my message"	>
                                         {{ end }}
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
