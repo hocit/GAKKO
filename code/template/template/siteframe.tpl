@@ -49,7 +49,7 @@
 
     {{ foot }}
 
-    <script src="{{ base }}/data/js/jquery.js"></script>
+    <script src='https://code.jquery.com/jquery-2.1.3.js'></script>
     <script src='https://cdn.jsdelivr.net/gh/guillaumepotier/Parsley.js@2.9.2/dist/parsley.js'></script>
     <script src="{{ base }}/data/js/wow.min.js"></script>
     <script src="{{ base }}/data/js/script.js"></script>
