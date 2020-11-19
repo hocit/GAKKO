@@ -173,8 +173,8 @@
                             </div>
                         </div>
                         <div class="col02">
-                            {{ assign $iagree = 'iagree' }}
-                            {{ if $page.data[ $iagree ] === '1' }}
+                            {{ assign $privacy = 'privacy' }}
+                            {{ if $page.data[ $privacy ] === '1' }}
                             同意する
                             {{ end }}
                         </div>
@@ -183,7 +183,7 @@
             </div>
             <div class="list">
                 <div class="item">
-                    <a href="{{ base }}/school/schola/contact/" class="btnBasic01 btn btnBasic01#232448">
+                    <a href="{{ base }}/contact/" class="btnBasic01 btn btnBasic01#232448">
                         <div class="txt">
                             <div class="title">
                                 修正する

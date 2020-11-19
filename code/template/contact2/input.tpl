@@ -78,7 +78,7 @@
                 <div class="title">送信</div>
             </div>
         </div>
-        <form action="{{ base }}/school/schola/contact/confirm.html" method="post">
+        <form id="contact-form" action="{{ base }}/school/schola/contact/confirm.html" method="post">
             <div class="form">
                 <div class="item">
                     <div class="grid">
@@ -96,7 +96,7 @@
                                 {{ if isset($page.error.type )}}
                                 <div class="item item01">
                                     <label for="label_01" class="chkBasic01 chkBasic01err chk01">
-                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]">
+                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required="">
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
                                                 viewBox="0 0 16.562 10.917">
@@ -110,7 +110,7 @@
                                     <label for="label_01" class="title">資料請求</label>
                                 </div>
                                 <div class="item item01">
-                                    <label for="label_02" class="chkBasic01 chkBasic01err chk01">
+                                    <label for="label_02" class="chkBasic01 chkBasic01err chk01" data-parsley-mincheck="1" required="">
                                         <input type="checkbox" value="体験授業" id="label_02" name="{{ $type }}[]">
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
@@ -124,7 +124,7 @@
                                     <label for="label_02" class="title">体験授業</label>
                                 </div>
                                 <div class="item item01">
-                                    <label for="label_03" class="chkBasic01 chkBasic01err chk01">
+                                    <label for="label_03" class="chkBasic01 chkBasic01err chk01" data-parsley-mincheck="1" required="">
                                         <input type="checkbox" value="その他質問など" id="label_03" name="{{ $type }}[]">
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
@@ -147,9 +147,9 @@
                                 <div class="item item01">
                                     <label for="label_01" class="chkBasic01 chk01">
                                         {{ if $page.data[ $type ][0] === '資料請求' }}
-                                        <input type="checkbox" checked value="document" id="label_01" name="{{ $type }}[]">
+                                        <input type="checkbox" checked value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required="">
                                         {{ else }}
-                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]">
+                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required="">
                                         {{ end }}
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
@@ -166,9 +166,9 @@
                                 <div class="item item01">
                                     <label for="label_02" class="chkBasic01 chk01">
                                         {{ if $page.data[ $type ][0] === '体験授業' || $page.data[ $type ][1] === '体験授業' }}
-                                        <input type="checkbox" checked value="lesson" id="label_02" name="{{ $type }}[]">
+                                        <input type="checkbox" checked value="体験授業" id="label_02" name="{{ $type }}[]" data-parsley-mincheck="1" required="">
                                         {{ else }}
-                                        <input type="checkbox" value="lesson" id="label_02" name="{{ $type }}[]">
+                                        <input type="checkbox" value="体験授業" id="label_02" name="{{ $type }}[]" data-parsley-mincheck="1" required="">
                                         {{ end }}
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
@@ -184,9 +184,9 @@
                                 <div class="item item01">
                                     <label for="label_03" class="chkBasic01 chk01">
                                         {{ if $page.data[ $type ][0] === 'その他質問など' || $page.data[ $type ][1] === 'その他質問など' || $page.data[ $type ][2] === 'その他質問など' }}
-                                        <input type="checkbox" checked value="question" id="label_03" name="{{ $type }}[]">
+                                        <input type="checkbox" checked value="その他質問など" id="label_03" name="{{ $type }}[]" data-parsley-mincheck="1" required="">
                                         {{ else }}
-                                        <input type="checkbox" value="question" id="label_03" name="{{ $type }}[]">
+                                        <input type="checkbox" value="その他質問など" id="label_03" name="{{ $type }}[]" data-parsley-mincheck="1" required="">
                                         {{ end }}
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"

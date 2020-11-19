@@ -16,3 +16,12 @@ $('.backTop').on('click', function (e) {
         scrollTop: 0
     }, '300');
 });
+
+$(function () {
+    $('#contact-form').parsley().on('field:validated', function () {
+
+        .on('form:submit', function () {
+            return false;
+        });
+    });
+});
