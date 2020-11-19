@@ -519,8 +519,7 @@
                                         {{ if $page.data[ $privacy ] === '1' }}
                                         <input name="{{ $privacy }}" checked value="1" type="checkbox" id="label_04">
                                         {{ else }}
-                                        <input name="{{ $privacy }}" value="1" type="checkbox" id="label_04">
-                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]"
+                                        <input name="{{ $privacy }}" value="1" type="checkbox" id="label_04"
                                             data-parsley-mincheck="1" required="" data-parsley-class-handler="#privacy"
                                             data-parsley-errors-container="#privacy"
                                             data-parsley-error-message="必ず入力してください。">
