@@ -52,7 +52,7 @@
 
 <section class="secCurriculum01">
     <div class="box">
-        <div class="list animatedParent animateOnce" data-appear-top-offset='-300' data-sequence='500'>
+        <div class="list animatedParent animateOnce" data-sequence='200'>
             <div class="item itemMedium item01 animated fadeIn slowest" data-id='1'>
                 <div class="txt">
                     <div class="arrow pc">
