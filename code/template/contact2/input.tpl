@@ -483,7 +483,7 @@
                                 必須
                             </div>
                         </div>
-                        <div class="col02" id="privacy">
+                        <div class="col02">
                             {{ assign $privacy = 'privacy' }}
                             {{ if isset($page.error.privacy )}}
                             <div class="tltBasic01 tlt03">
@@ -513,7 +513,7 @@
                                 <div class="title">※個人情報の取り扱いについては、<a href="#">プライバシーポリシー</a>をご覧ください。</div>
                             </div>
                             {{ else }}
-                            <div class="iagree">
+                            <div class="iagree" id="privacy">
                                 <div class="chk">
                                     <label for="label_04" class="chkBasic01 chk01">
                                         {{ if $page.data[ $privacy ] === '1' }}
