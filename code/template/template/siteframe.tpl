@@ -39,7 +39,7 @@
         href="https://fonts.googleapis.com/css2?family=Cardo&family=Cormorant+Garamond:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="{{ base }}/data/css/styles.css?v={{ $site.version }}">
-    <link rel="stylesheet" href="{{ base }}/data/css/animate.min.css">
+    <link rel="stylesheet" href="{{ base }}/data/css/animations.css">
 </head>
 
 <body>
@@ -52,7 +52,8 @@
     {{ foot }}
 
     <script src='https://code.jquery.com/jquery-2.1.3.js'></script>
-    <script src='https://cdn.jsdelivr.net/gh/guillaumepotier/Parsley.js@2.9.2/dist/parsley.js'></script>
+    <script src='{{ base }}/data/js/css3-animate-it.js'></script>
+    <script src='{{ base }}/data/js/parsley.js'></script>
     <script src="{{ base }}/data/js/script.js"></script>
     <script type="text/javascript">
         $(function () {

@@ -52,8 +52,8 @@
 
 <section class="secCurriculum01">
     <div class="box">
-        <div class="list">
-            <div class="item itemMedium item01">
+        <div class="list animatedParent">
+            <div class="item itemMedium item01 animated fadeIn slow">
                 <div class="txt">
                     <div class="arrow pc">
                         <svg class="pc" xmlns="http://www.w3.org/2000/svg" width="29" height="32.575"
@@ -103,7 +103,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item itemSmall item02">
+            <div class="item itemSmall item02 animated fadeIn slow">
                 <div class="txt">
                     <div class="arrow pc">
                         <svg class="pc" xmlns="http://www.w3.org/2000/svg" width="29" height="32.575"
@@ -176,7 +176,7 @@
                 </div>
 
             </div>
-            <div class="item itemBig item03">
+            <div class="item itemBig item03 animated fadeIn slow">
                 <div class="txt">
                     <div class="arrow pc">
                         <svg class="pc" xmlns="http://www.w3.org/2000/svg" width="29" height="32.575"
@@ -229,7 +229,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item itemSmall item04">
+            <div class="item itemSmall item04 animated fadeIn slow">
                 <div class="txt">
                     <div class="arrow pc">
                         <svg class="pc" xmlns="http://www.w3.org/2000/svg" width="29" height="32.575"
@@ -284,7 +284,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item itemBig item05">
+            <div class="item itemBig item05 animated fadeIn slow">
                 <div class="txt">
                     <div class="arrow pc">
                         <svg class="pc" xmlns="http://www.w3.org/2000/svg" width="29" height="32.575"
