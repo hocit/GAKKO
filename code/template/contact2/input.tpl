@@ -496,7 +496,7 @@
                                 <div class="chk">
                                     <label for="label_04" class="chkBasic01 chkBasic01err chk01">
                                         <input name="{{ $privacy }}" type="checkbox" id="label_04"
-                                            required="" data-parsley-class-handler="#privacy"
+                                            data-parsley-mincheck="1" required="" data-parsley-class-handler="#privacy"
                                             data-parsley-errors-container="#privacy"
                                             data-parsley-error-message="必ず入力してください。">
                                         <span class="mark">
