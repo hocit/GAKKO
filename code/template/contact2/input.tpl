@@ -520,6 +520,10 @@
                                         <input name="{{ $privacy }}" checked value="1" type="checkbox" id="label_04">
                                         {{ else }}
                                         <input name="{{ $privacy }}" value="1" type="checkbox" id="label_04">
+                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]"
+                                            data-parsley-mincheck="1" required="" data-parsley-class-handler="#privacy"
+                                            data-parsley-errors-container="#privacy"
+                                            data-parsley-error-message="必ず入力してください。">
                                         {{ end }}
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
