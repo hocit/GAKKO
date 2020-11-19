@@ -91,12 +91,12 @@
                             </div>
                         </div>
                         <div class="col02">
-                            <div class="grid">
+                            <div class="grid" id="type">
                                 {{ assign $type = 'type' }}
                                 {{ if isset($page.error.type )}}
                                 <div class="item item01">
                                     <label for="label_01" class="chkBasic01 chkBasic01err chk01">
-                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required="">
+                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required=""data-parsley-class-handler="#test2">
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
                                                 viewBox="0 0 16.562 10.917">
@@ -147,9 +147,9 @@
                                 <div class="item item01">
                                     <label for="label_01" class="chkBasic01 chk01">
                                         {{ if $page.data[ $type ][0] === '資料請求' }}
-                                        <input type="checkbox" checked value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required="">
+                                        <input type="checkbox" checked value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required="" data-parsley-class-handler="#type">
                                         {{ else }}
-                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required="">
+                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required="" data-parsley-class-handler="#type">
                                         {{ end }}
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
