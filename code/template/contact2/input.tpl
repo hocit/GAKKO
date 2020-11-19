@@ -96,7 +96,8 @@
                                 {{ if isset($page.error.type )}}
                                 <div class="item item01">
                                     <label for="label_01" class="chkBasic01 chkBasic01err chk01">
-                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required="" data-parsley-class-handler="#test2">
+                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]"
+                                            data-parsley-mincheck="1" required="" data-parsley-class-handler="#test2">
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
                                                 viewBox="0 0 16.562 10.917">
@@ -110,7 +111,8 @@
                                     <label for="label_01" class="title">資料請求</label>
                                 </div>
                                 <div class="item item01">
-                                    <label for="label_02" class="chkBasic01 chkBasic01err chk01" data-parsley-mincheck="1" required="">
+                                    <label for="label_02" class="chkBasic01 chkBasic01err chk01"
+                                        data-parsley-mincheck="1" required="">
                                         <input type="checkbox" value="体験授業" id="label_02" name="{{ $type }}[]">
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
@@ -124,7 +126,8 @@
                                     <label for="label_02" class="title">体験授業</label>
                                 </div>
                                 <div class="item item01">
-                                    <label for="label_03" class="chkBasic01 chkBasic01err chk01" data-parsley-mincheck="1" required="">
+                                    <label for="label_03" class="chkBasic01 chkBasic01err chk01"
+                                        data-parsley-mincheck="1" required="">
                                         <input type="checkbox" value="その他質問など" id="label_03" name="{{ $type }}[]">
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
@@ -141,15 +144,21 @@
                                     <div class="ttl">
                                         必ずどれかをチェックしてください。
                                     </div>
-                                <div class="arrow"></div>
+                                    <div class="arrow"></div>
                                 </div>
                                 {{ else}}
                                 <div class="item item01">
                                     <label for="label_01" class="chkBasic01 chk01">
                                         {{ if $page.data[ $type ][0] === '資料請求' }}
-                                        <input type="checkbox" checked value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required="" data-parsley-class-handler="#type" data-parsley-errors-container="#type" data-parsley-error-message="必ずどれかをチェックしてください。">
+                                        <input type="checkbox" checked value="資料請求" id="label_01" name="{{ $type }}[]"
+                                            data-parsley-mincheck="1" required="" data-parsley-class-handler="#type"
+                                            data-parsley-errors-container="#type"
+                                            data-parsley-error-message="必ずどれかをチェックしてください。">
                                         {{ else }}
-                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required="" data-parsley-class-handler="#type" data-parsley-errors-container="#type" data-parsley-error-message="必ずどれかをチェックしてください。">
+                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]"
+                                            data-parsley-mincheck="1" required="" data-parsley-class-handler="#type"
+                                            data-parsley-errors-container="#type"
+                                            data-parsley-error-message="必ずどれかをチェックしてください。">
                                         {{ end }}
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
@@ -166,9 +175,11 @@
                                 <div class="item item01">
                                     <label for="label_02" class="chkBasic01 chk01">
                                         {{ if $page.data[ $type ][0] === '体験授業' || $page.data[ $type ][1] === '体験授業' }}
-                                        <input type="checkbox" checked value="体験授業" id="label_02" name="{{ $type }}[]" data-parsley-mincheck="1" required="">
+                                        <input type="checkbox" checked value="体験授業" id="label_02" name="{{ $type }}[]"
+                                            data-parsley-mincheck="1" required="">
                                         {{ else }}
-                                        <input type="checkbox" value="体験授業" id="label_02" name="{{ $type }}[]" data-parsley-mincheck="1" required="">
+                                        <input type="checkbox" value="体験授業" id="label_02" name="{{ $type }}[]"
+                                            data-parsley-mincheck="1" required="">
                                         {{ end }}
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
@@ -184,9 +195,11 @@
                                 <div class="item item01">
                                     <label for="label_03" class="chkBasic01 chk01">
                                         {{ if $page.data[ $type ][0] === 'その他質問など' || $page.data[ $type ][1] === 'その他質問など' || $page.data[ $type ][2] === 'その他質問など' }}
-                                        <input type="checkbox" checked value="その他質問など" id="label_03" name="{{ $type }}[]" data-parsley-mincheck="1" required="">
+                                        <input type="checkbox" checked value="その他質問など" id="label_03"
+                                            name="{{ $type }}[]" data-parsley-mincheck="1" required="">
                                         {{ else }}
-                                        <input type="checkbox" value="その他質問など" id="label_03" name="{{ $type }}[]" data-parsley-mincheck="1" required="">
+                                        <input type="checkbox" value="その他質問など" id="label_03" name="{{ $type }}[]"
+                                            data-parsley-mincheck="1" required="">
                                         {{ end }}
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
@@ -217,7 +230,8 @@
                         <div class="col02" id="child_name">
                             {{ assign $child_name = 'child_name' }}
                             {{ if isset($page.error.child_name )}}
-                            <input name="{{ $child_name }}" type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="山田太郎"  required="">
+                            <input name="{{ $child_name }}" type="text" class="iptBasic01 iptBasic01err ipt01"
+                                placeholder="山田太郎" required="">
                             <div class="tltBasic01 tlt02">
                                 <div class="ttl">
                                     必ず入力してください。
@@ -225,7 +239,10 @@
                                 <div class="arrow"></div>
                             </div>
                             {{ else }}
-                            <input name="{{ $child_name }}" value="{{ $page.data[ $child_name ] }}" type="text" class="iptBasic01 ipt01" placeholder="山田太郎" required=""  data-parsley-class-handler="#child_name" data-parsley-errors-container="#child_name" data-parsley-error-message="必ず入力してください。">
+                            <input name="{{ $child_name }}" value="{{ $page.data[ $child_name ] }}" type="text"
+                                class="iptBasic01 ipt01" placeholder="山田太郎" required=""
+                                data-parsley-class-handler="#child_name" data-parsley-errors-container="#child_name"
+                                data-parsley-error-message="必ず入力してください。">
                             {{ end }}
                         </div>
                     </div>
@@ -240,7 +257,7 @@
                                 必須
                             </div>
                         </div>
-                        <div class="col02">
+                        <div class="col02" id="child_name_phonetic">
                             {{ assign $child_name_phonetic = 'child_name_phonetic' }}
                             {{ if isset($page.error.child_name_phonetic )}}
                             <input name="{{ $child_name_phonetic }}" type="text" class="iptBasic01 iptBasic01err ipt01"
@@ -252,8 +269,11 @@
                                 <div class="arrow"></div>
                             </div>
                             {{ else }}
-                            <input name="{{ $child_name_phonetic }}" value="{{ $page.data[ $child_name_phonetic ] }}" type="text" class="iptBasic01 ipt01"
-                                placeholder="やまだたろう">
+                            <input name="{{ $child_name_phonetic }}" value="{{ $page.data[ $child_name_phonetic ] }}"
+                                type="text" class="iptBasic01 ipt01" placeholder="やまだたろう" required=""
+                                data-parsley-class-handler="#child_name_phonetic"
+                                data-parsley-errors-container="#child_name_phonetic"
+                                data-parsley-error-message="必ず入力してください。">
                             {{ end }}
                         </div>
                     </div>
@@ -268,7 +288,7 @@
                                 必須
                             </div>
                         </div>
-                        <div class="col02">
+                        <div class="col02" id="age">
                             {{ assign $age = 'age' }}
                             {{ if isset($page.error.age )}}
                             <input name="{{ $age }}" type="text" class="iptBasic01 iptBasic01err ipt01"
@@ -280,14 +300,17 @@
                                 <div class="arrow"></div>
                             </div>
                             {{ else }}
-                            <input name="{{ $age }}" value="{{ $page.data[ $age ] }}"  type="text" class="iptBasic01 ipt01" placeholder="小学1年生">
+                            <input name="{{ $age }}" value="{{ $page.data[ $age ] }}" type="text"
+                                class="iptBasic01 ipt01" placeholder="小学1年生" required=""
+                                data-parsley-class-handler="#age" data-parsley-errors-container="#age"
+                                data-parsley-error-message="必ず入力してください。">
                             {{ end }}
                         </div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="grid">
-                        <div class="col01">
+                        <div class="col01" id="parent_name">
                             <div class="title">
                                 保護者様のお名前
                             </div>
@@ -299,7 +322,8 @@
                             {{ assign $parent_name = 'parent_name' }}
                             {{ if isset($page.error.parent_name )}}
                             <input name="{{ $parent_name }}" type="text" class="iptBasic01 iptBasic01err ipt01"
-                                placeholder="山田太郎">
+                                placeholder="山田太郎" required="" data-parsley-class-handler="#parent_name"
+                                data-parsley-errors-container="#parent_name" data-parsley-error-message="必ず入力してください。">
                             <div class="tltBasic01 tlt02">
                                 <div class="ttl">
                                     必ず入力してください。
@@ -307,7 +331,10 @@
                                 <div class="arrow"></div>
                             </div>
                             {{ else }}
-                            <input name="{{ $parent_name }}" value="{{ $page.data[ $parent_name ] }}" type="text" class="iptBasic01 ipt01" placeholder="山田太郎">
+                            <input name="{{ $parent_name }}" value="{{ $page.data[ $parent_name ] }}" type="text"
+                                class="iptBasic01 ipt01" placeholder="山田太郎" required=""
+                                data-parsley-class-handler="#parent_name" data-parsley-errors-container="#parent_name"
+                                data-parsley-error-message="必ず入力してください。">
                             {{ end }}
                         </div>
                     </div>
@@ -322,7 +349,7 @@
                                 必須
                             </div>
                         </div>
-                        <div class="col02">
+                        <div class="col02" id="parent_name_phonetic">
                             {{ assign $parent_name_phonetic = 'parent_name_phonetic' }}
                             {{ if isset($page.error.parent_name_phonetic )}}
                             <input name="{{ $parent_name_phonetic }}" type="text" class="iptBasic01 iptBasic01err ipt01"
@@ -334,8 +361,11 @@
                                 <div class="arrow"></div>
                             </div>
                             {{ else }}
-                            <input name="{{ $parent_name_phonetic }}" value="{{ $page.data[ $parent_name_phonetic ] }}" type="text" class="iptBasic01 ipt01"
-                                placeholder="やまだたろう">
+                            <input name="{{ $parent_name_phonetic }}" value="{{ $page.data[ $parent_name_phonetic ] }}"
+                                type="text" class="iptBasic01 ipt01" placeholder="やまだたろう" required=""
+                                data-parsley-class-handler="#parent_name_phonetic"
+                                data-parsley-errors-container="#parent_name_phonetic"
+                                data-parsley-error-message="必ず入力してください。">
                             {{ end }}
                         </div>
                     </div>
@@ -350,10 +380,11 @@
                                 必須
                             </div>
                         </div>
-                        <div class="col02">
+                        <div class="col02" id="email">
                             {{ assign $email = 'email' }}
                             {{ if isset($page.error.email )}}
-                            <input name="{{ $email }}" type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="ryouhin@chunichi-shobou.co.jp">
+                            <input name="{{ $email }}" type="text" class="iptBasic01 iptBasic01err ipt01"
+                                placeholder="ryouhin@chunichi-shobou.co.jp">
                             <div class="tltBasic01 tlt02">
                                 <div class="ttl">
                                     必ず入力してください。
@@ -361,7 +392,10 @@
                                 <div class="arrow"></div>
                             </div>
                             {{ else }}
-                            <input name="{{ $email }}" value="{{ $page.data[ $email ] }}" type="text" class="iptBasic01 ipt01" placeholder="ryouhin@chunichi-shobou.co.jp">
+                            <input name="{{ $email }}" value="{{ $page.data[ $email ] }}" type="text"
+                                class="iptBasic01 ipt01" placeholder="ryouhin@chunichi-shobou.co.jp" required=""
+                                data-parsley-class-handler="#email" data-parsley-errors-container="#email"
+                                data-parsley-error-message="必ず入力してください。">
                             {{ end }}
                         </div>
                     </div>
@@ -376,10 +410,11 @@
                                 必須
                             </div>
                         </div>
-                        <div class="col02">
+                        <div class="col02" id="tel">
                             {{ assign $tel = 'tel' }}
                             {{ if isset($page.error.tel )}}
-                            <input name="{{ $tel }}" type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="052-931-0400">
+                            <input name="{{ $tel }}" type="text" class="iptBasic01 iptBasic01err ipt01"
+                                placeholder="052-931-0400">
                             <div class="tltBasic01 tlt02">
                                 <div class="ttl">
                                     必ず入力してください。
@@ -387,7 +422,10 @@
                                 <div class="arrow"></div>
                             </div>
                             {{ else }}
-                            <input name="{{ $tel }}" value="{{ $page.data[ $tel ] }}" type="text" class="iptBasic01 ipt01" placeholder="052-931-0400">
+                            <input name="{{ $tel }}" value="{{ $page.data[ $tel ] }}" type="text"
+                                class="iptBasic01 ipt01" placeholder="052-931-0400" required=""
+                                data-parsley-class-handler="#tel" data-parsley-errors-container="#tel"
+                                data-parsley-error-message="必ず入力してください。">
                             {{ end }}
                         </div>
                     </div>
@@ -402,10 +440,11 @@
                                 必須
                             </div>
                         </div>
-                        <div class="col02">
+                        <div class="col02" id="address">
                             {{ assign $address = 'address' }}
                             {{ if isset($page.error.address )}}
-                            <input name="{{ $address }}" type="text" class="iptBasic01 iptBasic01err ipt01" placeholder="愛知県名古屋市東区代官町34番15号">
+                            <input name="{{ $address }}" type="text" class="iptBasic01 iptBasic01err ipt01"
+                                placeholder="愛知県名古屋市東区代官町34番15号">
                             <div class="tltBasic01 tlt02">
                                 <div class="ttl">
                                     必ず入力してください。
@@ -413,7 +452,10 @@
                                 <div class="arrow"></div>
                             </div>
                             {{ else }}
-                            <input name="{{ $address }}" value="{{ $page.data[ $address ] }}" type="text" class="iptBasic01 ipt01" placeholder="愛知県名古屋市東区代官町34番15号">
+                            <input name="{{ $address }}" value="{{ $page.data[ $address ] }}" type="text"
+                                class="iptBasic01 ipt01" placeholder="愛知県名古屋市東区代官町34番15号" required=""
+                                data-parsley-class-handler="#address" data-parsley-errors-container="#address"
+                                data-parsley-error-message="必ず入力してください。">
                             {{ end }}
                         </div>
                     </div>
@@ -441,7 +483,7 @@
                                 必須
                             </div>
                         </div>
-                        <div class="col02">
+                        <div class="col02" id="privacy">
                             {{ assign $privacy = 'privacy' }}
                             {{ if isset($page.error.privacy )}}
                             <div class="tltBasic01 tlt03">
@@ -453,7 +495,10 @@
                             <div class="iagree">
                                 <div class="chk">
                                     <label for="label_04" class="chkBasic01 chkBasic01err chk01">
-                                        <input name="{{ $privacy }}" type="checkbox" id="label_04">
+                                        <input name="{{ $privacy }}" type="checkbox" id="label_04"
+                                            data-parsley-mincheck="1" required="" data-parsley-class-handler="#privacy"
+                                            data-parsley-errors-container="#privacy"
+                                            data-parsley-error-message="必ず入力してください。">
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
                                                 viewBox="0 0 16.562 10.917">
@@ -487,7 +532,8 @@
                                     </label>
                                     <label for="label_04" class="title">同意する</label>
                                 </div>
-                                <div class="title">※個人情報の取り扱いについては、<a href="{{ base }}/{{ $menu_info['privacy'] }}">プライバシーポリシー</a>をご覧ください。</div>
+                                <div class="title">※個人情報の取り扱いについては、<a
+                                        href="{{ base }}/{{ $menu_info['privacy'] }}">プライバシーポリシー</a>をご覧ください。</div>
                             </div>
                             {{ end }}
                         </div>
@@ -500,13 +546,16 @@
                         入力内容の確認
                     </div>
                     <div class="icon iconRight">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="19.662" height="11.737" viewBox="0 0 19.662 11.737">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19.662" height="11.737"
+                            viewBox="0 0 19.662 11.737">
                             <g id="Group_84" data-name="Group 84" transform="translate(0 0.369)">
                                 <path id="Path_194" data-name="Path 194" d="M155.775,803.688h19"
-                                    transform="translate(-155.775 -798.152)" fill="none" stroke="#232448" stroke-width="1">
+                                    transform="translate(-155.775 -798.152)" fill="none" stroke="#232448"
+                                    stroke-width="1">
                                 </path>
                                 <path id="Path_195" data-name="Path 195" d="M168.275,783.965l6,5.5-6,5.5"
-                                    transform="translate(-155.354 -783.965)" fill="none" stroke="#232448" stroke-width="1">
+                                    transform="translate(-155.354 -783.965)" fill="none" stroke="#232448"
+                                    stroke-width="1">
                                 </path>
                             </g>
                         </svg>
