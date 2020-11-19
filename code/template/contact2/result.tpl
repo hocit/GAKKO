@@ -70,7 +70,7 @@
         </div>
         <div class="list">
             <div class="item">
-                <a href="#" class="btnBasic01 btn btnBasic01O#232448">
+                <a href="/" class="btnBasic01 btn btnBasic01O#232448">
                     <div class="txt">
                         <div class="title">
                             トップページ

@@ -349,7 +349,9 @@
         <div class="timeline">
             <div class="start">START</div>
             <div class="circle circleTop"></div>
-            <div class="line"></div>
+            <div class="line">
+                <input type="range" name="" id="">
+            </div>
             <div class="arrow">
                 <svg xmlns="http://www.w3.org/2000/svg" width="31.107" height="18.672" viewBox="0 0 31.107 18.672">
                     <path id="Path_233" data-name="Path 233"
