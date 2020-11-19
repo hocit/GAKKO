@@ -147,9 +147,9 @@
                                 <div class="item item01">
                                     <label for="label_01" class="chkBasic01 chk01">
                                         {{ if $page.data[ $type ][0] === '資料請求' }}
-                                        <input type="checkbox" checked value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required="" data-parsley-class-handler="#type" data-parsley-errors-container="#type" data-parsley-error-message="必ずどれかをチェックしてください。">
+                                        <input type="checkbox" checked value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required="" data-parsley-class-handler="#type" data-parsley-errors-container="#type">
                                         {{ else }}
-                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required="" data-parsley-class-handler="#type" data-parsley-errors-container="#type" data-parsley-error-message="必ずどれかをチェックしてください。">
+                                        <input type="checkbox" value="資料請求" id="label_01" name="{{ $type }}[]" data-parsley-mincheck="1" required="" data-parsley-class-handler="#type" data-parsley-errors-container="#type">
                                         {{ else }}>
                                         {{ end }}
                                         <span class="mark">
