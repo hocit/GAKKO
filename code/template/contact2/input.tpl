@@ -318,7 +318,7 @@
                                 必須
                             </div>
                         </div>
-                        <div class="col02">
+                        <div class="col02" id="parent_name">
                             {{ assign $parent_name = 'parent_name' }}
                             {{ if isset($page.error.parent_name )}}
                             <input name="{{ $parent_name }}" type="text" class="iptBasic01 iptBasic01err ipt01"
