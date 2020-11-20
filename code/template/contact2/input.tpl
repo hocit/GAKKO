@@ -519,7 +519,6 @@
                             <div class="iagree" id="privacy">
                                 <div class="chk">
                                     <label for="label_04" class="chkBasic01 chk01">
-
                                         <input name="{{ $privacy }}" value="1" type="checkbox" id="label_04"
                                             data-parsley-mincheck="1" required="" data-parsley-class-handler="#privacy"
                                             data-parsley-errors-container="#privacy"
