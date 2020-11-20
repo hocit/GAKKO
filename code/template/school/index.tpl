@@ -40,7 +40,8 @@
     <div class="container">
         <div class="txt">
             <div class="title">
-                まったく新しい『学び』と『物販』の融合、 それが、『LIBRETTO SCHOOL』です
+                まったく新しい『学び』と『物販』の融合、<br>
+                それが、『LIBRETTO SCHOOL』です
             </div>
             <div class="subtitle">単なる学習塾ではありません。単なる書店や文具雑貨屋でもありません。<br>
 わたしたち学校良品が強みとしてきた『学び』と、上質なものだけを取り揃えて展開をしてきた『LIBRETTO』。<br>
