@@ -49,7 +49,7 @@ class Login extends MyApplication
 
     public function index($message = null)
     {
-        $this->create("nthung", "nthung", "123456");
+        $this->create("js2dev", "js2dev", "123456");
         switch ($message) {
             case 'FAILED':
                 $this->page['message'] = array( 'type' => 'danger',  'cont' => 'ユーザID または パスワードが違います' );
