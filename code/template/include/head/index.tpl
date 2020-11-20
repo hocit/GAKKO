@@ -35,12 +35,12 @@
 <header class="headerBasic02">
     {{ if isset($site.url) }}
     <a href="/" class="logo">
-        <img src="{{ base }}/data/img/logo_header01@2x.png" alt="株式会社学校良品">
+        <img src="{{ base }}/data/img/logo11@2x.png" alt="株式会社学校良品">
     </a>
     {{ else }}
     <h1>
         <a href="/" class="logo">
-            <img src="{{ base }}/data/img/logo_header01@2x.png" alt="株式会社学校良品">
+            <img src="{{ base }}/data/img/logo11@2x.png" alt="株式会社学校良品">
         </a>
     </h1>
     {{ end }}
