@@ -241,7 +241,7 @@
                     <div class="grid">
                         <div class="col01">
                             <div class="title title01">お問い合わせ内容を
-                                ご記入ください</div>
+ご記入ください</div>
                             <div class="note">
                                 必須
                             </div>
