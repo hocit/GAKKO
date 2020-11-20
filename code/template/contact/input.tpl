@@ -1,6 +1,7 @@
 {{ assign $site.title = 'スコーラについてのお問い合わせ | 陰山式スコーラプレミアについて | 教室事業 | 株式会社学校良品' }}
 {{ assign $site.description = '学校良品の教室事業、陰山式スコーラプレミアのお問い合わせはこちらから。' }}
 {{ assign $site.url = 'contact/' }}
+{{ assign $footer_type = 'type_3' }}
 
 {{ transclude '../template/siteframe' }}
 
