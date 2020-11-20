@@ -1,6 +1,7 @@
 {{ assign $site.title = 'お問い合わせ [完了] | ' . $site.title }}
 {{ assign $site.description = 'お問い合わせ [完了] | ' . $site.description }}
 {{ assign $site.url = 'school/schola/contact/complete.html' }}
+{{ assign $footer_type = 'type_3' }}
 
 {{ transclude '../template/siteframe' }}
 
