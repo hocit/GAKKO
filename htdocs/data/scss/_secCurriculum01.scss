@@ -23,6 +23,8 @@
             @include mq(xl) {
                 left: auto;
                 right: 0;
+                width: calc(100% - 80px);
+
             }
 
             >.item {
@@ -31,7 +33,7 @@
                 display: flex;
 
                 @include mq(bt5) {
-                    width: 257px;
+                    width: 100%;
                 }
 
                 >.txt {

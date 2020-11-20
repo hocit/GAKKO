@@ -38,7 +38,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cardo&family=Cormorant+Garamond:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="{{ base }}/data/css/styles.css?v={{ $site.version }}">
+    <link rel="stylesheet" href="{{ base }}/data/css/style.css?v={{ $site.version }}">
     <link rel="stylesheet" href="{{ base }}/data/css/animations.css">
 </head>
 
