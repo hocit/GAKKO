@@ -9,7 +9,7 @@ $(".iconClose").click(function () {
     // $('body').removeClass("menu-open");
 });
 
-$('.backTop').on('click', function (e) {
+$('.backTop01').on('click', function (e) {
     e.preventDefault();
     $('html, body').animate({
         scrollTop: 0
