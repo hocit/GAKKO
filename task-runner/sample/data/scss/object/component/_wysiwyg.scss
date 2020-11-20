@@ -1,0 +1,158 @@
+.c-entry-block {
+    /**
+     * Heading
+     */
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: bold;
+        margin: 1.4em 0 0.5em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+
+    h4 {
+        font-size: 1.4em;
+    }
+
+    h5 {
+        font-size: 1.2em;
+    }
+
+    /**
+     * Image
+     */
+    img {
+        max-width: 100%;
+        height: auto !important;
+        vertical-align: top;
+
+        &[style*="float: left;"] {
+            margin: 0 1.5em 1.5em 0;
+        }
+
+        &[style*="float: right;"] {
+            margin: 0 0 1.5em 1.5em;
+        }
+
+        // stylelint-disable-next-line
+        &.aligncenter {
+            display: block;
+            margin: 0 auto 1.5em;
+        }
+
+        // stylelint-disable-next-line
+        &.alignleft {
+            float: left;
+            margin: 0 1.5em 1.5em 0;
+        }
+
+        // stylelint-disable-next-line
+        &.alignright {
+            float: right;
+            margin: 0 0 1.5em 1.5em;
+        }
+
+        @include mq_sp {
+            &[style*="float: left;"],
+            &[style*="float: right;"] {
+                display: block;
+                // stylelint-disable-next-line
+                float: none !important;
+                margin: 0 auto 1.5em;
+            }
+
+            // stylelint-disable-next-line
+            &.aligncenter,
+            // stylelint-disable-next-line
+            &.alignleft,
+            // stylelint-disable-next-line
+            &.alignright {
+                display: block;
+                float: none;
+                margin: 0 auto 1.5em;
+            }
+        }
+    }
+
+    /**
+     * Table
+     */
+    table {
+        margin: 1.4em 0;
+
+        th {
+            background: #eee;
+            border: 1px solid #ccc;
+            padding: 0.5em;
+        }
+
+        td {
+            border: 1px solid #ccc;
+            padding: 0.5em;
+        }
+    }
+
+    /**
+     * Paragraph
+     */
+    p {
+        margin: 1.4em 0;
+    }
+
+    pre {
+        background: #333;
+        color: #fff;
+        font-family: monospace;
+        line-height: 1.2;
+        margin: 1.4em 0;
+        overflow: auto;
+        padding: 5px;
+        white-space: pre;
+    }
+
+    blockquote {
+        border-left: 5px solid #eee;
+        margin: 1.4em 0;
+        padding: 0 0 0 1.4em;
+    }
+
+    /**
+     * List
+     */
+    ul,
+    ol,
+    dl {
+        margin: 1.4em 0;
+
+        li {
+            list-style: disc outside;
+            margin-left: 1.4em;
+        }
+    }
+
+    ol {
+        li {
+            list-style: decimal outside;
+        }
+    }
+
+    dl {
+        dt {
+            font-weight: bold;
+        }
+
+        dd {
+            padding-left: 2em;
+        }
+    }
+}
+

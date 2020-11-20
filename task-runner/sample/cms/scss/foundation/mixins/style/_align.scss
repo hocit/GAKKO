@@ -1,0 +1,18 @@
+// stylelint-disable
+@mixin alignStyle($prefix: "") {
+    .u#{$prefix}-align-center {
+        text-align: center !important;
+    }
+
+    .u#{$prefix}-align-left {
+        text-align: left !important;
+    }
+
+    .u#{$prefix}-align-right {
+        text-align: right !important;
+    }
+
+    .u#{$prefix}-align-justify {
+        text-align: justify !important;
+    }
+}

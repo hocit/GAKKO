@@ -1,0 +1,52 @@
+.c-table-form {
+    width: 100%;
+
+    @include mq_sp {
+        &,
+        &__tbody,
+        &__tbody__row,
+        &__tbody__head,
+        &__tbody__data {
+            display: block;
+        }
+    }
+
+    &__tbody {
+        &__row + &__row {
+            @include mq_sp {
+                border-top: 1px dotted #aaa;
+            }
+        }
+
+        &__head {
+            padding: 15px 10px;
+            width: 8em;
+            white-space: nowrap;
+            text-align: right;
+
+            @include mq_sp {
+                width: auto;
+                padding-bottom: 0;
+                text-align: left;
+            }
+        }
+
+        &__data {
+            padding: 15px 10px;
+
+            @include mq_sp {
+                padding-top: 5px;
+            }
+        }
+
+        &__row:hover &__head,
+        &__row:hover &__data {
+            background: #fff;
+        }
+
+        &__row.is-top &__head,
+        &__row.is-top &__data {
+            vertical-align: top;
+        }
+    }
+}

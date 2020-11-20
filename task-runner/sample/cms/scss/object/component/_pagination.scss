@@ -1,0 +1,40 @@
+.c-pagination {
+    margin: 1.6em 0;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item {
+        margin: 5px;
+    }
+
+    &__anchor {
+        text-decoration: none;
+        display: block;
+        line-height: 2;
+        min-width: 2em;
+        padding: 0 0.2em;
+        text-align: center;
+        border: 1px solid #ddd;
+        color: $color-text;
+
+        &:hover {
+            background: #eee;
+            text-decoration: none;
+        }
+    }
+
+    &__current {
+        display: block;
+        line-height: 2;
+        min-width: 2em;
+        padding: 0 0.2em;
+        text-align: center;
+        border: 1px solid #ddd;
+        background: #999;
+        color: #fff;
+    }
+}

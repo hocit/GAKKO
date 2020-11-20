@@ -1,0 +1,57 @@
+/**
+ * Spaces (margin, padding)
+ *
+ * .u-m-(number) : Margin all
+ * .u-mh-(number) : Margin horizontal
+ * .u-mv-(number) : Margin vertical
+ * .u-mt-(number) : Margin top
+ * .u-mb-(number) : Margin bottom
+ * .u-ml-(number) : Margin left
+ * .u-mr-(number) : Margin right
+ *
+ * .u-p-(number) : Padding all
+ * .u-ph-(number) : Padding horizontal
+ * .u-pv-(number) : Padding vertical
+ * .u-pt-(number) : Padding top
+ * .u-pb-(number) : Padding bottom
+ * .u-pl-(number) : Padding left
+ * .u-pr-(number) : Padding right
+ *
+ * @see foundation/mixins/style/_image.scss
+ */
+$space: 0;
+$max: 10;
+$step: 1;
+
+@include spaceStyleAuto();
+
+@while ($space <= $max) {
+    @include spaceStyleRem($space);
+    $space: $space + $step;
+}
+
+@include mq_pc {
+    $space: 0;
+    $max: 10;
+    $step: 1;
+
+    @include spaceStyleAuto('-pc');
+
+    @while ($space <= $max) {
+        @include spaceStyleRem($space, '-pc');
+        $space: $space + $step;
+    }
+}
+
+@include mq_sp {
+    $space: 0;
+    $max: 10;
+    $step: 1;
+
+    @include spaceStyleAuto('-sp');
+
+    @while ($space <= $max) {
+        @include spaceStyleRem($space, '-sp');
+        $space: $space + $step;
+    }
+}

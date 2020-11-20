@@ -1,0 +1,13 @@
+.c-panel {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    @include mq_sp {
+        width: auto;
+    }
+
+    &.is-small {
+        width: 480px;
+    }
+}

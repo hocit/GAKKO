@@ -1,0 +1,82 @@
+.c-button {
+    appearance: none;
+    background: #1183c0;
+    border: 1px solid #1183c0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 1;
+    outline: none;
+    padding: 15px 30px;
+    text-decoration: none;
+    vertical-align: middle;
+
+    @include mq_sp {
+        font-size: 1.6rem;
+        padding: 1.5rem 3rem;
+    }
+
+    &:hover,
+    &.is-active {
+        color: #1183c0;
+        background: #fff;
+    }
+
+    &.is-small {
+        font-size: 1.4rem;
+        padding: 5px 10px;
+
+        @include mq_sp {
+            font-size: 1.4rem;
+            padding: 0.5rem 1rem;
+        }
+    }
+
+    &.is-large {
+        font-size: 1.8rem;
+        padding: 20px 60px;
+    }
+
+    &.is-block {
+        display: block;
+        text-align: center;
+    }
+
+    &[disabled],
+    &.is-disabled {
+        background: darken(#1183c0, 15%);
+        cursor: not-allowed;
+        color: #ccc;
+
+        &:hover {
+            color: #ccc;
+            background: darken(#1183c0, 15%);
+        }
+    }
+
+    &__secondary {
+        background: #eee;
+        color: #333;
+        border: 1px solid #ccc;
+
+        &:hover,
+        &.is-active {
+            color: #333;
+            background: #fff;
+        }
+
+        &[disabled],
+        &.is-disabled {
+            background: darken(#eee, 15%);
+            color: #666;
+
+            &:hover {
+                color: #666;
+                background: darken(#eee, 15%);
+            }
+        }
+    }
+}
+

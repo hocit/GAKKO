@@ -1,0 +1,40 @@
+.c-input-text {
+    font-size: 1.1em;
+    font-family: inherit;
+    line-height: inherit;
+    color: $color-text;
+    border: 1px solid #aaa;
+    outline: none;
+    padding: 0.2em 0.6em;
+    border-radius: 3px;
+    box-shadow: inset 0 2px 3px #ccc;
+
+    @include mq_sp {
+        font-size: initial;
+    }
+
+    &:focus {
+        border: 1px solid $cat-primary-back;
+        box-shadow: 0 0 5px $cat-primary-back;
+    }
+
+    &.is-micro {
+        width: 4em;
+    }
+
+    &.is-mini {
+        width: 8em;
+    }
+
+    &.is-middle {
+        width: 20em;
+    }
+
+    &.is-half {
+        width: 50%;
+    }
+
+    &.is-full {
+        width: 100%;
+    }
+}

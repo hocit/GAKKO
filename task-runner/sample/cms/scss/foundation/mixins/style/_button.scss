@@ -1,0 +1,28 @@
+@mixin buttonStyle( $name, $border, $text, $back-color, $hover, $back ) {
+    @at-root #{selector-append(&, '.is-#{$name}')} {
+        border: 1px solid $border;
+        color: $text;
+        background: $back-color;
+
+        &:hover {
+            background: $hover;
+        }
+
+        &:active {
+            background: $back-color;
+        }
+
+        &.is-inset {
+            border: 1px solid darken($border, 20%);
+            background: darken($back-color, 20%);
+
+            &:hover {
+                background: darken($hover, 20%);
+            }
+
+            &:active {
+                background: darken($back-color, 20%);
+            }
+        }
+    }
+}

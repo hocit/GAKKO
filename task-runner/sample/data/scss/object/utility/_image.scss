@@ -1,0 +1,21 @@
+/**
+ * Image
+ *
+ * .u-image-full
+ * .u-image-contain
+ * .u-image-fit-contain
+ * .u-image-fit-cover
+ * .u-image-fit-fill
+ * .u-image-fit-scale-down
+ *
+ * @see foundation/mixins/style/_image.scss
+ */
+@include imageStyle;
+
+@media screen and (min-width: $sp-width-breakpoint + 1px) {
+    @include imageStyle("-pc");
+}
+
+@include mq_sp {
+    @include imageStyle("-sp");
+}

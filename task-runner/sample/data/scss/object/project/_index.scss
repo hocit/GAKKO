@@ -1,0 +1,131 @@
+.p-index {
+    &__slider {
+        margin-bottom: 6rem;
+
+        @include mq_sp {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__service {
+        margin-bottom: 6rem;
+
+        @include mq_sp {
+            margin-bottom: 3rem;
+        }
+
+        &__col {
+            list-style: none;
+            width: 30rem;
+
+            @include mq_sp {
+                margin-bottom: 1.5rem;
+                margin-right: 0;
+                width: auto;
+            }
+        }
+
+        &__button {
+            background: #eee;
+            color: #333;
+            display: block;
+            font-size: 1.6rem;
+            height: 12rem;
+            line-height: 12rem;
+            text-align: center;
+            text-decoration: none;
+
+            &:hover {
+                background: #ddd;
+            }
+        }
+    }
+
+    &__info {
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-between;
+
+        @include mq_sp {
+            display: block;
+        }
+    }
+
+    &__news {
+        width: 63rem;
+
+        @include mq_sp {
+            margin-bottom: 3rem;
+            width: auto;
+        }
+
+        &__head-group {
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        &__head {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        &__button {
+            position: absolute;
+            right: 0;
+            top: 0.5rem;
+        }
+
+        &__table {
+            width: 100%;
+            border-collapse: collapse;
+
+            &__head {
+                border-bottom: 1px solid #ddd;
+                border-top: 1px solid #ddd;
+                font-weight: normal;
+                padding: 0.5rem 1em 0.5rem 0;
+                white-space: nowrap;
+                width: 1em;
+            }
+
+            &__data {
+                border-bottom: 1px solid #ddd;
+                border-top: 1px solid #ddd;
+                padding: 0.5rem 0;
+
+                &.is-label {
+                    padding: 0.5rem 1em 0.5rem 0;
+                    white-space: nowrap;
+                    width: 1em;
+                }
+            }
+        }
+    }
+
+    &__banner {
+        width: 30rem;
+
+        @include mq_sp {
+            width: auto;
+        }
+
+        &__col {
+            list-style: none;
+            margin-bottom: 1.2rem;
+        }
+
+        &__button {
+            background: #eee;
+            color: #333;
+            display: block;
+            height: 6rem;
+            line-height: 6rem;
+            text-align: center;
+            text-decoration: none;
+
+            &:hover {
+                background: #ddd;
+            }
+        }
+    }
+}

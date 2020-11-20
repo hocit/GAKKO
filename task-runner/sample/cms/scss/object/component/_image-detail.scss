@@ -1,0 +1,142 @@
+.c-image-detail {
+    @include mq_pc {
+        display: flex;
+    }
+
+    &__image {
+        @include mq_pc {
+            flex-grow: 1;
+            margin-right: 40px;
+        }
+    }
+
+    &__operate {
+        @include mq_pc {
+            width: 300px;
+        }
+
+        @include mq_sp {
+            margin-top: 20px;
+        }
+
+        &__head {
+            margin-top: 0;
+
+            & ~ & {
+                margin-top: 20px;
+            }
+        }
+
+        &__table {
+            width: 100%;
+            font-size: 0.9em;
+
+            &__tbody {
+                &__head {
+                    width: 1em;
+                    white-space: nowrap;
+                    padding: 5px;
+                    border: 1px solid #ccc;
+                    text-align: left;
+                }
+
+                &__data {
+                    padding: 5px;
+                    border: 1px solid #ccc;
+                    word-wrap: break-word;
+                }
+            }
+        }
+
+        &__list {
+            &__title {
+                margin-bottom: 10px;
+
+                & ~ & {
+                    padding-top: 20px;
+                }
+            }
+        }
+
+        &__size {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 0 -3px;
+
+            &__item {
+                margin: 0 3px;
+            }
+
+            &__input {
+                width: 4em;
+            }
+
+            &__switch {
+                vertical-align: middle;
+                position: relative;
+                width: 2.4em;
+                overflow: hidden;
+                white-space: nowrap;
+                display: inline-block;
+                line-height: normal;
+                padding: 5px;
+                font-size: 1.1em;
+                box-sizing: border-box;
+                border: 1px solid #aaa;
+                border-radius: 3px;
+                margin: 0 3px;
+
+                &__input {
+                    display: none;
+                }
+
+                &__label {
+                    padding-left: 3em;
+                    cursor: pointer;
+                }
+
+                &__input + &__label::before {
+                    // stylelint-disable-next-line
+                    font-family: FontAwesome;
+                    position: absolute;
+                    content: "\f127";
+                    display: block;
+                    left: 0;
+                    top: 0;
+                    margin: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: transparent;
+                    line-height: 34px;
+                    text-align: center;
+                }
+
+                &__input:checked + &__label::before {
+                    background: #ddd;
+                    content: "\f0c1";
+                }
+            }
+        }
+
+        &__trim {
+            width: 100%;
+
+            &__tbody {
+                &__data {
+                    padding: 0;
+                    border: 1px solid #ccc;
+                    width: 33.3%;
+                    text-align: center;
+                }
+            }
+
+            &__label {
+                display: block;
+                padding: 10px 0;
+                margin: 0;
+                cursor: pointer;
+            }
+        }
+    }
+}

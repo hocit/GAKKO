@@ -1,0 +1,26 @@
+// stylelint-disable
+@mixin imageStyle ($prefix: "") {
+    .u#{$prefix}-image-full {
+        width: 100%;
+    }
+
+    .u#{$prefix}-image-contain {
+        max-width: 100%;
+    }
+
+    .u#{$prefix}-image-fit-contain {
+        object-fit: contain;
+    }
+
+    .u#{$prefix}-image-fit-cover {
+        object-fit: cover;
+    }
+
+    .u#{$prefix}-image-fit-fill {
+        object-fit: fill;
+    }
+
+    .u#{$prefix}-image-fit-scale-down {
+        object-fit: scale-down;
+    }
+}

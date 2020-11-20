@@ -1,0 +1,7 @@
+.l-pop-content {
+    padding: 10px 30px;
+
+    @include mq_sp {
+        padding: 10px;
+    }
+}

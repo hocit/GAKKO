@@ -1,0 +1,39 @@
+
+/**
+ * Pagination
+ * ページネーション
+ */
+.c-pagination {
+    margin: 1.6em 0;
+    text-align: center;
+
+    &__list {
+        display: inline-block;
+        margin: 0 5px;
+        vertical-align: top;
+
+        & > span,
+        & > a {
+            border: 1px solid #ddd;
+            color: #333;
+            display: inline-block;
+            line-height: 2;
+            min-width: 2.2em;
+            padding: 0 0.2em;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        & > a {
+            &:hover {
+                background: #eee;
+                text-decoration: none;
+            }
+        }
+
+        & > span {
+            background: #999;
+            color: #fff;
+        }
+    }
+}

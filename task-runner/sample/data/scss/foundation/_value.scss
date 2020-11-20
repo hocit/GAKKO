@@ -1,0 +1,28 @@
+// Font
+/* stylelint-disable-next-line value-keyword-case */
+$font-sans: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Verdana, sans-serif;
+/* stylelint-disable-next-line value-keyword-case */
+$font-serif: "Noto Serif JP", Georgia, 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
+$font-source: 'Source Code Pro', monospace;
+$font-default: $font-sans;
+
+// For SmartPhone
+$sp-width: 375;
+$sp-width-breakpoint: $sp-width * 2;
+$sp-window-gap: 1.5rem;
+$sp-grid-gap: 0.5rem;
+$sp-grid-steps: 12;
+
+// For PC
+$pc-layout-width: 1000;
+$pc-window-gap: 4rem;
+$pc-min-width: calc(#{$pc-layout-width}px + #{$pc-window-gap * 2});
+$pc-grid-gap: 2rem;
+$pc-grid-steps: 12;
+
+// Spaces
+$space-elements-gap: 1.4em;
+
+// Colors
+$color-text: #1d1d1d;
+$color-link-text: #1183c0;

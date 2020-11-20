@@ -1,0 +1,8 @@
+// ラベルスタイル
+@mixin labelStyle( $name, $field, $border ) {
+    @at-root #{selector-append(&, '.is-#{$name}')} {
+        background: $field;
+        border: 1px solid darken($field, 10%);
+        color: darken($border, 15%);
+    }
+}

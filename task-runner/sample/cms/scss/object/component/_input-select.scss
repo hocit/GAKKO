@@ -1,0 +1,39 @@
+.c-input-select {
+    font-size: 1.1em;
+    font-family: inherit;
+    line-height: inherit;
+    color: #333;
+    border: 1px solid #aaa;
+    vertical-align: middle;
+    height: 2.16em;
+    padding: 0 0.5em;
+
+    @include mq_sp {
+        font-size: initial;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+    }
+
+    &.is-micro {
+        width: 4em;
+    }
+
+    &.is-mini {
+        width: 8em;
+    }
+
+    &.is-middle {
+        width: 20em;
+    }
+
+    &.is-half {
+        width: 50%;
+    }
+
+    &.is-full {
+        width: 100%;
+    }
+}

@@ -1,0 +1,19 @@
+/**
+ * Display Styles
+ *
+ * .u-display-block
+ * .u-display-inline-block
+ * .u-display-flex
+ * .u-display-none
+ *
+ * @see foundation/mixins/style/_display.scss
+ */
+@include displayStyle();
+
+@include mq_pc {
+    @include displayStyle('-pc');
+}
+
+@include mq_sp {
+    @include displayStyle('-sp');
+}

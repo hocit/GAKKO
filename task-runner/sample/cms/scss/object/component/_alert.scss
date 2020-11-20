@@ -1,0 +1,35 @@
+.c-alert {
+    padding: 20px;
+    border: 1px solid transparent;
+    margin-bottom: 1.6em;
+    border-radius: 5px;
+
+    ul {
+        margin-bottom: 0;
+    }
+
+    li {
+        margin: 0 0 0 1.4em;
+        list-style: disc outside;
+    }
+
+    @include mq_sp {
+        padding: 10px;
+    }
+
+    &__header {
+        margin-bottom: 0.8em;
+        font-size: 2rem;
+    }
+
+    &.is-small {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    @include alertStyle( 'default',  $cat-default-field,  $cat-default-text );
+    @include alertStyle( 'primary',  $cat-primary-field,  $cat-primary-border );
+    @include alertStyle( 'danger',   $cat-danger-field,   $cat-danger-border  );
+    @include alertStyle( 'success',  $cat-success-field,  $cat-success-border );
+    @include alertStyle( 'warning',  $cat-warning-field,  $cat-warning-border );
+}

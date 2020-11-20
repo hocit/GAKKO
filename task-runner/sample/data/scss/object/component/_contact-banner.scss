@@ -1,0 +1,37 @@
+/**
+ * Contact Banner
+ */
+.c-contact-banner {
+    align-items: center;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+
+    @include mq_sp {
+        display: block;
+        padding: 1rem;
+    }
+
+    &__tel {
+        font-size: 3.2rem;
+        font-weight: bold;
+        margin-right: 30px;
+
+        @include mq_sp {
+            font-size: 2.4rem;
+            margin: 0;
+            text-align: center;
+        }
+    }
+
+    &__time {
+        flex-grow: 1;
+        line-height: 16px;
+
+        @include mq_sp {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+    }
+}

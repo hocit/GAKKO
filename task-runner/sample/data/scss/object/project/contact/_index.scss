@@ -1,0 +1,27 @@
+.p-contact {
+    &__privacy-check {
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    &__submit {
+        text-align: center;
+
+        &__button {
+            display: inline-block;
+        }
+    }
+
+    &__error {
+        color: #f00;
+    }
+
+    &__result {
+        text-align: center;
+
+        &__head {
+            font-size: 1.4em;
+            margin-bottom: 20px;
+        }
+    }
+}

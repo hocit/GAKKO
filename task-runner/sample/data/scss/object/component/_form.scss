@@ -1,0 +1,51 @@
+/**
+ * Form styling
+ */
+.c-form {
+    &__table {
+        width: 100%;
+
+        @include mq_sp {
+            &,
+            &__thead,
+            &__tbody,
+            &__row {
+                width: auto;
+                display: block;
+            }
+        }
+
+        &__head {
+            padding: 10px 1em 10px 0;
+            text-align: left;
+            vertical-align: middle;
+            white-space: nowrap;
+            width: 1em;
+
+            @include mq_sp {
+                width: auto;
+                display: block;
+                white-space: normal;
+                padding: 1rem 0 0;
+            }
+        }
+
+        &__data {
+            padding: 10px 0;
+            vertical-align: middle;
+
+            @include mq_sp {
+                width: auto;
+                display: block;
+                padding: 0 0 1rem;
+            }
+        }
+
+        &__row.is-top & {
+            &__head,
+            &__data {
+                vertical-align: top;
+            }
+        }
+    }
+}

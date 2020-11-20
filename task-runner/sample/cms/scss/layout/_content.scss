@@ -1,0 +1,63 @@
+.l-content {
+    @include mq_sp {
+        position: relative;
+        transition: left 0.3s;
+        left: 0;
+
+        .has-side & {
+            left: $side-width;
+        }
+    }
+
+    &__main {
+        padding: 40px 30px 10px;
+        margin-left: $side-width;
+
+        @include mq_sp {
+            padding: 40px 10px 10px;
+            margin-left: 0;
+        }
+    }
+
+    &__side {
+        font-size: 0.9em;
+        width: $side-width;
+        height: 100%;
+        overflow: auto;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: $frame-back-color;
+        color: $frame-text-color;
+        z-index: 2;
+
+        @include mq_sp {
+            left: -$side-width;
+            transition: left 0.3s;
+
+            .has-side & {
+                left: 0;
+            }
+        }
+
+        &__logo {
+            margin: 0;
+            padding: 0;
+            border: none;
+
+            &__anchor {
+                height: 120px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+            }
+
+            &__image {
+                max-height: 85%;
+                max-width: 85%;
+                width: 100%;
+            }
+        }
+    }
+}

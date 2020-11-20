@@ -1,0 +1,26 @@
+.p-news {
+    border-collapse: collapse;
+    width: 100%;
+
+    &__head {
+        border-bottom: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+        font-weight: normal;
+        padding: 15px 1em 15px 0;
+        white-space: nowrap;
+        width: 1em;
+    }
+
+    &__data {
+        border-bottom: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+        padding: 15px 0;
+
+        &.is-label {
+            padding: 15px 1em 15px 0;
+            white-space: nowrap;
+            width: 1em;
+        }
+    }
+}
+

@@ -1,0 +1,25 @@
+.c-fieldset {
+    margin: 0;
+    border: none;
+    border-top: 1px solid #ccc;
+    padding: 30px;
+
+    @include mq_sp {
+        padding: 15px 5px;
+    }
+
+    &:nth-child(even) {
+        background: #eee;
+    }
+
+    &__legend {
+        padding: 0 20px;
+        margin: 0 0 -10px 0;
+        font-size: 1.4em;
+
+        @include mq_sp {
+            padding: 0 10px;
+            margin: 0 0 -5px 0;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+/**
+ * Float
+ *
+ * .u-float-left
+ * .u-float-right
+ * .u-clear
+ * .u-clearfix
+ *
+ * @see foundation/mixins/style/_float.scss
+ */
+@include floatStyle;
+
+@media screen and (min-width: $sp-width-breakpoint + 1px) {
+    @include floatStyle("-pc");
+}
+
+@include mq_sp {
+    @include floatStyle("-sp");
+}
