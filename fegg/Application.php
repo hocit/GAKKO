@@ -27,7 +27,7 @@ class Application
     /**
      *  constructor
      */
-    function __construct()
+    public function __construct()
     {
         // Fegg設定ファイルを取得
         require(FEGG_DIR . '/settings.php');
@@ -48,8 +48,8 @@ class Application
         // エラー処理設定
         if (!isset($_SERVER['REMOTE_ADDR']) || (isset($_SERVER['REMOTE_ADDR']) && !in_array($_SERVER['REMOTE_ADDR'], $this->_settings['developer_ip']))) {
             // 本番モード
-            define('FEGG_DEVELOPER', '0');
-            ini_set( 'display_errors', 0 );
+            define('FEGG_DEVELOPER', '1');
+            ini_set('display_errors', 1);
         } else {
             // 開発モード
             define('FEGG_DEVELOPER', '1');
@@ -130,8 +130,7 @@ class Application
                 $tempKey = $currentKey . "[$key]";
                 $data[$key] = $this->_setHiddenForTemplate($value, $tempKey);
             }
-
-        } else if(!empty($currentKey)) {
+        } elseif (!empty($currentKey)) {
             $currentKey = preg_replace('/^\[([^\]]+)\]/i', '\1', $currentKey);
             $this->_hiddenForTemplate[$currentKey] = $data;
         }
@@ -162,7 +161,9 @@ class Application
     private function _isSupportLanguage($languageCode)
     {
         // 言語コードが空白の場合
-        if (!$languageCode) { return false; }
+        if (!$languageCode) {
+            return false;
+        }
 
         // アプリケーションがサポートする言語コードを取得
         $supportLanguage = isset($this->_settings['support_language']) ? $this->_settings['support_language'] : '';
@@ -170,7 +171,7 @@ class Application
         // サポート言語判定
         if ($languageCode && is_array($supportLanguage) && in_array($languageCode, $supportLanguage)) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }
@@ -181,7 +182,8 @@ class Application
      * @param string $classNamespace 名前空間付きクラス名
      * @return string 名前空間をlib以下のパスに置き換えた文字列
      */
-    private function _namespaceToPath($classNamespace) {
+    private function _namespaceToPath($classNamespace)
+    {
         $path = ltrim($classNamespace, '\\');
         $libRoot = FEGG_CODE_DIR . DIRECTORY_SEPARATOR . 'lib' .DIRECTORY_SEPARATOR;
         return $libRoot . str_replace('\\', DIRECTORY_SEPARATOR, $path) . '.php';
@@ -200,7 +202,7 @@ class Application
      * @param  string $user Basic認証ユーザーの個別指定
      * @param  string $password Basic認証パスワードの個別指定
      */
-    function basicAuth($user = '', $password = '')
+    public function basicAuth($user = '', $password = '')
     {
         // 認証範囲
         $scope = isset($this->_settings['basic_auth_scope']) && $this->_settings['basic_auth_scope'] ? $this->_settings['basic_auth_scope'] : 0;
@@ -211,8 +213,7 @@ class Application
             $password = $password ? $password : $this->_settings['basic_auth_password'];
 
             if (!isset($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW']) || !$_SERVER['PHP_AUTH_USER']
-             || $_SERVER['PHP_AUTH_USER'] <> $user || $_SERVER['PHP_AUTH_PW'] <> $password)
-            {
+             || $_SERVER['PHP_AUTH_USER'] <> $user || $_SERVER['PHP_AUTH_PW'] <> $password) {
                 // メッセージの設定
                 $authMessage = isset($this->_settings['basic_auth_message']) && $this->_settings['basic_auth_message'] ? $this->_settings['basic_auth_message'] : "Enter username and password.";
                 $authErrorMessage = isset($this->_settings['basic_auth_error_message']) && $this->_settings['basic_auth_error_message'] ? $this->_settings['basic_auth_message'] : "Authorization Required";
@@ -235,7 +236,7 @@ class Application
      * @param string $toTimezone 変換先タイムゾーン（Asia/Tokyo形式）
      * @return string 変換後日付
      */
-    function convertDatetime($date, $fromTimezone, $toTimezone)
+    public function convertDatetime($date, $fromTimezone, $toTimezone)
     {
         // 変換元タイムゾーンで日付をtimeに変換
         date_default_timezone_set($fromTimezone);
@@ -255,7 +256,7 @@ class Application
      * 画面表示
      * @param string $template テンプレートファイル名（拡張子は不要）
      */
-    function displayPage($template)
+    public function displayPage($template)
     {
         // Basic認証の処理対象に設定
         $this->_basicAuthFlag = 'true';
@@ -278,25 +279,25 @@ class Application
      * @param array $assignedValue 表示データ
      * @return テンプレートの実行結果を画面出力
      */
-    function displayTemplate($template, $assignedValue = array())
+    public function displayTemplate($template, $assignedValue = array())
     {
         // カレントディレクトリ指定があり、テンプレートIDの頭が「/」じゃない場合は相対パス
-        if( isset( $this->_settings['current_template_dir'] ) && ! empty( $this->_settings['current_template_dir'] ) && substr($template, 0, 1) !== '/' ) {
+        if (isset($this->_settings['current_template_dir']) && ! empty($this->_settings['current_template_dir']) && substr($template, 0, 1) !== '/') {
             $template = $this->_settings['current_template_dir'].$template;
         }
         // 相対パスの指定を削除する
         if (is_numeric(strpos($template, '.'))) {
             $stack = array();
-            foreach( explode( '/', $template ) as $path ) {
-                if( $path === '..' ) {
-                    if( count( $stack ) ) {
-                        array_pop( $stack );
+            foreach (explode('/', $template) as $path) {
+                if ($path === '..') {
+                    if (count($stack)) {
+                        array_pop($stack);
                     }
-                } else if( $path !== '.' && $path !== '' ) {
-                    array_push( $stack, $path );
+                } elseif ($path !== '.' && $path !== '') {
+                    array_push($stack, $path);
                 }
             }
-            $template = implode( '/', $stack );
+            $template = implode('/', $stack);
         }
 
         // ディレクトリを設定
@@ -315,7 +316,7 @@ class Application
             return;
         }
         // テンプレートファイルのカレントディレクトリパス
-        $currentDir = str_replace( $this->_settings['template_dir'], '', dirname( $templateFile ) ).'/';
+        $currentDir = str_replace($this->_settings['template_dir'], '', dirname($templateFile)).'/';
 
         // テンプレートが更新されている場合はキャッシュファイルを作成
         if (!file_exists($cacheFile) || filemtime($cacheFile) < filemtime($templateFile)) {
@@ -332,7 +333,7 @@ class Application
                 $parentParts = '';
                 if (isset($matches[1]) && $matches[1]) {
                     // 頭が「/」じゃない場合は相対ファイルとして読み込む
-                    if( substr($matches[1], 0, 1) == '/' ) {
+                    if (substr($matches[1], 0, 1) == '/') {
                         $parentTemplate = substr($matches[1], 1);
                     } else {
                         $parentTemplate = $currentDir . $matches[1];
@@ -359,7 +360,7 @@ class Application
             }
 
             // 変数修飾子をPHPに変換
-            $function = function($matches) {
+            $function = function ($matches) {
                 $tokens = explode("|", trim($matches[1]));
                 $statement = '$' . trim(array_shift($tokens));
                 $variable = $statement;
@@ -370,20 +371,23 @@ class Application
                     $modifire = array_shift($parameters);
                     if ($htmlSpecialCharsFlag && strtolower($modifire) == "noescape") {
                         $htmlSpecialCharsFlag = false;
-                    } else if(! $breakLineFlag && strtolower($modifire) == "br") {
+                    } elseif (! $breakLineFlag && strtolower($modifire) == "br") {
                         $breakLineFlag = true;
-                    } else if(strtolower($modifire) == "replace") {
+                    } elseif (strtolower($modifire) == "replace") {
                         $statement = "mb_ereg_replace('" . $parameters[0] . "', '" . $parameters[1] . "', " . $statement . ")";
                     } else {
-                        $parameter = ""; foreach ($parameters as $value) { $parameter .= "," . $value; }
+                        $parameter = "";
+                        foreach ($parameters as $value) {
+                            $parameter .= "," . $value;
+                        }
                         $statement = $modifire . "(" . $statement . $parameter . ")";
                     }
                 }
                 if ($htmlSpecialCharsFlag && $breakLineFlag) {
                     return "<?php if (isset($variable) && !is_array($variable)) { echo nl2br( htmlSpecialChars($statement, ENT_QUOTES, '' . FEGG_DEFAULT_CHARACTER_CODE . '') ); } ?>";
-                } else if($htmlSpecialCharsFlag) {
+                } elseif ($htmlSpecialCharsFlag) {
                     return "<?php if (isset($variable) && !is_array($variable)) { echo htmlSpecialChars($statement, ENT_QUOTES, '' . FEGG_DEFAULT_CHARACTER_CODE . ''); } ?>";
-                } else if($breakLineFlag) {
+                } elseif ($breakLineFlag) {
                     return "<?php if (isset($variable) && !is_array($variable)) { echo nl2br($statement); } ?>";
                 } else {
                     return "<?php if (isset($variable) && !is_array($variable)) { echo $statement; } ?>";
@@ -488,7 +492,8 @@ class Application
                 foreach ($matches[1] as $key => $paramater) {
                     $elements = explode(" ", trim($paramater));
                     $tempElements = array();
-                    foreach ($elements as $element) { ;
+                    foreach ($elements as $element) {
+                        ;
                         list($id, $value) = explode("=", $element);
                         $tempElements[trim($id)] = trim($value);
                     }
@@ -519,8 +524,10 @@ class Application
             }
 
             // 変数を$assignedValueの要素として変換
-            $function = function($matches) {
-                if (trim($matches[1]) == '$assignedValue' || trim($matches[1]) == '$assignedClass' || trim($matches[1]) == '$assignedHead') { return trim($matches[1]); }
+            $function = function ($matches) {
+                if (trim($matches[1]) == '$assignedValue' || trim($matches[1]) == '$assignedClass' || trim($matches[1]) == '$assignedHead') {
+                    return trim($matches[1]);
+                }
                 $variables = explode(".", trim($matches[1]));
                 $element = "";
                 foreach ($variables as $variable) {
@@ -541,7 +548,7 @@ class Application
 
             // $variable[$id].id 形式への対応（５次元まで対応）
             $compiledTemplate = preg_replace('/(\[\'*[^\]]+\'*\])\.(\w+)/', '\1[\'\2\']', $compiledTemplate);
-            for($i = 0; $i < 5; $i++) {
+            for ($i = 0; $i < 5; $i++) {
                 $compiledTemplate = preg_replace('/(\[*\])\.(\w+)/', '\1[\'\2\']', $compiledTemplate);
             }
 
@@ -568,15 +575,13 @@ class Application
      * @param  mixed 判定する変数
      * @return boolean 空なら ture そうでなければ false
      */
-    function _empty($var)
+    public function _empty($var)
     {
         if ((is_array($var) && count($var) == 0)
          || ($var === "")
-         || ($var === NULL)
+         || ($var === null)
          || ($var === false)) {
-
             return true;
-
         } else {
             return false;
         }
@@ -590,9 +595,9 @@ class Application
      * @param string $errorFile
      * @param int $errorLine
      */
-    function errorHandler($errorNo, $errorMessage, $errorFile, $errorLine)
+    public function errorHandler($errorNo, $errorMessage, $errorFile, $errorLine)
     {
-        if ( 0 == error_reporting () ) {
+        if (0 == error_reporting()) {
             return;
         }
 
@@ -604,15 +609,19 @@ class Application
             $error .= "Error Message: <font color='red'>$errorMessage</font><br/>";
 
             // エラー対象ファイルの該当行の表示
-            if(file_exists($errorFile)) {
+            if (file_exists($errorFile)) {
                 $file = file_get_contents($errorFile);
                 $line = explode("\n", $file);
                 $error .= '<p></p>';
                 for ($i = $errorLine - 10; $i <= $errorLine + 10; $i++) {
                     if ($i > 0 && isset($line[$i - 1])) {
-                        if ($i == $errorLine) { $error .= '<font color="red">'; }
+                        if ($i == $errorLine) {
+                            $error .= '<font color="red">';
+                        }
                         $error .= $i . ': ' . htmlspecialchars($line[$i - 1]) . '<br/>';
-                        if ($i == $errorLine) { $error .= '</font>'; }
+                        if ($i == $errorLine) {
+                            $error .= '</font>';
+                        }
                     }
                 }
             }
@@ -628,7 +637,7 @@ class Application
      * 表示用の変数設定と画面編集
      * @param string $template テンプレートファイル名（.tplは不要）
      */
-    function fetchPage($template)
+    public function fetchPage($template)
     {
         // テンプレートに渡すデータを設定
         $assign = array();
@@ -684,7 +693,7 @@ class Application
      * @param array $assignedValue 表示データ
      * @return string テンプレートの出力結果
      */
-    function fetchTemplate($templateFile, $assignedValue = array())
+    public function fetchTemplate($templateFile, $assignedValue = array())
     {
         // 直接コールされている場合はBasic認証の対象外に
         $this->_basicAuthFlag = $this->_basicAuthFlag != '' ? $this->_basicAuthFlag : 'false';
@@ -710,7 +719,7 @@ class Application
      * @param array $parameter
      * @return mixed 正常時：クラスインスタンス 異常時：null
      */
-    function getClass()
+    public function getClass()
     {
         // 引数取得
         $parameters = func_get_args();
@@ -771,7 +780,7 @@ class Application
      * @param string $name
      * @return string 対象のCookie値
      */
-    function getCookie($name = '')
+    public function getCookie($name = '')
     {
         if ($name) {
             return isset($_COOKIE[$name]) ? $_COOKIE[$name] : '';
@@ -787,7 +796,7 @@ class Application
      * @param string $timeZone タイムゾーン（Asia/Tokyo形式、省略時はFEGG_DEFAULT_TIMEZONEを使用）
      * @return string 指定したタイムゾーンの日時（指定フォーマット、指定無しは y-m-d H:i:s 形式）
      */
-    function getDatetime($format = 'Y-m-d H:i:s', $timeZone = '')
+    public function getDatetime($format = 'Y-m-d H:i:s', $timeZone = '')
     {
         if ($timeZone) {
             date_default_timezone_set($timeZone);
@@ -802,7 +811,7 @@ class Application
      * インスタンス取得
      * @return Application このクラスのインスタンス
      */
-    function &getInstance()
+    public function &getInstance()
     {
         return $this;
     }
@@ -812,25 +821,25 @@ class Application
      * 実行環境から言語コードを取得
      * @return string 言語コード
      */
-    function getLanguage()
+    public function getLanguage()
     {
 
         // URLで指定された言語コード
         $languageCode = isset($_GET['lang']) ? $_GET['lang'] : '';
-        if ($this->_isSupportLanguage($languageCode)){
+        if ($this->_isSupportLanguage($languageCode)) {
             return $languageCode;
         }
 
         // Cookieで指定された言語コード
         $languageCode = isset($_COOKIE['FEGG_language_code']) ? $_COOKIE['FEGG_language_code'] : '';
-        if ($this->_isSupportLanguage($languageCode)){
+        if ($this->_isSupportLanguage($languageCode)) {
             return $languageCode;
         }
 
         // サブドメインで指定された言語コード
         if (isset($_SERVER['SERVER_NAME'])) {
             $languageCode = preg_replace('/^([\w\-]+)\..+$/', "\1", $_SERVER['SERVER_NAME']);
-            if ($this->_isSupportLanguage($languageCode)){
+            if ($this->_isSupportLanguage($languageCode)) {
                 return $languageCode;
             }
         }
@@ -838,7 +847,7 @@ class Application
         // ブラウザで指定された言語コード
         $languageCode = isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) ? $_SERVER['HTTP_ACCEPT_LANGUAGE'] : '';
 
-        if ($this->_isSupportLanguage($languageCode)){
+        if ($this->_isSupportLanguage($languageCode)) {
             return $languageCode;
         } else {
             // 取得値がサポート言語ではない場合は先頭２文字で再判定
@@ -856,7 +865,7 @@ class Application
      * セッション値取得
      * @param String $name
      */
-    function getSession($name = '')
+    public function getSession($name = '')
     {
         // セッションを開始
         if (!session_id()) {
@@ -876,7 +885,7 @@ class Application
      * @param string $name 設定名
      * @return string 設定値
      */
-    function getSetting($name)
+    public function getSetting($name)
     {
         return isset($this->_settings[$name]) ? $this->_settings[$name] : '';
     }
@@ -886,16 +895,16 @@ class Application
      * リダイレクト
      * @param string $url リダイレクト先URL
      */
-    function redirect($url)
+    public function redirect($url)
     {
         // URLが指定されている場合は指定アドレスにリダイレクト
-        if (preg_match( '/^http[s]*:\/\//', $url))  {
+        if (preg_match('/^http[s]*:\/\//', $url)) {
             header('Location: ' . $url);
             exit();
         }
 
         // アプリケーション内のリンクの場合
-        if (!preg_match('/^\/.*/', $url))  {
+        if (!preg_match('/^\/.*/', $url)) {
             $url = '/' . $url;
         }
         $url = FEGG_CURRENT_URL . $url;
@@ -908,7 +917,7 @@ class Application
     /**
      * セッションIDの再発行
      */
-    function regeneratSessionId()
+    public function regeneratSessionId()
     {
         // セッションを開始
         if (!session_id()) {
@@ -916,7 +925,7 @@ class Application
         }
 
         // $_SESSIONを利用する場合のセキュリティ対策
-        session_regenerate_id(TRUE);
+        session_regenerate_id(true);
     }
 
 
@@ -926,10 +935,12 @@ class Application
      * @param string $languageCode
      * @return コンフィグ（配列）
      */
-    function loadConfig($name, $languageCode = '')
+    public function loadConfig($name, $languageCode = '')
     {
         // 既に読み込み済みの場合はその値を返す
-        if (isset($this->config[$name])) { return $this->config[$name]; }
+        if (isset($this->config[$name])) {
+            return $this->config[$name];
+        }
 
         $configFile = "$name.php";
         $languageCode = $languageCode ? $languageCode : $this->languageCode;
@@ -968,7 +979,7 @@ class Application
      * @param type $method リクエストメソッド(POST/GET)。省略時は全て取得。
      * @return mixed 取得結果が単一: 取得値（string） / 取得結果が配列 取得値（array）
      */
-    function in($name = '', $method = '')
+    public function in($name = '', $method = '')
     {
         // 定数との比較判定のため大文字変換
         $method = strtoupper($method);
@@ -992,10 +1003,14 @@ class Application
 
             // 全データを取得
             if (!$method || $method == 'GET') {
-                foreach ($_GET as $key => $value) { $requestData[$key] = $value; }
+                foreach ($_GET as $key => $value) {
+                    $requestData[$key] = $value;
+                }
             }
             if (!$method || $method == 'POST') {
-                foreach ($_POST as $key => $value) { $requestData[$key] = $value; }
+                foreach ($_POST as $key => $value) {
+                    $requestData[$key] = $value;
+                }
             }
         }
 
@@ -1024,13 +1039,13 @@ class Application
      * @param  array $options オプション
      * @return int mail()関数の返値
      */
-    function mail($to, $subject, $message, $from, $options = array())
+    public function mail($to, $subject, $message, $from, $options = array())
     {
         $boundary = 'boundary_' . md5(rand());
         $bounceto = isset($options['bounceto']) ? $options['bounceto'] : $from;
 
         // mimeエンコード用無名関数
-        $mime = function($text, $length = 99999) {
+        $mime = function ($text, $length = 99999) {
             $index = 0;
             $encoded = '';
             while ($index * $length <= mb_strlen($text)) {
@@ -1091,7 +1106,7 @@ class Application
      * 文字コード設定
      * @param string $characterCode 文字コード
      */
-    function setCharacterCode($characterCode)
+    public function setCharacterCode($characterCode)
     {
         $this->_characterCode = $characterCode;
     }
@@ -1104,7 +1119,7 @@ class Application
      * @parame string $expire 有効期限（秒で指定、0で現在時刻）
      * @param string $path パス
      */
-    function setCookie($name, $value, $expire = '', $path = '/')
+    public function setCookie($name, $value, $expire = '', $path = '/')
     {
         // 有効期限
         $expire = $expire > 0 ? time() + $expire : time() + 604800;
@@ -1122,7 +1137,7 @@ class Application
      * テンプレートのカレントディレクトリを設定
      * @param string $dir カレントディレクトリ
      */
-    function setCurrentTemplateDirectory( $dir )
+    public function setCurrentTemplateDirectory($dir)
     {
         $this->_settings['current_template_dir'] = $dir;
     }
@@ -1133,7 +1148,7 @@ class Application
      * @param mixed $name hidden名、もしくは {'key' => value} 型の配列
      * @param string $value 設定する値
      */
-    function setHidden($name, $value = "")
+    public function setHidden($name, $value = "")
     {
         if (! is_array($name)) {
             $this->_hidden[$name] = $value;
@@ -1149,7 +1164,7 @@ class Application
      * HTML Headerを設定
      * @param string $header ヘッダー
      */
-    function setHtmlHeader($header)
+    public function setHtmlHeader($header)
     {
         header($header);
     }
@@ -1159,10 +1174,10 @@ class Application
      * 言語コード設定
      * @param string $languageCode
      */
-    function setLanguage($languageCode)
+    public function setLanguage($languageCode)
     {
         // 言語コードが指定されていて、サポート言語であることを確認
-        if ($languageCode && $this->_isSupportLanguage($languageCode)){
+        if ($languageCode && $this->_isSupportLanguage($languageCode)) {
 
             // 言語コードをCookieに保存
             $this->setCookie('FEGG_language_code', $languageCode);
@@ -1178,7 +1193,7 @@ class Application
      * @param String $name
      * @param String $value
      */
-    function setSession($name, $value)
+    public function setSession($name, $value)
     {
         // セッションを開始
         if (!session_id()) {
@@ -1193,7 +1208,7 @@ class Application
      * @param string $id ID
      * @param string $value 設定値
      */
-    function setSiteinfo($id, $value)
+    public function setSiteinfo($id, $value)
     {
         $this->_site[$id] = $value;
     }
@@ -1203,7 +1218,7 @@ class Application
      * リロード対策用ワンタイムチケット発行
      * @param string $name チケット名
      */
-    function setTicket($name)
+    public function setTicket($name)
     {
         $ticketName = 'ticket_' . $name;
         $ticket = md5(uniqid() . mt_rand());
@@ -1216,7 +1231,7 @@ class Application
      * クッキーを削除
      * @param string $name
      */
-    function unsetCookie($name)
+    public function unsetCookie($name)
     {
         $this->setCookie($name, '', time() - 86500, '/');
     }
@@ -1226,13 +1241,15 @@ class Application
      * hiddenのデータを削除（テンプレートタグ {{hidden}} で出力される）
      * @param string $name
      */
-    function unsetHidden($name)
+    public function unsetHidden($name)
     {
-        if ($name) { unset($this->_hidden[$name]); }
+        if ($name) {
+            unset($this->_hidden[$name]);
+        }
     }
 
 
-    function unsetSession($name = '')
+    public function unsetSession($name = '')
     {
         // セッションを開始
         if (!session_id()) {
@@ -1242,8 +1259,8 @@ class Application
         if ($name) {
             unset($_SESSION[$name]);
         } else {
-          $_SESSION = array();
-          session_destroy();
+            $_SESSION = array();
+            session_destroy();
         }
     }
 
@@ -1253,7 +1270,7 @@ class Application
      * @param string $name
      * @return boolean チケット有効： true / チケット無効： false
      */
-    function useTicket($name)
+    public function useTicket($name)
     {
         $ticketName = 'ticket_' . $name;
         $ticketId = $this->in($ticketName, 'POST');
@@ -1263,7 +1280,7 @@ class Application
         }
 
         // ワンタイムチケット認証
-        if ($ticketId && $ticketId === $this->getSession($ticketName)){
+        if ($ticketId && $ticketId === $this->getSession($ticketName)) {
             $this->unsetSession($ticketName);
             return true;
         } else {
@@ -1278,7 +1295,7 @@ class Application
  */
 function shutdownHandler()
 {
-    if ( 0 == error_reporting () ) {
+    if (0 == error_reporting()) {
         return;
     }
 
@@ -1295,7 +1312,7 @@ function shutdownHandler()
                 if ($key + 1 == $error['line']) {
                     echo '<a name="target" /><font color=red>' . ($key + 1) . ": $value</font><br/>";
                 } else {
-                    echo ($key + 1) . ": $value<br/>";
+                    echo($key + 1) . ": $value<br/>";
                 }
             }
             echo '</pre>';
