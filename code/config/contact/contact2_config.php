@@ -37,13 +37,13 @@ $_ADMIN_DOMAIN = 'gakkou-ryouhin.com';
 
 // 管理者アドレス
 // Adoministrator's address
-$_ADMIN_MAIL    = 'huyennk@nlbn.net';
+$_ADMIN_MAIL    = 'check@lionheart.co.jp';
 // テスト用アドレス
 // Tester's address
 $_ADMIN_TEST    = 'check@lionheart.co.jp';
 // 閲覧者向け送信元アドレス
 // Send from address for viewers
-$_ADMIN_FROM    = 'huyennk@nlbn.net';
+$_ADMIN_FROM    = 'check@lionheart.co.jp';
 // 管理者向けメール件名
 // Subject for administrator
 $_ADMIN_SUBJECT = 'ホームページからスコーラについてお問い合わせがありました';
