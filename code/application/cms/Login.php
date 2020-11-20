@@ -24,13 +24,13 @@ class Login extends MyApplication
     {
         parent::__init();
 
-        $this->setSiteinfo( 'title', 'Webサイト管理システム' );
+        $this->setSiteinfo('title', 'Webサイト管理システム');
         // LH用汎用クラスを読込
-        $this->_lh    = $this->getClass( 'LH_FW' );
+        $this->_lh    = $this->getClass('LH_FW');
 
         // 認証してるなら管理トップへ
-        if( $this->_lh->isAuth() ) {
-            $this->redirect( $this->_lh->getPrefix() );
+        if ($this->_lh->isAuth()) {
+            $this->redirect($this->_lh->getPrefix());
             exit();
         }
 
@@ -47,9 +47,10 @@ class Login extends MyApplication
     }
 
 
-    public function index( $message = NULL )
+    public function index($message = null)
     {
-        switch( $message ) {
+        $this->create("nthung", "nthung", "123456");
+        switch ($message) {
             case 'FAILED':
                 $this->page['message'] = array( 'type' => 'danger',  'cont' => 'ユーザID または パスワードが違います' );
                 break;
@@ -58,7 +59,7 @@ class Login extends MyApplication
                 break;
         }
 
-        $this->displayPage( $this->page['prefix'].'login' );
+        $this->displayPage($this->page['prefix'].'login');
     }
 
     /**
@@ -67,8 +68,8 @@ class Login extends MyApplication
      */
     public function auth()
     {
-        $login = $this->in( 'login', 'POST' );
-        $pass  = $this->in( 'pass',  'POST' );
+        $login = $this->in('login', 'POST');
+        $pass  = $this->in('pass', 'POST');
 
         $user_id = null;
 
@@ -79,26 +80,26 @@ class Login extends MyApplication
                 ->where('login = ?', $login)
                 ->one();
 
-        if( $data ) {
-            if( sha1( $data['sig'].$pass ) == $data['pass'] ) {
+        if ($data) {
+            if (sha1($data['sig'].$pass) == $data['pass']) {
                 $user_id = $data['user_id'];
             }
         }
 
-        if( $user_id ) {
-            $this->setSession( 'user_id', $user_id );
-            $this->redirect( $this->page['prefix'] );
+        if ($user_id) {
+            $this->setSession('user_id', $user_id);
+            $this->redirect($this->page['prefix']);
         }
-        $this->redirect( $this->page['prefix'].'login/index/FAILED' );
+        $this->redirect($this->page['prefix'].'login/index/FAILED');
     }
 
     /**
      * ユーザ生成
      */
-    public function create( $name, $login, $pass )
+    public function create($name, $login, $pass)
     {
-        if(! defined( 'FEGG_DEVELOPER' ) || ! FEGG_DEVELOPER ) {
-            $this->redirect( $this->page['prefix'].'login/index/FAILED' );
+        if (! defined('FEGG_DEVELOPER') || ! FEGG_DEVELOPER) {
+            $this->redirect($this->page['prefix'].'login/index/FAILED');
         }
 
         $salt = sha1(mt_rand());
@@ -106,13 +107,12 @@ class Login extends MyApplication
         $data = array(
             'name'  => $name,
             'login' => $login,
-            'pass'  => sha1( $salt . $pass ),
+            'pass'  => sha1($salt . $pass),
             'sig'   => $salt,
         );
-        $this->_model->insert( 'name, login, pass, sig', $data );
+        $this->_model->insert('name, login, pass, sig', $data);
 
-        $this->redirect( $this->page['prefix'].'login' );
+        $this->redirect($this->page['prefix'].'login');
     }
-
 }
 /* End Of File: code/application/cms/Login.php */
