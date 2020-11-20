@@ -296,7 +296,7 @@
                                 <div class="chk">
                                     <label for="label_04" class="chkBasic01 chk01">
                                     {{code var_dump($page.data[ $privacy ]);}}
-                                        {{ if $page.data[ $privacy ] === '1' }}
+                                        {{ if $page.data[ $privacy ] === 'undefine' }}
                                         <input name="{{ $privacy }}" checked value="1" type="checkbox" id="label_04">
                                         {{ else }}
                                         <input name="{{ $privacy }}" value="1" type="checkbox" id="label_04" required=""
