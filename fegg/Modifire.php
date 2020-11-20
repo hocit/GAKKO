@@ -164,7 +164,7 @@ function feggMenus()
 function feggExcerpt45($string)
 {
     mb_internal_encoding("UTF-8");
-    if (strlen($string)>45) {
+    if (mb_strlen($string)>45) {
         return mb_substr($string, 0, 45).'...';
     } else {
         return $string;
