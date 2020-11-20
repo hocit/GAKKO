@@ -147,6 +147,16 @@ mpi英語倶楽部に関する
 </section>
 </section>
 {{ end }}
+<section class="secBasic10">
+    {{ if $footer_type === 'type_1' || $footer_type === 'type_2' }}
+    {{ else }}
+    <div class="backTop">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25.693" height="13.054" viewBox="0 0 25.693 13.054">
+            <path id="Path_229" data-name="Path 229" d="M-11821.905,1626.305l12.5-12,12.5,12"
+                transform="translate(11822.252 -1613.612)" fill="none" stroke="#fff" stroke-width="1"></path>
+        </svg>
+    </div>
+    {{ end }}
 <footer class="footerBasic01">
     {{ if $footer_type === 'type_1' || $footer_type === 'type_2' }}
     {{ else }}
@@ -300,3 +310,4 @@ mpi英語倶楽部に関する
         Copyright © GAKKO RYOHIN. All Rights Reserved.
     </div>
 </footer>
+</section>
