@@ -295,7 +295,7 @@
                             <div class="iagree" id="privacy">
                                 <div class="chk">
                                     <label for="label_04" class="chkBasic01 chk01">
-                                    {{php var_dump($page.data[ $privacy ]);}}
+                                    {{code var_dump($page.data[ $privacy ]);}}
                                         {{ if $page.data[ $privacy ] === '1' }}
                                         <input name="{{ $privacy }}" checked value="1" type="checkbox" id="label_04">
                                         {{ else }}
