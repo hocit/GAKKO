@@ -5,12 +5,12 @@
 {{ end }}
     {{ if isset($site.url) }}
     <a href="/" class="logo">
-    <img src="{{ base }}/data/img/Logo5@2x.png" alt="株式会社学校良品" srcset="">
+    <img src="{{ base }}/data/img/logo10@2x.png" alt="株式会社学校良品" srcset="">
     </a>
     {{ else }}
     <h1>
         <a href="/" class="logo">
-            <img src="{{ base }}/data/img/Logo5@2x.png" alt="株式会社学校良品" srcset="">
+            <img src="{{ base }}/data/img/logo11@2x.png" alt="株式会社学校良品" srcset="">
         </a>
     </h1>
     {{ end }}

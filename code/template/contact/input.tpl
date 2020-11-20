@@ -2,7 +2,6 @@
 {{ assign $site.description = '学校良品の教室事業、陰山式スコーラプレミアのお問い合わせはこちらから。' }}
 {{ assign $site.url = 'contact/' }}
 {{ assign $footer_type = 'type_3' }}
-
 {{ transclude '../template/siteframe' }}
 
 {{ include head '../include/head/index' }}
@@ -296,11 +295,14 @@
                             <div class="iagree" id="privacy">
                                 <div class="chk">
                                     <label for="label_04" class="chkBasic01 chk01">
-
+                                        {{ if $page.data[ $privacy ] === '1' }}
+                                        <input name="{{ $privacy }}" checked value="1" type="checkbox" id="label_04">
+                                        {{ else }}
                                         <input name="{{ $privacy }}" value="1" type="checkbox" id="label_04" required=""
                                             data-parsley-class-handler="#privacy"
                                             data-parsley-errors-container="#privacy"
                                             data-parsley-error-message="必ず入力してください。">
+                                        {{ end }}
                                         <span class="mark">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16.562" height="10.917"
                                                 viewBox="0 0 16.562 10.917">
