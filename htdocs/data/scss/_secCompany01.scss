@@ -1,0 +1,85 @@
+@import "vars";
+.secCompany01 {
+
+    &aa {
+        margin-top: 29px;
+        margin-bottom: 100px;
+
+        @include mq(lg) {
+            padding: 0 15px;
+        }
+
+        @include mq(md) {
+            padding: 0 15px;
+            margin-top: 65px;
+        }
+        
+    }
+
+    >.ttl {
+        font-size: 2.9282576867vw;
+        line-height: 4.39238653vw;
+        font-weight: 500;
+        color: #232448;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 58px;
+
+        @include mq(md) {
+            font-size: 30px;
+            line-height: 50px;
+            margin-bottom: 34px;
+        }
+    }
+
+    >.contact {
+        >.list {
+            width: 900px;
+            margin: auto;
+
+            @include mq(lg) {
+                width: auto;
+                margin: auto;
+            }
+
+            @include mq(md) {
+                width: auto;
+                margin: auto;
+            }
+
+            >.item {
+                border-bottom: 1px solid #979797;
+                display: flex;
+                padding: 18px 30px;
+
+                @include mq(md) {
+                    flex-wrap: wrap;
+                    padding: 20px 0;
+                }
+
+                >.left {
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    width: 120px;
+
+                    @include mq(md) {
+                        width: 100%;
+                        margin-bottom: 10px !important;
+                    }
+                }
+
+                >.right {
+                    width: 100%;
+                    font-size: 16px;
+                    line-height: 30px;
+                    a {
+                        color:#080808;
+                    }
+                }
+
+            }
+        }
+    }
+}

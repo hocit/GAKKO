@@ -1,0 +1,54 @@
+@import "vars";
+
+.secBasic05 {
+    // overflow: hidden;
+    height: 314px;
+    background-image: url(../img/section8@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    
+    @include mq(bt2) {
+        padding: 0 15px;
+        height: 250px;
+        background-image: url(../img/section8-mobile@2x.png);
+    }
+
+    >.txt {
+        margin: auto;
+        align-self: center;
+        >.title {
+            font-size: 40px;
+            color: #232448;
+            font-weight: 600;
+            line-height: 51px;
+            text-align: center;
+            margin-bottom: 15px;
+
+            @include mq(bt2) {
+                font-size: 26px;
+                line-height: 33px;
+                margin-bottom: 12px;
+
+            }
+        }
+
+        >.subtitle {
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 30px;
+            white-space: pre;
+
+            @include mq(bt2) {
+                margin-bottom: 27px;
+                white-space: normal;
+            }
+        }
+
+        >.btn {
+            margin: auto;
+        }
+    }
+}

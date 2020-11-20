@@ -1,0 +1,105 @@
+@import "vars";
+
+.secIndex03 {
+    display: flex;
+    height: 600px;
+    background: url(../img/img22@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+    @include mq(bt2) {
+        background: none;
+        height: auto;
+    }
+
+    @include mq(bt) {
+        width: 100%;
+    }
+
+    >.container {
+        display: flex;
+        @include mq(bt) {
+            padding: 0 15px;
+        }
+        @include mq(bt2) {
+            display: block;
+            width: 100%;
+            padding: 0;
+        }
+
+
+
+        >.row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            @include mq(bt2) {
+                flex-direction: column-reverse;
+
+            }
+
+            >.col01 {
+                width: 470px;
+
+                @include mq(bt2) {
+                    width: 100%;
+                    padding-top: 20px;
+                    padding-bottom: 70px;
+                }
+
+                >.txt {
+                    @include mq(bt2) {
+                        padding: 0 15px;
+                    }
+
+                    >.title {
+                        font-size: 40px;
+                        color: #232448;
+                        line-height: 60px;
+                        font-weight: 500;
+                        margin: 0;
+                        margin-bottom: 30.1px;
+                        text-align: center;
+                        margin-top: 0;
+
+                        @include mq(bt2) {
+                            font-size: 30px;
+                            line-height: 50px;
+                            margin-bottom: 30px;
+
+                        }
+                    }
+
+                    >.subtitle {
+                        font-size: 16px;
+                        line-height: 30px;
+                        margin-bottom: 49.9px;
+
+                        @include mq(bt2) {
+                            margin-bottom: 40px;
+                        }
+                    }
+
+                    >.btn {
+                        margin: auto;
+                    }
+                }
+            }
+
+            >.col02 {
+                display: none;
+
+                @include mq(bt2) {
+                    display: block;
+                    width: 100%;
+                }
+
+                >img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

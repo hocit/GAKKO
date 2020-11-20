@@ -1,0 +1,123 @@
+@import "vars";
+
+.headerBasic02 {
+    height: 70px;
+    justify-content: space-between;
+    display: none;
+    position: relative;
+
+    @include mq(bt) {
+        display: flex;
+    }
+
+    >h1 {
+        margin: 0;
+        margin-left: 0;
+        // display: flex;
+        align-self: center;
+
+        >a {
+            display: flex;
+
+            >img {
+                margin: auto;
+            }
+        }
+    }
+
+    >.logo {
+        display: flex;
+
+        >img {
+            margin: auto;
+        }
+    }
+
+    >.icon {
+        margin: auto;
+        margin-right: 15px;
+        align-self: center;
+    }
+
+    >.menu {
+        position: absolute;
+        top: 70px;
+        background: rgba(35, 36, 72, 0.98);
+        width: 100%;
+        z-index: 1;
+        display: none;
+        left: 0;
+        >.icon {
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            top: -70px;
+            right: 0;
+            z-index: 2;
+            background: rgba(35, 36, 72, 0.98);
+            display: flex;
+
+            >svg {
+                margin: auto;
+            }
+        }
+
+        >.list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            >.item {
+                &:first-child {
+                    border-top: 1px solid #979797;
+                }
+
+                >.link {
+                    color: white;
+                    padding: 12px 15px;
+                    font-size: 18px;
+                    line-height: 26px;
+                    font-weight: 500;
+                    border-bottom: 1px solid #979797;
+                    display: block;
+                    position: relative;
+
+                    >svg {
+                        position: absolute;
+                        right: 15px;
+                        height: 100%;
+                        top: 0;
+                    }
+                }
+
+                >.list {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+
+                    >.item {
+                        >.link {
+                            color: white;
+                            padding: 12px 15px;
+                            padding-left: 53px;
+                            font-size: 16px;
+                            line-height: 23px;
+                            border-bottom: 1px solid #979797;
+                            display: block;
+                            position: relative;
+
+                            >svg {
+                                position: absolute;
+                                right: 15px;
+                                height: 100%;
+                                top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

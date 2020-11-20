@@ -1,0 +1,49 @@
+@import "vars";
+.tltBasic01 {
+    position: absolute;
+    padding: 0 22px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #CE2C29;
+    background: white;
+
+    @include mq(bt2) {
+        left: 0;
+        top: calc(100% + 10px);
+    }
+
+    >.ttl {
+        color: #CE2C29;
+        margin: auto;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    >.arrow {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 15px;
+        height: 15px;
+        background: white;
+        -webkit-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+        transform: rotate(225deg);
+        border-width: 1px 0 0 1px;
+        border-style: solid;
+        border-color: #CE2C29;
+        left: calc(50% - 7.5px);
+        bottom: -8.5px;
+
+        @include mq(bt2) {
+            border-width: 0 1px 1px 0;
+            top: -8.5px;
+        }
+    }
+
+    // &aa {
+    //     top: -40px;
+    //     left: -144px;
+    // }
+}

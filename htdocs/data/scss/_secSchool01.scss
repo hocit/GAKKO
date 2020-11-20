@@ -1,0 +1,56 @@
+@import "vars";
+.secSchool01 {
+    padding-top: 31px;
+    padding-bottom: 120px;
+
+    @include mq(xl) {
+        padding: 0 15px;
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    >.container {
+        @include mq(xl) {
+            width: auto;
+        }
+        >.txt {
+            width: 770px;
+            margin: auto;
+            @include mq(xl) {
+                width: auto;
+            }
+   
+
+            >.title {
+                color: #232448;
+                font-size: 36px;
+                font-weight: 500;
+                line-height: 51px;
+                text-align: center;
+                margin: auto;
+                margin-bottom: 30px;
+
+                @include mq(md) {
+                    font-size: 25px;
+                    line-height: 46px;
+                    margin: auto;
+                    margin-bottom: 20px;
+                }
+            }
+
+            >.subtitle {
+                font-size: 16px;
+                line-height: 30px;
+                margin: auto;
+
+                @include mq(md) {
+                    font-size: 16px;
+                    line-height: 30px;
+                    margin: auto;
+
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,63 @@
+@import "vars";
+
+.secPrivacy02 {
+    @include mq(xl) {
+        padding: 0 15px;
+    }
+    >.box {
+        background: #F4F4F4;
+        width: 770px;
+        padding-top: 31px;
+        padding-bottom: 30px;
+        margin: auto;
+        margin-bottom: 93px;
+
+        @include mq(md) {
+            width: auto;
+            margin-bottom: 100px;
+        }
+
+        >.txt {
+            @include mq(md) {
+                width: 320px;
+                margin: auto;
+            }
+
+            >.ttl {
+                font-size: 16px;
+                line-height: 30px;
+                text-align: center;
+                margin-bottom: 30px;
+
+                @include mq(md) {
+                    white-space: pre;
+                    margin-bottom: 15px !important;
+                }
+            }
+
+            >.logo {
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 38px;
+                text-align: center;
+                margin-bottom: 16px;
+            }
+
+            >.address {
+                font-size: 16px;
+                line-height: 30px;
+                text-align: center;
+            }
+
+            >.contact {
+                font-size: 16px;
+                line-height: 30px;
+                text-align: center;
+
+                >a {
+                    color: #080808
+                }
+            }
+        }
+    }
+}

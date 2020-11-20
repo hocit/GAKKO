@@ -1,0 +1,144 @@
+@import "vars";
+
+.secBasic01 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 21.9619326501vw;
+    min-height: 182px;
+    max-height: 300px;
+    display: flex;
+
+    // @include mq(md) {
+    //     padding: 0 15px;
+    //     height: 182px;
+    // }
+
+    @include mq(xl) {
+        padding: 0 15px;
+        height: 182px;
+    }
+
+    &school {
+        background-image: url(../img/img24@2x.png);
+
+        @include mq(md) {
+            background-image: url(../img/img25@2x.png);
+        }
+    }
+
+    &schola {
+        background-image: url(../img/img39@2x.png);
+
+        @include mq(md) {
+            background-image: url(../img/img40@2x.png);
+        }
+    }
+
+    &curriculum {
+        background-image: url(../img/img47@2x.png);
+
+        @include mq(md) {
+            background-image: url(../img/img48@2x.png);
+        }
+    }
+
+    &developer {
+        background-image: url(../img/img49@2x.png);
+
+        @include mq(md) {
+            background-image: url(../img/img50@2x.png);
+        }
+    }
+
+    &contact {
+        background-image: url(../img/img02@2x.png);
+
+        @include mq(md) {
+            background-image: url(../img/img03@2x.png);
+        }
+    }
+
+    &news {
+        background-image: url(../img/img55@2x.png);
+
+        @include mq(md) {
+            background-image: url(../img/img56@2x.png);
+        }
+    }
+
+    &company {
+        background-image: url(../img/img10@2x.png);
+
+        @include mq(md) {
+            background-image: url(../img/img11@2x.png);
+        }
+    }
+
+    &privacy {
+        background-image: url(../img/img12@2x.png);
+
+        @include mq(md) {
+            background-image: url(../img/img13@2x.png);
+        }
+    }
+
+    &sitemap {
+        background-image: url(../img/img14@2x.png);
+
+        @include mq(md) {
+            background-image: url(../img/img15@2x.png);
+        }
+    }
+
+    >.container {
+        display: flex;
+
+        @include mq(xl) {
+            width: 100%;
+        }
+
+        >.txt {
+            margin: auto;
+            margin-left: 0;
+            align-self: center;
+
+            >.title {
+                font-size: 3.8067349927vw;
+                line-height: 5.4904831625vw;
+                font-weight: 600;
+                color: #232448;
+                margin: 0;
+
+                @include mq(xl-min) {
+                    font-size: 52px;
+                    line-height: 75px;
+                }
+
+                @include mq(md) {
+                    font-size: 25px;
+                    line-height: 36px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            >.subtitle {
+                font-family: 'Cormorant Garamond';
+                font-size: 2.196193265vw;
+                font-weight: bold;
+                line-height: 2.4890190337vw;
+                color: #232448;
+
+                @include mq(xl-min) {
+                    font-size: 30px;
+                    line-height: 34px;
+                }
+
+                @include mq(md) {
+                    font-size: 17px;
+                    line-height: 19px;
+                }
+            }
+        }
+    }
+}

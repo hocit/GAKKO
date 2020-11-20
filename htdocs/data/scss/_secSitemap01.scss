@@ -1,0 +1,119 @@
+@import "vars";
+
+.secSitemap01 {
+    padding: 0 15px;
+    overflow: hidden;
+
+    &aa {
+        margin-top: 45px;
+        margin-bottom: 80px;
+
+        @include mq(xl) {
+            margin-top: 62px;
+            margin-bottom: 0;
+        }
+    }
+
+    &ab {
+        margin-bottom: 80px;
+
+        @include mq(xl) {
+            margin-bottom: 0 !important;
+
+        }
+    }
+
+    &ac {
+        margin-bottom: 96px;
+
+        @include mq(xl) {
+            margin-bottom: 100px !important;
+
+        }
+    }
+
+    >.container {
+        @include mq(xl) {
+            width: 100%;
+        }
+
+        >.grid {
+            color: red;
+
+            // display: grid;
+            // grid-template-columns: repeat(4, 1fr);
+            display: flex;
+
+            @include mq(xl) {
+                flex-wrap: wrap;
+                // grid-template-columns: repeat(1, 1fr);
+            }
+
+            >.col {
+                width: calc(100% / 4);
+
+                @include mq(xl) {
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+
+                >.nav {
+                    >.item {
+                        font-size: 17px;
+                        font-weight: 500;
+                        line-height: 50px;
+                        color: #080808;
+                        display: block;
+                        height: 29px;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 25px;
+
+                        @include mq(md) {
+                            font-size: 16px !important;
+                            font-weight: 400;
+                        }
+
+                        &:not(:last-child) {
+                            margin-bottom: 21px;
+
+                        }
+
+                        >svg {
+                            margin-right: 15px;
+
+                        }
+                    }
+
+                    >.item01 {
+                        font-size: 20px !important;
+                        font-weight: bold !important;
+                        padding-left: 0 !important;
+
+                        @include mq(md) {
+                            font-size: 18px !important;
+                        }
+                    }
+
+                    >.item02 {
+                        padding-left: 50px !important;
+                        font-weight: 400;
+                    }
+
+                    >.item03 {
+                        @include mq(xl) {
+                            display: none !important;
+                        }
+                    }
+                }
+
+            }
+
+            >.col04 {
+                @include mq(xl) {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}

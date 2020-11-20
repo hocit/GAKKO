@@ -1,0 +1,111 @@
+@import "vars";
+
+.btnBasic01 {
+    width: 270px;
+    height: 53px;
+    display: flex;
+    position: relative;
+    transition: all 0.5s;
+    cursor: pointer;
+    background: transparent;
+    padding: 0;
+    border: 0;
+    outline: none;
+    >.txt {
+        border: 1px solid transparent;
+        width: 264px;
+        height: 47px;
+        display: flex;
+        position: relative;
+        color: transparent;
+        transition: all 0.5s;
+
+        >.icon {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        >.iconRight {
+            right: 27px;
+        }
+
+        >.iconLeft {
+            left: 27px;
+        }
+
+        >.title {
+            margin: auto;
+            font-size: 16px;
+            font-weight: 500;
+            color: transparent;
+            align-self: center;
+        }
+    }
+
+    &:hover {
+
+        >.txt {
+            transition: all 0.5s;
+            transform: translate(5px, 5px);
+        }
+    }
+
+    &:after {
+        content: "";
+        width: 265px;
+        height: 47px;
+        border-right: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        position: absolute;
+        right: -1px;
+        bottom: -1px;
+    }
+
+    &O\#232448 {
+        >.txt {
+            border: 1px solid #232448;
+
+            >.title {
+                color: #232448;
+            }
+        }
+
+        &:after {
+            border-right: 1px solid #232448;
+            border-bottom: 1px solid #232448;
+        }
+    }
+
+    &\#232448 {
+        >.txt {
+            background: #232448 !important;
+
+            >.title {
+                color: white !important;
+            }
+        }
+
+        &:after {
+            border-right: 1px solid #232448 !important;
+            border-bottom: 1px solid #232448 !important;
+        }
+    }
+
+    &White {
+        >.txt {
+            background: white;
+
+            .title {
+                color: #232448;
+            }
+        }
+
+        &:after {
+            border-right: 1px solid white;
+            border-bottom: 1px solid white;
+        }
+    }
+}

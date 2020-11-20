@@ -1,0 +1,95 @@
+@import "vars";
+.secSchool04 {
+    @include mq(xl) {
+        padding:0 15px;
+
+
+    }
+    >.container {
+        @include mq(xl) {
+            width: auto;
+        }
+        >.row {
+            display: flex;
+            flex-wrap: wrap;
+
+            @include mq(ipd) {
+                flex-direction: column-reverse;
+            }
+
+            >.col01 {
+                width: 50%;
+                display: flex;
+
+                @include mq(ipd) {
+                    width: 100%;
+                }
+
+                >.txt {
+                    width: 470px;
+                    margin: auto;
+                    margin-left: 0;
+
+                    @include mq(ipd) {
+                        padding: 0 15px;
+                        padding-top: 50px;
+                        width: auto;
+                    }
+
+                    >.title {
+                        color: #232448;
+                        font-size: 40px;
+                        font-weight: 500;
+                        line-height: 60px;
+                        text-align: center;
+                        margin: auto;
+                        margin-bottom: 27px;
+
+                        @include mq(ipd) {
+                            margin: auto;
+                            margin-bottom: 21px;
+                        }
+                    }
+
+                    >.subtitle {
+                        margin-bottom: 30px;
+                        font-size: 16px;
+                        line-height: 30px;
+                        >span {
+                            font-size: 13px;
+                        }
+
+                        @include mq(ipd) {
+                            margin-bottom: 50px;
+                        }
+                    }
+
+                    >.btn {
+                        margin: auto;
+                    }
+                }
+            }
+
+            >.col02 {
+                width: 50%;
+                height: 510px;
+                overflow: hidden;
+
+                @include mq(ipd) {
+                    min-height: 230px;
+                    height: 100%;
+                    overflow: hidden;
+                    width: 100%;
+                }
+
+                >.img {
+                    width: 100%;
+                    margin: 0;
+                    >img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

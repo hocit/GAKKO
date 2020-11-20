@@ -1,0 +1,96 @@
+@import "vars";
+
+.secComplete01 {
+
+    >.box {
+        width: 900px;
+        margin: auto;
+
+        @include mq(lg) {
+            width: auto;
+            padding: 0 15px;
+        }
+
+
+
+        >.tab {
+            display: flex;
+            margin-bottom: 58px;
+
+              @include mq(lg) {
+                margin-bottom: 30px;
+
+            }
+
+            >.item {
+                height: 41px;
+                border-bottom: 6px solid #F0F0F0;
+                width: calc(100% / 3);
+
+                >.title {
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 34px;
+                    color: #D4D4D4;
+                    text-align: center;
+
+                }
+
+                >.titleActive {
+                    color: #080808;
+
+                }
+            }
+
+            >.itemActive {
+                border-bottom: 6px solid #356FBF;
+
+            }
+        }
+
+        >.alert {
+            line-height: 40px;
+            font-size: 20px;
+            width: 419px;
+            margin: auto;
+            margin-top: 32px;
+            margin-bottom: 106px;
+            text-align: center;
+
+            @include mq(lg) {
+                width: 278px;
+                margin: auto;
+                margin-top: 51px;
+                margin-bottom: 83px;
+            }
+        }
+
+        >.list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+
+            >.item {
+                @include mq(lg) {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+
+
+    }
+
+    &aa {
+        padding-top: 31px;
+        padding-bottom: 98px;
+
+        @include mq(lg) {
+            padding: 0 15px;
+            padding-top: 60px;
+            padding-bottom: 80px;
+        }
+    }
+}

@@ -1,0 +1,139 @@
+@import "vars";
+
+.secIndex04 {
+    height: 400px;
+    overflow: hidden;
+
+    @include mq(bt2) {
+        height: auto;
+    }
+
+    &aa {
+        padding: 80px 0;
+
+        @include mq(bt2) {
+            padding: 0;
+        }
+
+    }
+
+    >.container {
+        @include mq(bt2) {
+            width: auto;
+        }
+
+        @include mq(bt) {
+            width: 100%;
+        }
+
+        >.row {
+            display: flex;
+            flex-wrap: wrap;
+
+            @include mq(bt2) {
+                flex-direction: column-reverse !important;
+            }
+
+            >.col01 {
+                width: 50%;
+                height: 400px;
+                display: flex;
+
+                @include mq(bt2) {
+                    height: auto;
+                    width: 100%;
+                    padding-top: 20px;
+                    padding-bottom: 70px;
+                }
+
+                >.txt {
+                    width: 470px;
+                    margin: auto;
+                    align-self: center;
+
+                    @include mq(bt2) {
+                        padding: 0 15px;
+                        margin: auto !important;
+                    }
+
+                    >.title {
+                        font-size: 40px;
+                        color: #232448;
+                        line-height: 60px;
+                        font-weight: 500;
+                        margin: 0;
+                        margin-bottom: 30px;
+                        text-align: center;
+
+                        @include mq(bt2) {
+                            font-size: 30px;
+                            line-height: 50px;
+                        }
+                    }
+
+                    >.subtitle {
+                        font-size: 16px;
+                        line-height: 39px;
+                        margin-bottom: 49px;
+                        text-align: center;
+                        white-space: pre;
+
+                        @include mq(bt2) {
+                            margin-bottom: 39px;
+                            white-space: normal;
+                        }
+
+                    }
+
+                    >.btn {
+                        margin: auto;
+                    }
+                }
+
+                >.txtRight {
+                    margin-right: 0;
+
+                }
+
+                >.txtLeft {
+                    margin-left: 0;
+
+                }
+            }
+
+            >.col02 {
+                width: 50%;
+                height: 400px;
+
+                @include mq(bt2) {
+                    height: 100%;
+                    width: 100%;
+                }
+
+                >.img {
+                    @include mq(bt2) {
+                        width: 100%;
+                        float: auto;
+                    }
+                }
+
+                >.imgRight {
+                    float: right;
+
+                }
+
+                >.imgLeft {
+                    float: left;
+
+                }
+
+            }
+        }
+
+        >.rowReverse {
+            flex-direction: row-reverse;
+
+
+        }
+    }
+}

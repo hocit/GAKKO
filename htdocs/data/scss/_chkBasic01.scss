@@ -1,0 +1,53 @@
+.chkBasic01 {
+    height: 23px;
+    min-height: 23px;
+    width: 23px;
+    min-width: 23px;
+    position: relative;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+    &err {
+        >.mark {
+            background: #FD99A2 !important;
+        }
+    }
+
+    >input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+
+        &:checked {
+            &~.mark {
+                background: #356FBF !important;
+                border: 1px solid #356FBF !important;
+
+                >svg {
+                    display: block;
+
+                }
+            }
+        }
+    }
+
+    >.mark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+        border: 1px solid #979797;
+        min-width: 23px;
+        width: 23px;
+        height: 23px;
+        min-height: 23px;
+        display: flex;
+
+        >svg {
+            margin: auto;
+            display: none;
+        }
+    }
+}

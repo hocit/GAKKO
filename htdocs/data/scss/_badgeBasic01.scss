@@ -1,0 +1,46 @@
+@import "vars";
+
+.badgeBasic01 {
+    color: white;
+    font-size: 14px;
+    width: 190px;
+    min-width: 190px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    margin-right: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mq(bt2) {
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 13px;
+    }
+
+    &\#356FBF {
+        background: #356FBF !important;
+    }
+
+    &\#E57AC0 {
+        background: #E57AC0 !important;
+    }
+
+    &\#848484 {
+        background: #848484 !important;
+    }
+
+    &\#F0BB1C {
+        background: #F0BB1C !important;
+    }
+
+    &Small {
+        width: 170px;
+        min-width: 170px;
+        height: 24px;
+        line-height: 28px;
+        font-size: 14px;
+        background: transparent;
+        color: white;
+    }
+}

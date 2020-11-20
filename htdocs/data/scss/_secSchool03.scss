@@ -1,0 +1,185 @@
+@import "vars";
+
+.secSchool03 {
+    overflow: hidden;
+
+    @include mq(xl) {
+        padding: 0 15px;
+    }
+
+    >.container {
+        @include mq(xl) {
+            width: auto;
+        }
+
+        >.txt {
+            width: 770px;
+            margin: auto;
+            @include mq(xl) {
+                width: auto;
+            }
+            @include mq(xs) {
+                width: initial;
+            }
+
+            >.title {
+                color: #232448;
+                font-size: 36px;
+                font-weight: 500;
+                line-height: 51px;
+                text-align: center;
+                margin: auto;
+                margin-bottom: 27px;
+
+                @include mq(xs) {
+                    font-size: 30px;
+                    line-height: 50px;
+                    margin: auto;
+                    margin-bottom: 21px;
+                }
+            }
+
+            >.subtitle {
+                font-size: 16px;
+                line-height: 30px;
+                margin-bottom: 60px;
+
+                @include mq(xs) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        >.list {
+            display: flex;
+            // gap: 30px;
+            justify-content: center;
+
+            // flex-wrap: wrap;
+            @include mq(xl) {
+                text-align: center;
+                display: block;
+            }
+
+            >.item {
+                position: relative;
+                margin-right: 15px;
+                margin-left: 15px;
+                display: inline-block;
+
+                @include mq(xl) {
+                    margin-bottom: 30px;
+                }
+                @include mq(sm) {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                
+                @include mq(xs) {
+                    width: 100%;
+                    overflow: hidden;
+                    height: 246px;
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+
+                >.img {
+                    margin: 0;
+                    max-width: 370px;
+                    width: 370px;
+                    max-height: 250px;
+                    height: 250px;
+                    overflow: hidden;
+
+                    >img {
+                        width: 100%;
+                    }
+                }
+
+                >.title {
+                    position: absolute;
+                    background: rgba(35, 36, 72, 0.9);
+                    color: white;
+                    width: 100%;
+                    bottom: 0;
+                    height: 52px;
+                    font-size: 20px;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+
+    &aa {
+        padding-top: 60px;
+        padding-bottom: 119px;
+
+        @include mq(xs) {
+            padding-top: 30px;
+            padding-bottom: 80px;
+        }
+
+
+
+    }
+
+    &ab {
+        padding-top: 60px;
+        padding-bottom: 100px;
+
+        @include mq(xs) {
+            padding-top: 30px;
+            padding-bottom: 80px;
+        }
+    }
+
+    &ac {
+        padding-top: 60px;
+        padding-bottom: 120px;
+
+        @include mq(xs) {
+            padding-top: 30px;
+            padding-bottom: 80px;
+        }
+
+    }
+
+    &ad {
+        padding-top: 60px;
+        padding-bottom: 120px;
+
+        @include mq(xs) {
+            padding-top: 30px;
+            padding-bottom: 80px;
+        }
+
+    }
+
+    &ae {
+        padding-bottom: 100px;
+
+    }
+
+    &curriculum {
+        padding-top: 80px;
+        padding-bottom: 140px;
+
+        @include mq(xs) {
+            padding-top: 100px;
+            padding-bottom: 80px;
+        }
+    }
+
+    &developer {
+        padding-bottom: 140px;
+
+        @include mq(xs) {
+            padding-bottom: 80px;
+        }
+
+
+    }
+}

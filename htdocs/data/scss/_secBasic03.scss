@@ -1,0 +1,40 @@
+@import "vars";
+
+.secBasic03 {
+    overflow: hidden;
+
+    @include mq(xl) {
+        padding: 0 15px;
+    }
+
+
+    @include mq(md) {
+        display: none;
+    }
+
+    >.container {
+        @include mq(xl) {
+            width: auto;
+        }
+
+        >.list {
+            display: flex;
+            padding: 15px 0;
+            justify-content: flex-end;
+
+            >.link {
+                color: #356FBF !important;
+            }
+
+            >.item {
+                color: #080808;
+                font-size: 15px;
+                line-height: 30px;
+            }
+
+            >.icon {
+                margin: 0 15px;
+            }
+        }
+    }
+}

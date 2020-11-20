@@ -1,0 +1,405 @@
+@import "vars";
+
+.secContact01 {
+    overflow: hidden;
+
+    >.box {
+        width: 900px;
+        margin: auto;
+
+        @include mq(lg) {
+            width: auto;
+            padding: 0 15px;
+        }
+
+        >.title {
+            font-size: 16px;
+            line-height: 30px;
+            color: #080808;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        >.contact {
+            background: #F4F4F4;
+            border: 1px solid #F4F4F4;
+            height: 80px;
+            display: flex;
+            margin-bottom: 60px;
+
+            @include mq(lg) {
+                height: 162px;
+                margin-bottom: 50px;
+            }
+
+            >.txt {
+                width: 745px;
+                height: 50px;
+                margin: auto;
+                display: flex;
+
+                @include mq(lg) {
+                    display: block;
+                    height: auto;
+                    width: auto;
+                }
+
+                >.tel {
+                    font-size: 20px;
+                    font-weight: 600;
+                    // line-height: 30px;
+                    color: #080808;
+                    white-space: nowrap;
+                    margin: auto;
+                    line-height: 50px;
+                    display: block;
+
+                    @include mq(lg) {
+                        text-align: center;
+                        margin-bottom: 20px;
+                        line-height: 30px;
+                        padding-top: 20px;
+                    }
+                }
+
+                >.line {
+                    height: 50px;
+                    min-width: 1px;
+                    background: #707070;
+                    margin: auto 50px;
+
+                    @include mq(lg) {
+                        height: 1px;
+                        width: 310px;
+                        margin: auto;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                >.time {
+                    font-size: 16px;
+                    // line-height: 30px;
+                    color: #080808;
+                    white-space: nowrap;
+                    margin: auto;
+                    line-height: 50px;
+
+                    @include mq(lg) {
+                        white-space: pre;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+
+        >.tab {
+            // display: grid;
+            // grid-template-columns: repeat(3, 1fr);
+            display: flex;
+            margin-bottom: 58px;
+
+            @include mq(lg) {
+                margin-bottom: 30px;
+
+            }
+
+            >.item {
+                height: 41px;
+                border-bottom: 6px solid #F0F0F0;
+                width: calc(100% / 3);
+
+                >.title {
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 34px;
+                    color: #D4D4D4;
+                    text-align: center;
+
+                }
+
+                >.titleActive {
+                    color: #080808;
+
+                }
+            }
+
+            >.itemActive {
+                border-bottom: 6px solid #356FBF;
+
+            }
+        }
+
+        >form {
+            >.form {
+                margin-bottom: 59px;
+
+                @include mq(lg) {
+                    margin-bottom: 50px;
+                }
+
+                >.item {
+                    padding: 0 10px;
+                    border-bottom: 1px solid #979797;
+                    min-height: 84px;
+                    display: flex;
+
+                    @include mq(lg) {
+                        padding: 20px 0;
+                        height: auto;
+                    }
+
+                    >.grid {
+                        display: flex;
+                        justify-content: space-between;
+                        height: 54px;
+                        margin: auto 0;
+                        width: 100%;
+                        align-self: center;
+                        padding: 15.5px 0;
+
+                        @include mq(lg) {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            height: auto;
+                        }
+
+                        >.col01 {
+                            width: 100%;
+                            display: flex;
+
+                            @include mq(lg) {
+                                height: 40px;
+                                margin-bottom: 20px;
+                            }
+
+                            >.title {
+                                font-size: 16px;
+                                font-weight: 600;
+                                // line-height: 30px;
+                                margin: auto;
+                                margin-left: 0;
+                                line-height: 54px;
+                            }
+
+                            >.title01 {
+                                margin-top: 27px;
+                                white-space: pre;
+
+                                @include mq(lg) {
+                                    margin-top: 15px;
+                                    white-space: normal;
+                                }
+                            }
+
+                            >.note {
+                                font-size: 16px;
+                                font-weight: 600;
+                                line-height: 30px;
+                                height: 40px;
+                                width: 70px;
+                                background: #B299D9;
+                                color: white;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin: auto;
+                                margin-right: 30px;
+                                margin-top: 7px;
+
+                                @include mq(lg) {
+                                    margin-right: 0;
+
+                                }
+                            }
+                        }
+
+                        >.col02 {
+                            min-width: 590px;
+                            width: 590px;
+                            display: flex;
+                            position: relative;
+
+                            @include mq(lg) {
+                                min-width: auto;
+                                width: 100%;
+                            }
+
+                            >.iagree {
+                                margin: auto;
+                                margin-left: 0;
+
+                                @include mq(lg) {
+                                    margin-left: auto;
+
+                                }
+
+                                >.chk {
+                                    display: flex;
+                                    height: 29px;
+                                    margin-bottom: 16px;
+
+                                    @include mq(lg) {
+                                        justify-content: center;
+                                        margin-bottom: 17px;
+                                    }
+
+                                    >.chk01 {
+                                        margin-right: 15px;
+                                    }
+
+                                    >.title {
+                                        font-size: 16px;
+                                        line-height: 30px;
+                                        color: #080808;
+                                        display: flex;
+                                        align-items: center;
+                                        line-height: auto;
+                                    }
+                                }
+
+                                >.title {
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    line-height: 30px;
+
+                                    @include mq(lg) {
+                                        width: 287px;
+                                    }
+
+                                    >a {
+                                        color: #356FBF;
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+
+                            .tlt01 {
+                                top: -60px;
+                                left: -144px;
+
+                                @include mq(lg) {
+                                    left: 0;
+                                    top: calc(100% + 10px);
+                                }
+                            }
+
+                            .tlt02 {
+                                right: 20px;
+                                bottom: calc(100% + 5px);
+
+                                @include mq(lg) {
+                                    left: 0;
+                                    top: calc(100% + 5px);
+                                    width: 176px;
+                                }
+                            }
+
+                            .tlt03 {
+                                top: -62px;
+                                left: -97px;
+
+                                @include mq(lg) {
+                                    width: 208px;
+                                    top: 40px;
+                                    left: 6px;
+                                }
+                            }
+
+                            >.grid {
+                                display: flex;
+                                position: relative;
+
+                                @include mq(lg) {
+                                    flex-wrap: wrap;
+                                    row-gap: 10px;
+                                }
+
+
+
+                                >.item {
+                                    display: flex;
+
+                                    @include mq(lg) {
+                                        width: 50%;
+
+                                    }
+
+                                    >.chk01 {
+                                        margin-right: 15px;
+                                    }
+
+                                    >.title {
+                                        font-size: 16px;
+                                        line-height: 30px;
+                                        color: #080808;
+                                        display: flex;
+                                        align-items: center;
+                                        line-height: auto;
+                                    }
+                                }
+
+                                >.item01 {
+                                    margin: auto;
+                                    margin-left: 0;
+                                    margin-right: 30px;
+
+                                    @include mq(lg) {
+                                        margin-right: auto !important;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                >.itemMedium {
+                    height: 102px;
+
+                    @include mq(lg) {
+                        height: auto;
+
+                    }
+                }
+
+                >.itemBig {
+                    height: 251px;
+
+                    @include mq(lg) {
+                        height: auto;
+
+                    }
+
+                    >.grid {
+                        height: auto;
+
+                        >.col01 {
+                            >.title01 {
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            >.btn {
+                margin: auto;
+            }
+        }
+    }
+
+
+
+    &aa {
+        padding-top: 31px;
+        padding-bottom: 98px;
+
+        @include mq(lg) {
+            padding: 0 15px;
+            padding-top: 60px;
+            padding-bottom: 80px;
+        }
+    }
+}

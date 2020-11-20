@@ -1,0 +1,52 @@
+@import "vars";
+
+.secSchola01 {
+
+    &aa {
+        padding-bottom: 78px;
+        padding-top: 31px;
+
+        @include mq(bt2) {
+            padding-top: 38px;
+            padding-bottom: 52px;
+        }
+
+        >.title {
+            @include mq(bt2) {
+                width: 210px;
+            }
+        }
+    }
+
+    &curriculum {
+        padding-bottom: 77px;
+        padding-top: 29px;
+
+        @include mq(bt2) {
+            padding-top: 52px;
+            padding-bottom: 37px;
+        }
+
+    }
+
+    >.title {
+        font-size: 2.9282576867vw;
+        color: #232448;
+        line-height: 4.39238653vw;
+        text-align: center;
+        margin: auto;
+        font-weight: 500;
+
+        @include mq(xl-min) {
+            font-size: 40px;
+            line-height: 60px;
+        }
+
+        @include mq(md) {
+            font-size: 30px;
+            line-height: 50px;
+            font-weight: 500;
+            margin: auto;
+        }
+    }
+}

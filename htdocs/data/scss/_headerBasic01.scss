@@ -1,0 +1,95 @@
+@import "vars";
+.headerBasic01 {
+    display: flex;
+    justify-content: space-between;
+    height: 84px;
+    overflow: hidden;
+
+    @include mq(bt) {
+        display: none;
+    }
+
+    >h1 {
+        margin: 0;
+    }
+
+    >.right {
+        display: flex;
+
+        >.nav {
+            display: flex;
+            align-items: center;
+
+            >.list {
+                >.item {
+                    margin-right: 45px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 23px;
+                    text-decoration: none;
+                    color: #080808;
+                    position: relative;
+
+                    &:hover {
+                        &:after {
+                            opacity: 1;
+                        }
+                    }
+
+                    &:after {
+                        position: absolute;
+                        content: "";
+                        width: 60px;
+                        height: 2px;
+                        background: #356FBF;
+                        opacity: 0;
+                        bottom: -14.5px;
+                        left: calc(50% - 30px);
+                        transition: opacity .25s ease-in-out;
+                        -moz-transition: opacity .25s ease-in-out;
+                        -webkit-transition: opacity .25s ease-in-out;
+                    }
+                }
+            }
+        }
+
+        >.contact {
+            width: 170px;
+            height: 84px;
+            background: #232448;
+            display: flex;
+            transition: all 0.5s;
+            &:hover {
+                background: #356FBF;
+            }
+            >.txt {
+                margin: auto;
+                align-self: center;
+                width: 100%;
+        
+
+                >.title {
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-align: center;
+                    color: white;
+                }
+
+                >.subtitle {
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-align: center;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    &aa {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.32);
+        z-index: 1;
+    }
+}

@@ -1,0 +1,64 @@
+@import "vars";
+.secIndex05 {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 830px;
+    margin-top: 30px;
+    margin-bottom: 79px;
+    height: 200px;
+
+    @include mq(bt2) {
+        margin-bottom: 80px;
+        margin-top: 10px;
+        width: auto;
+        height: 90px;
+        padding: 0 15px;
+
+    }
+    @include mq(bt) {
+        width: auto;
+    }
+
+    >.box {
+        position: relative;
+
+        >.img {
+                width: 100%;
+        }
+
+        >.txt {
+            position: absolute;
+            top: 51px;
+            left: 69px;
+
+            @include mq(bt2) {
+                top: 19px;
+                left: 19.8px;
+            }
+
+            >.title {
+                font-size: 60px;
+                font-family: 'Cormorant Garamond';
+                color: rgba(35, 36, 72, 0.79);
+
+                @include mq(bt2) {
+                    font-size: 35px;
+                }
+            }
+
+            >.subtitle {
+                font-size: 18px;
+                line-height: 37.5px;
+                font-weight: 300;
+                color: #232448;
+
+                @include mq(bt2) {
+                    font-size: 12px;
+                    line-height: auto;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,38 @@
+@import "vars";
+.secIndex02 {
+    height: 356px;
+    display: flex;
+
+    @include mq(bt2) {
+        height: auto;
+        padding: 120px 15px;
+    }
+
+
+
+    >.container {
+        display: flex;
+        @include mq(bt) {
+            padding: 0 15px;
+        }
+        >.txt {
+            font-size: 18px;
+            line-height: 45px;
+            text-align: center;
+            white-space: pre;
+            align-self: center;
+            width: 100%;
+
+            @include mq(bt2) {
+                white-space: normal;
+                font-size: 16px;
+
+            }
+
+            @include mq(bt) {
+                white-space: normal;
+            }
+        }
+    }
+
+}

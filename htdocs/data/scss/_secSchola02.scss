@@ -1,0 +1,113 @@
+@import "vars";
+
+.secSchola02 {
+    height: 400px;
+    overflow: hidden;
+
+    &aa {
+        padding-bottom: 80px;
+    }
+
+
+    @include mq(xl) {
+        height: auto;
+        padding: 0 15px;
+        padding-bottom: 80px;
+
+    }
+
+    >.container {
+        @include mq(xl) {
+            width: auto;
+        }
+        >.rowReverse {
+            flex-direction: row-reverse;
+        }
+
+        >.row {
+            display: flex;
+            flex-wrap: wrap;
+
+            >.col01 {
+                width: 50%;
+                display: flex;
+                height: 400px;
+
+                @include mq(xl) {
+                    width: 100%;
+                    margin-bottom: 30px;
+                    height: auto;
+                }
+
+                >.txtRight {
+                    margin-right: 0 !important;
+                }
+
+                >.txtLeft {
+                    margin-left: 0 !important;
+                }
+
+                >.txt {
+                    width: 530px;
+                    margin: auto;
+                    align-self: center;
+                    @include mq(xl) {
+                        width: auto;
+                        height: auto;
+                    }
+
+                    >.title {
+                        font-size: 30px;
+                        color: #232448;
+                        line-height: 50px;
+                        font-weight: 500;
+                        margin: 0;
+                        margin-bottom: 30px;
+                        white-space: pre;
+                        @include mq(xl) {
+                            font-size: 20px;
+                            line-height: 36px;
+                            white-space: normal;
+                        }
+                    }
+
+                    >.subtitle {
+                        font-size: 16px;
+                        color: #080808;
+                        line-height: 30px;
+                        white-space: pre;
+                        @include mq(xl) {
+                            white-space: normal;
+                        }
+                    }
+                }
+            }
+
+            >.col02 {
+                width: 50%;
+                height: 400px;
+
+                @include mq(xl) {
+                    width: 100%;
+                    height: auto;
+                }
+
+                >img {
+                    @include mq(xl) {
+                        width: 100%;
+                    }
+                }
+
+
+                >.imgLeft {
+                    float: left;
+
+                }
+
+                >.imgRight {
+                    float: right;
+                }
+            }
+        }
+    }
+}

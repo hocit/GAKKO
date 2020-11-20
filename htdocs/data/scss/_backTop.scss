@@ -1,0 +1,23 @@
+@import "vars";
+.backTop {
+    height: 50px;
+    width: 50px;
+    background: #232448;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    display: flex;
+    cursor: pointer;
+    transition: all 0.5s;
+    overflow: hidden;
+    @include mq(bt2) {
+        height: 40px;
+        width: 40px;
+        top: -40px;
+    }
+
+    >svg {
+        margin: auto;
+
+    }
+}

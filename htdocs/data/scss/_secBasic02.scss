@@ -1,0 +1,140 @@
+@import "vars";
+
+.secBasic02 {
+    @include mq(xl) {
+        padding: 0 15px;
+    }
+    >.container {
+        @include mq(xl) {
+            width: auto;
+            margin: auto;
+        }
+        >.title {
+            font-size: 45px;
+            line-height: 68px;
+            font-weight: 500;
+            color: #232448;
+            margin: 0;
+            margin-bottom: 10px;
+            text-align: center;
+
+             @include mq(xl) {
+                font-size: 32px;
+                line-height: 40px;
+                margin-bottom: 14px;
+            }
+        }
+
+        >.subtitle {
+            margin-bottom: 37px;
+            font-size: 16px;
+            font-family: 'Cormorant Garamond';
+            text-align: center;
+            font-weight: 600;
+            line-height: 34px;
+            color: #232448;
+
+             @include mq(xl) {
+                margin-bottom: 27px;
+                line-height: 30px;
+            }
+
+        }
+
+        >.btn {
+            margin: auto;
+        }
+
+        >.list {
+            margin-bottom: 69px;
+
+             @include mq(xl) {
+                margin-bottom: 30px;
+            }
+
+            >.item {
+                display: flex;
+                color: #356FBF;
+                height: 34px;
+                padding: 15.5px 20px;
+                border-bottom: 1px solid #979797;
+
+                 @include mq(xl) {
+                    height: auto;
+                    flex-wrap: wrap;
+                    padding: 15px;
+                    padding-bottom: 20px;
+                    justify-content: space-between;
+                }
+
+                >.date {
+                    font-size: 16px;
+                    line-height: 34px;
+                    color: #080808;
+                    font-weight: bold;
+                    margin-right: 21px;
+
+                     @include mq(xl) {
+                        width: 90px;
+                        margin-right: 35px;
+                    }
+                }
+
+                >.badge {
+                    margin-right: 18px;
+
+                     @include mq(xl) {
+                        margin-right: 0;
+                        margin-bottom: 13px;
+                    }
+                }
+
+                >.title {
+                    font-size: 16px;
+                    line-height: 34px;
+                    font-weight: 500;
+                    width: 100%;
+
+                     @include mq(xl) {
+                        line-height: 30px;
+
+                    }
+                }
+            }
+        }
+
+        >.pagination {
+            >.list {
+                display: flex;
+                justify-content: center;
+
+                >.item {
+                    font-size: 18px;
+                    line-height: 34px;
+                    color: #356FBF;
+
+                    &:not(:last-child) {
+                        margin-right: 20px;
+
+                    }
+                }
+
+                >.itemActive {
+                    color: #080808;
+                }
+            }
+        }
+    }
+
+    &school {
+        padding-top: 54px;
+        padding-bottom: 102px;
+
+         @include mq(xl) {
+            padding: 0 15px;
+            padding-top: 60px;
+            padding-bottom: 99px;
+
+        }
+    }
+}

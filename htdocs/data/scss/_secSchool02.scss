@@ -1,0 +1,36 @@
+@import "vars";
+.secSchool02 {
+    height: 260px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+
+    @include mq(bt2) {
+        height: 150px;
+    }
+
+    &aa {
+        background-image: url(../img/banner2@2x.png);
+
+        @include mq(bt2) {
+            background-image: url(../img/banner2-mobile@2x.png);
+        }
+    }
+
+    &ab {
+        background-image: url(../img/banner3@2x.png);
+
+        @include mq(bt2) {
+            background-image: url(../img/banner3-mobile@2x.png);
+        }
+    }
+
+    &ac {
+        background-image: url(../img/banner4@2x.png);
+
+        @include mq(bt2) {
+            background-image: url(../img/banner4-mobile@2x.png);
+
+        }
+    }
+}

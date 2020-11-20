@@ -1,0 +1,248 @@
+@import "vars";
+.secCurriculum01 {
+    height: 829px;
+    display: flex;
+    margin-bottom: 138.5px;
+
+    @include mq(xl) {
+        padding: 0 15px;
+
+    }
+
+    >.box {
+        position: relative;
+        width: 559px;
+        margin: auto;
+
+        >.list {
+            position: absolute;
+            top: 23px;
+            left: 62px;
+            z-index: 1;
+
+            @include mq(xl) {
+                left: auto;
+                right: 0;
+            }
+
+            >.item {
+                background: #F8F9FA;
+                width: 470px;
+                display: flex;
+
+                @include mq(bt5) {
+                    width: 257px;
+                }
+
+                >.txt {
+                    position: relative;
+                    display: flex;
+                    width: 100%;
+
+                    >.arrow {
+                        position: absolute;
+                        top: calc(50% - 17.78px);
+                        left: -29px;
+                    }
+
+                    >.sp {
+                        position: absolute;
+                        top: calc(50% - 15px);
+                        left: -15.5px;
+                    }
+
+                    >.icon {
+                        margin: auto;
+                        margin-right: 35px;
+                        margin-left: 51px;
+                        display: flex;
+
+                        @include mq(bt5) {
+                            margin-right: 10px;
+                            margin-left: 17px;
+                        }
+                    }
+
+                    >.title {
+                        font-size: 25px;
+                        font-weight: 500;
+                        color: #232448;
+                        margin: auto;
+                        margin-left: 0;
+
+                        @include mq(bt5) {
+                            font-size: 20px;
+                        }
+                    }
+
+                    >.line {
+                        margin: auto;
+                        margin-right: 0;
+                    }
+
+                    >.subtitle {
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: #B0B0B0;
+                        margin: auto;
+                        margin-right: 42px;
+                        margin-left: 30.5px;
+                        width: 58px;
+
+                        @include mq(bt5) {
+                            font-size: 12px;
+                            margin-right: 11px;
+                            margin-left: 14px;
+                            width: 39px;
+                        }
+                    }
+                }
+
+            }
+
+            >.itemMedium {
+                height: 120px;
+
+            }
+
+            >.itemSmall {
+                height: 80px;
+
+            }
+
+            >.itemBig {
+                height: 150px;
+
+            }
+
+            >.item01 {
+                margin-bottom: 11px;
+
+            }
+
+            >.item02 {
+                margin-bottom: 23px;
+
+            }
+
+            >.item03 {
+                margin-bottom: 23px;
+
+            }
+
+            >.item04 {
+                margin-bottom: 22px;
+
+            }
+        }
+
+        >.timeline {
+            position: relative;
+
+            @include mq(bt5) {
+                margin-left: 55px;
+
+            }
+
+            >.start {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 27px;
+                color: #356FBF;
+                position: absolute;
+                bottom: calc(100% + 32px);
+                left: -30.5px;
+            }
+
+            >.circle {
+                height: 30px;
+                width: 30px;
+                border: 5px solid #466FB9;
+                border-radius: 50%;
+                position: absolute;
+                background: white;
+                left: -15.5px;
+            }
+
+            >.circleTop {
+                bottom: calc(100% - 14px);
+
+            }
+
+            >.circleBottom {
+                top: calc(100% - 18px);
+
+            }
+
+            >.line {
+                height: 700px;
+                width: 7px;
+                background: #979797;
+            }
+
+            >.arrow {
+                position: absolute;
+                top: 96.3px;
+                left: -11.5px;
+            }
+
+            >.point {
+                position: absolute;
+                left: -49px;
+                font-size: 15px;
+                font-weight: bold;
+                line-height: 28px;
+                color: #B0B0B0;
+
+                &:after {
+                    content: "";
+                    width: 16px;
+                    height: 3px;
+                    background: #979797;
+                    position: absolute;
+                    top: calc(50% - 1.5px);
+                    right: -23px;
+                }
+
+
+            }
+
+            >.point10 {
+                top: 133.5px;
+
+            }
+
+            >.point15 {
+                top: 226.5px;
+
+            }
+
+            >.point30 {
+                top: 403.5px;
+
+            }
+
+            >.point35 {
+                top: 506.5px;
+
+            }
+
+            >.point50 {
+                top: 672px;
+                &:after {
+                    display: none;
+                }
+            }
+
+            >.finish {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 27px;
+                color: #356FBF;
+                position: absolute;
+                top: calc(100% + 27px);
+                left: -40.5px;
+            }
+        }
+    }
+}
